@@ -3,7 +3,7 @@ Ecommerce Site PSD to HTML Excercise
 
 
 Taking a PSD file and converting to HTML.
-Added JQuery Slideshow to this version
+Working with Patterns, SASS, OOCSS
 ----------------------------------------
 Browse Refinements Task
 ----------------------------------------

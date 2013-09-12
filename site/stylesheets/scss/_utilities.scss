@@ -1,0 +1,134 @@
+// ==========================================================================
+// Font Sizes
+// ==========================================================================
+$font_size_8px:  0.667em;
+$font_size_9px:  0.75em;
+$font_size_10px: 0.833em;
+$font_size_11px: 0.917em;
+$font_size_12px: 1em;
+$font_size_13px: 1.083em;
+$font_size_14px: 1.167em;
+$font_size_15px: 1.25em;
+$font_size_16px: 1.333em;
+$font_size_17px: 1.417em;
+$font_size_18px: 1.5em;
+$font_size_19px: 1.583em;
+$font_size_20px: 1.667em;
+$font_size_21px: 1.75em;
+$font_size_22px: 1.833em;
+$font_size_23px: 1.917em;
+$font_size_24px: 2em;
+$font_size_25px: 2.083em;
+$font_size_30px: 2.5em;
+$font_size_36px: 3em;
+
+$default_margin: $font_size_12px;
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+$pink:	#eb5190;
+$hotPink: #ff008a;
+$darkGrey: #424242;
+$defaultGrey: #3E3E3E;
+$white: #ffffff;
+$black: #000000;
+$lightGrey: #eeeeee;
+
+
+// ==========================================================================
+// Font Stacks
+// ==========================================================================
+$primary:     arial, helvetica, sans-serif;
+$josefinSans: 'Josefin Sans', Arial, Helvetica, sans-serif;
+$josefinSlab:  'Josefin Slab', Arial, Helvetica, sans-serif;
+$Lato:			'Lato',Arial,Helvetica,sans-serif;
+$Serif:			Georgia, "Times New Roman", Times, serif;
+
+// ==========================================================================
+// @mixin respond-to
+// ==========================================================================
+$break-small: 767 / 16;
+$break-medium: 768 / 16;
+$break-medium-only: 959 / 16;
+$break-wide: 960 / 16;
+
+$media-query-support: true !default;
+
+@mixin respond-to($media, $mq-support: $media-query-support) {
+  @if $mq-support == true {
+    // output content wrapped in media queries
+    @if $media == small {
+      @media screen and (max-width: #{$break-small}em) { @content; }
+    }
+    @else if $media == medium {
+      //@media screen and (min-width: $break-medium) { @content; }
+      @media screen and (min-width: #{$break-medium}em) { @content; }
+    }
+    @else if $media == medium-only {
+      @media screen and (min-width: #{$break-medium}em) and (max-width: #{$break-medium-only}em) { @content; }
+    }
+    @else if $media == wide {
+      @media screen and (min-width: #{$break-wide}em) { @content; }
+    }
+    @else {
+      @media screen and (min-width: $media) { @content; }
+    }
+  }
+  @elseif $mq-support == false {
+    // just output the content
+    @if $media == medium or wide {
+      @content;
+    }
+  }
+}
+
+// Use the following syntax to represent media queries:
+// Applies to everything below medium     @include respond-to(small) {}
+// Applies to medium and above            @include respond-to(medium) {}
+// Applies to wide and above              @include respond-to(wide) {}
+
+// ==========================================================================
+// @mixin triangle
+// ==========================================================================
+@mixin triangle ($direction: right, $color: #0050bf, $size: 3px) {
+  @if $direction == right {
+    border-color: transparent transparent transparent $color;
+    _border-color: #ffffff #ffffff #ffffff $color;
+    border-width: $size 0 $size $size;
+  }
+  @else if $direction == left {
+    border-color: transparent $color transparent transparent;
+    _border-color: #ffffff $color #ffffff #ffffff;
+    border-width: $size $size $size 0;
+  }
+  @else if $direction == up {
+    border-color: transparent transparent $color transparent;
+    _border-color: #ffffff #ffffff $color #ffffff;
+    border-width: 0 $size $size $size;
+  }
+  @else if $direction == down {
+    border-color: $color transparent transparent transparent;
+    _border-color: $color #ffffff #ffffff #ffffff;
+    border-width: $size $size 0 $size;
+  }
+}
+
+// ==========================================================================
+// hidden elements
+// ==========================================================================
+
+@mixin visually-hidden {
+    position: absolute;
+    left: -9999em;
+}
+@mixin js-visually-hidden {
+    position: absolute;
+    left: -9999em;
+}
+@mixin hidden {
+    display: none;
+}
+@mixin js-hidden {
+    display: none;
+}

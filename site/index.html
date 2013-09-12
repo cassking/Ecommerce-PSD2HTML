@@ -6,14 +6,19 @@
 <!--[if  IE 6]>
  <meta http-equip="imagetoolbar" content="no">
   <![endif]-->
-  <title>Ecommerce Site PSD to HTML Excercise</title>
-  <meta name="viewport" content="width-device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="apple-touch-icon" href="/resources/us/images/layout/mobile/favicon_iphone.png"/>
-  <meta name="description" content="...">
-  <meta name="author" content="...">
+ 	<title>Ecommerce Site PSD to HTML Excercise</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-  <link rel="stylesheet" href="stylesheets/css/styles.css">
+ 	<link rel="shortcut icon" href="/favicon.ico"/>
+	<link rel="apple-touch-icon" href="/resources/us/images/layout/mobile/favicon_iphone.png"/>
+  	<meta name="description" content="...">
+  	<meta name="author" content="...">
+
+  	<link rel="stylesheet" href="stylesheets/_shared/_defaults.css">
+  	<link rel="stylesheet" href="stylesheets/_shared/_utility.css">
+	<link rel="stylesheet" href="stylesheets/_shared/ie.css">
+	<link rel="stylesheet" href="stylesheets/css/styles.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Josefin+Sans:400,600,700,400italic,700italic|Josefin+Slab:400,600,700|IM+Fell+Double+Pica:400,400italic|Bitter:400,700,400italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	
 	<!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,7 +26,7 @@
   
 </head>
 
-<body class="home">
+<body class="l-products">
 	<ul id="navaccessibility" class="screenreaderonly">
 		<li><a href="#"></a></li>
 		<li><a href="#"></a></li>	
@@ -29,53 +34,834 @@
 	</ul>
 	<div class="wl-appwrapper-header wl-appwrapper wl-cf">
 		<!--SLI header starts -->
-		<div class="w1-appheader header wl-cf" role="banner"><!--Leave empty for now--></div>
+		<div class="w1-appheader wl-cf" role="banner"><!--use header image for now, build out later--></div>
 		<!--SLI header ends -->
 	</div>
 	
-	<!--SLI content starts -->
-
-	<div id="main" class="wl-appmain wl-cf" role="main">
-		<div class="content-area-1 ct wl-cf"></div>
-
-
-		<div class="categories">
-
-
-			<div class="wl-appwrapper wl-cf">
-			
-
-			</div>
+	<div class="wl-appcontent wl-grid-2col  wl-cf "> <!-- Start wl-appcontent wrapper-->
+		<!-- Begin breadcrumbs -->
+		<div class="wl-breadcrumbs-category wl-breadcrumbs clearfix" data-source="v-category-breadcrumb">
+			<ol class="clearfix">
+				<li><a class="node" href="#"><span class="txt">Home</span><span class="ico">></span></a></li>
+				<li><a class="node" href="#"><span class="txt">Clothes</span><span class="ico">></span></a></li>
+				<li><a class="node" href="#"><span class="txt">Dresses</span><span class="ico">></span></a></li>
+				<li><a class="node is-active" href="#"><span class="txt">Shop By Shape</span> </a></li>
+			</ol>
 
 		</div>
-
-		<div class="wl-appwrapper wl-cf">
-
-			<div class="wl-grid-main">
-
-				<div class="row wl-cf"> 
-
-					<div class="col-2"></div>
-
-					<div class="col-1"></div>
-
-					<div class="col-2"></div>
+		<!-- End breadcrumbs -->	
+		<!--SLI content starts -->
+		<div class="wl-appmain wl-cf" role="main">
 
 
+
+			<div class="wl-productbrowse clearfix" data-source="v-product-browsepagetemplate">
+				<div class="wl-form-container clearfix">
+				<div class="options clearfix"> <form name="freepeopleform" action="#" method="POST">
+						<div class="wl-dropdown">
+						<select name="dropdown1">
+						<option value="Dress one">Dress one</option>
+						<option value="Dress two">Dress two</option>
+						<option value="Dress three">Dress three</option>
+						</select>
+						</div>
+						<div class="wl-dropdown">
+						<select name="dropdown2">
+						<option value="Dress one">Dress one</option>
+						<option value="Dress two">Dress two</option>
+						<option value="Dress three">Dress three</option>
+						</select>
+						</div>
+						<div class="wl-dropdown">
+						<select name="dropdown3">
+						<option value="Dress one">Dress one</option>
+						<option value="Dress two">Dress two</option>
+						<option value="Dress three">Dress three</option>
+						</select>
+						</div>
+						</form>
+				</div>
+				<ul class="wl-list-styles-numbers">
+
+					76 Styles
+
+				</ul>
+				</div>
+				<div class="products-grid wl-productfeed wl-cf" data-source="v-product-thumbnails">
+				
+					<div class="products-wrap">
+						
+						<!--start row of items 1-->
+						<div class="row wl-cf">
+						<ul class="wl-products">
+							<!-- start catalog item-->
+							<li class="wl-product first" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+						</ul>
+						</div>
+						<!--end row of items 1-->
+						<!--start row of items 2-->
+						<div class="row wl-cf">
+						<ul class="wl-products">
+							<!-- start catalog item-->
+							<li class="wl-product first" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+						</ul>
+						</div>
+						<!--end row of items 2-->
+						<!--start row of items 3-->
+						<div class="row wl-cf">
+						<ul class="wl-products">
+							<!-- start catalog item-->
+							<li class="wl-product first" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+						</ul>
+						</div>
+						<!--end row of items 3-->
+						<!--start row of items 4-->
+						<div class="row wl-cf">
+						<ul class="wl-products">
+							<!-- start catalog item-->
+							<li class="wl-product first" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+							<!-- start catalog item-->
+							<li class="wl-product" itemscope="itemscope" itemtype="#">
+								<div class="product-inner corners-b corners">
+                            		<div class="image"><a href="#"><img class="product-largeThumb product" src="images/28780005_020_0.jpeg" alt="Sample Dress item 0000" itemprop="image"></a>
+	                            	</div>
+	                            	<!-- Start info wl-cf container with swatches, item name and item price -->
+									<div class="info wl-cf">
+                                		<div class="equalheightgroup wl-cf" style="min-height: 40px;">
+                                			<dl class="swatches clearfix"> <!--start color swatches-->
+                                    		<dd>
+                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
+                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
+                                                    </a>
+                                            </dd>
+                                            <dd>
+                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
+                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
+                                                    </a>
+                                            </dd>
+                                             <dd>
+                                                    <a class="swatch text" href="#" title="#" rel="nofollow">
+                                                     +4
+                                                    </a>
+                                            </dd>
+                                		</dl><!--end color swatches-->
+                                    	 <h2 class="name h1" itemprop="name"><a href="#" itemprop="url">Sample Dress item 0000</a></h2>
+                                		</div>
+
+                                		<div class="wl-prices section wl-cf" itemprop="offers" itemscope="itemscope" itemtype="#" style="min-height: 18.333333253860474px;">
+                                			<span class="price wl-cf">
+                            				<span itemprop="price" class="num">$78.00</span>
+                        					</span> 
+                    					</div>
+                    					
+									</div> 
+									<!-- End info wl-cf container with swatches, item name and item price -->
+
+								</div>
+
+							</li>
+							<!-- end catalog item-->
+						</ul>
+						</div>
+						<!--end row of items 4-->
+						
+						
+					</div>
 				</div>
 
-			</div>
-
 		</div>
-	</div>
+	
+
+	</div>	
 
 
 
 	<!--SLI content ends-->
-	<a class="screenreaderonly" href="#navaccessibility">Top of Page</a>
+	<!--Aside  navigation content begins-->
+	<div class="wl-appaside wl-cf" role="complementary">
+		
+		
+		<div class="wl-appaside-category-container wl-cf"> 
 
+
+			<h2>Category</h2>
+			<h3>
+				<span class="txt">Dresses</span>
+				<span class="ico-triangle"></span>
+				
+
+			</h3>
+			<ul class="link-list">
+				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
+				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
+				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
+				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
+				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
+
+			</ul>
+
+		</div>
+		
+
+		<!--Aside navigation content ends-->
+
+		<!--Aside trends content begins-->
+		<div class="wl-appaside-fptrends wl-cf clearfix" role="complementary">
+		<h2>Trends Creative TBD</h2>
+		</div>
+		<!--Aside trends content ends-->
+		
+		<!--Aside freepeople labels content begins-->
+		<div class="wl-appaside-fplabels wl-cf clearfix" role="complementary">
+		<h2>Free People Labels</h2>
+		</div>
+		<ul class="wl-fplabels-navigation wl-cf clearfix">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			
+		</ul>
+		<!--Aside freepeople labels content ends-->
+
+		<!--Aside freepeople sign up for email content begins-->
+		<div class="wl-appaside-email wl-cf" role="complementary">
+		
+		<form action="#" method="post" class="wl-email-signup">
+		<input name="email" value="SignUp" type="hidden">
+		<input name="email2" value="1" type="hidden">
+	    <div class="signup">
+	        <label for="emailAddress">SIGN UP FOR OUR EMAILS! <small>new friends get free shipping</small></label>
+	        <div class="wl-ht-text-box" >
+	            <input class="val" type="email" placeholder="Your Email Address" name="emailAddress" id="emailAddress" >
+	        </div>
+	        <button class="wl-pink-button" type="submit">
+		        <span class="txt">SIGN UP</span>
+	        </button>
+	    </div>
+	</form>
+		</div>
+		<!--Aside freepeople sign up for email content ends-->
+
+		</div>
+	</div>
+	
+	
+
+
+	<a class="screenreaderonly" href="#navaccessibility">Top of Page</a>
+</div> <!-- End  wl-appcontent wrapper-->
 	<!--SLI footer starts-->
-	<div class="wl-appfooter footer wl-cf" role="contentinfo"></div>
+	<div class="wl-appfooter  wl-cf" role="contentinfo"><p> wl-appfooter footer wl-cf clearfix</p></div>
 	<!--SLI footer ends-->
 
 	<!--All JS starts-->

@@ -45,7 +45,7 @@
 				<li><a class="node" href="#"><span class="txt">Home</span><span class="ico">></span></a></li>
 				<li><a class="node" href="#"><span class="txt">Clothes</span><span class="ico">></span></a></li>
 				<li><a class="node" href="#"><span class="txt">Dresses</span><span class="ico">></span></a></li>
-				<li><a class="node is-active" href="#"><span class="txt">Shop By Shape</span> </a></li>
+				<li><span class="txt">Shop By Shape</span></li>
 			</ol>
 
 		</div>
@@ -788,24 +788,72 @@
 	<div class="wl-appaside wl-cf" role="complementary">
 		
 		
-		<div class="wl-appaside-category-container wl-cf"> 
+		<div class="wl-appaside-category-container wl-cf clearfix"> 
 
 
-			<h2>Category</h2>
-			<h3>
-				<span class="txt">Dresses</span>
-				<span class="ico-triangle"></span>
-				
-
-			</h3>
 			<ul class="link-list">
-				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
-				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
-				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
-				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
-				<li class="link-item link-item--xxxxx"><a href=#"">Link text here</a></li>
+				<!--start secondary nav main ul-->
+				<!--start first link item/link group/contains header and nested ul link sublist-->
+				<li class="link-item link-item--by-category link-group">
+					<h2 class="wl-header">
+					<span class="txt">Category</span>
+				</h2>
+					<!--start nested ul link sublist-->
+					<ul class="link-sublist">
+						<!--start  expanded list li first-->
+						<li class="link-item link-item--dresses--expanded link-item--expanded"> 
+						<a href="#">
+						<span class="txt">dresses</span>
+						<span class="arrow"></span>
+						</a>
 
+						<!--start nested ul link sublist of items-->
+						<ul>
+							<li class="link-item link-item--day"><a href="#"> day</a> </li>
+							<li class="link-item link-item--party"><a href="#">party</a> </li>
+							<li class="link-item link-item--nightout"><a href="#">night out</a> </li>
+							<li class="link-item link-item--knitjersey"><a href="#">knit &amp; jersey</a> </li>
+						<!--start new li that will hold nested ul with shapes-->
+							<li class="link-item link-item--shop-by-shape link-item--active">
+								<a href="#"> 
+									<span class="txt">shop by shape</span>
+									<span class="arrow"></span>
+								</a>
+									<!--start nested ul link sublist by shape items-->
+									<ul class="link-sublist">
+									<li class="link-item link-item--shape1"><a href="#"> Shape One type dress</a> </li>	
+									<li class="link-item link-item--shape2"><a href="#"> Shape two type dress</a> </li>	
+									<li class="link-item link-item--shape3"><a href="#"> Shape three type dress</a> </li>	
+									</ul> 
+									<!--end nested ul link sublist by shape items-->
+							</li>	
+						</ul>
+					</li> 
+					<!--end  expanded list li first-->
+					<!--start  collapsed  li second through end of list-->
+					<li class="link-item link-item--tops">
+						<a href="#">
+							<span class="txt">tops</span>
+						</a>
+					</li>
+					<li class="link-item link-item--sweaters">
+						<a href="#">
+							<span class="txt">sweaters</span>
+						</a>
+					</li>
+					<li class="link-item link-item--jackets">
+						<a href="#">
+							<span class="txt">jackets</span>
+						</a>
+					</li>
+					<!--end  collapsed  li second-->
+					<!--end  expanded list li-->
+					</ul>
+					<!--end nested ul link sublist-->
+			</li>
+			<!--end first link item/link group/contains header and nested ul link sublist-->
 			</ul>
+			<!--end secondary nav main ul-->
 
 		</div>
 		
@@ -831,6 +879,7 @@
 			<li><a href="#">6</a></li>
 			
 		</ul>
+
 		<!--Aside freepeople labels content ends-->
 
 		<!--Aside freepeople sign up for email content begins-->
@@ -844,12 +893,15 @@
 	        <div class="wl-ht-text-box" >
 	            <input class="val" type="email" placeholder="Your Email Address" name="emailAddress" id="emailAddress" >
 	        </div>
-	        <button class="wl-pink-button" type="submit">
+	        <button class="wl-button" type="submit">
 		        <span class="txt">SIGN UP</span>
 	        </button>
+
 	    </div>
 	</form>
+
 		</div>
+
 		<!--Aside freepeople sign up for email content ends-->
 
 		</div>

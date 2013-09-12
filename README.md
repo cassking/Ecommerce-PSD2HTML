@@ -3,7 +3,7 @@ Ecommerce Site PSD to HTML Excercise
 
 
 Taking a PSD file and converting to HTML.
-Working with Patterns, SASS, OOCSS
+Working with Patterns, SASS, OOCSS, git
 ----------------------------------------
 Browse Refinements Task
 ----------------------------------------
@@ -97,9 +97,9 @@ We're redesining the browse page for Free People to include a new aesthetic and 
 * Create a [sprite-sheet|http://css-tricks.com/css-sprites/] as needed.
 
 *Specifications:*
-* All code should follow the Weblinc [coding standards|https://confluence.tools.weblinc.com/display/WEBLINCDIRECT/Coding+standards]
-* Use any of the existing [DOM patterns|https://confluence.tools.weblinc.com/pages/viewpage.action?pageId=17793029] whenever possible and create new ones as needed.
-* Follow the Weblinc [application architecture|https://confluence.tools.weblinc.com/display/WEBLINCDIRECT/Application+architecture] when building out the layout and components.
+* All code should follow the xxxxx [coding standards|https://confluence.tools.xxxxx.com/display/xxxxxx/Coding+standards]
+* Use any of the existing [DOM patterns|https://confluence.tools.xxxxx.com/pages/viewpage.action?pageId=17793029] whenever possible and create new ones as needed.
+* Follow the xxxxx [application architecture|https://confluence.tools.xxxxx.com/display/xxxxxDIRECT/Application+architecture] when building out the layout and components.
 * Ignore the site header shown in the comps, hold it's place with a blank header element with the words "Site Header Placeholder" vertically and horizontally centered within the element.
 
 *Browser Support:*

@@ -3,6 +3,7 @@
 @import "base";
 @import "utilities";
 @import "clearfix";
+@import "products";
 
 
 
@@ -37,17 +38,31 @@
 }
 
 .wl-appmain {
-   // border: 1px solid red;//for dev only
+ 
     padding: 0px; 
     width: 100%*(961/1200);
     min-height: 250px;
     float: right; 
-      border-width: 1px 0 0 0;
-     -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
-    -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
-    border-image:url("../../images/borders/border-25.png") 10 10 round;
-      
+     border-width: 1px 0 0 0;
+    //-webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
+   //-o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
+   //border-image:url("../../images/borders/border-25.png") 10 10 round;
+
+          :before {
+    padding: 0;
+    background: url("../../images/borders/border-25.png") ;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1em;
+    margin-top: -28px;
+    height: 1px;
+    width: 100%;
+    z-index:-1;
 }
+}
+
+
 
 // ==========================================================================
 // Application ASIDE Navigation and Promotional Elements
@@ -75,31 +90,47 @@
      -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
     -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
     border-image:url("../../images/borders/border-25.png") 10 10 round;
-    
+
+  
 
 }
 
+.wl-appaside-category-container .link-list,
+.wl-appaside-category-container .link-sublist {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
+}
 
 .link-list {
-
-      
-      
+  
     list-style-type: none;
-    padding:0;
+    padding: 0;
     margin: 0;
-
-
-    li {
+    padding: 0;
+        margin: 0 0 20px 0;
+        a {
+        color: #828282;
+        text-decoration: none;
+           
+        }
+       }
+       .wl-header {
+       background: transparent;
+       text-align:center;
+       display: block;
+        margin-left:-5px;
        padding: 0;
-     margin: 0 0 20px 0 ;
-     a {
-     margin-left: -15px;
-     }
-
-    }
-
-    }
+       margin-top: -13px;
+       .txt {
+        background-color:#fff;
+        padding: 0 5px 0 5px;
+       }
+     
+       }
+      
 
 
 
@@ -108,37 +139,33 @@
     text-transform: uppercase;
 
 
-    a {
-    text-decoration: none;
-    color: #828282;
-
-    &:hover, &:active {
-        background-color: #f7f7f7;
-        }
         .arrow {
         display: block;
         position: absolute;
-        top: 80px;
-        left: 125px;
-        border: 1px solid red;
-      
-        width: 20px;
-        height: 20px;
+        top: 10px;
+        left: 65px;
+       
+        width: 11px;
+        height: 8px;
         background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -362px -41px;
+        background-position: -80px -480px;
 
 
         }
+
     }
+
+   
     .link-item--active a .txt {
         color: $pink;
         border-top: 1px solid $pink;
       border-bottom: 1px solid $pink;
 
+
         }
 
  
-}
+
 
   
 .link-sublist {
@@ -146,42 +173,20 @@
     
 }
 
-//.link-item--expanded{
-     //border-top: 1px solid $pink;
-      //border-bottom: 1px solid $pink;
-
-    //}
 
 
 .link-group {
+
 position: relative;
 padding: 1px;
 margin: 0 0 15px 0;
 
-    
-}
 
-.link-item--by-category {
-    
+   
 }
 
 
 
-//.arrow {
-    //display: block;
-    //position: absolute;
-   // top: 80px;
-    //left: 125px;
-   //border: 1px solid red;
-    ////width: 7px;
-    ////height: 5px;
-    //width: 20px;
-    //height: 20px;
-    //background: transparent url("../../images/sprites.png") no-repeat;
-    //background-position: -362px -41px;
-  
-    
-//}
 
 ///ASIDE TRENDS
 .wl-appaside-fptrends {
@@ -258,6 +263,8 @@ ul.wl-fplabels-navigation {
 
 .wl-appaside-email {
 
+    text-align: center;
+
     padding: 0px; 
     float:left;
     width: 99%;
@@ -267,21 +274,45 @@ ul.wl-fplabels-navigation {
     -o-border-image:url("../../images/borders/border-pink.png") 10 10 round; //* Opera */
     border-image:url("../../images/borders/border-pink.png") 10 10 round;
 
-.wl-button:before {
-    content: '';
-    border: 1px solid red;
-    position: absolute;
-    width:50px;
-    height: 35px;
-    background: transparent url("../../images/sprites.png") no-repeat;
-    background-position: -241px -319px;
-   z-index: 9999;
    
-    left: -13px;
+    .h2 {
+        color: $hotPink;
+        font-size:$font_size_12px;
+        text-align: center;
+        margin-top: 20px;
 
+
+            small {
+            font-family: $Lato;
+            font-style: normal;
+            text-style: normal;
+            color: $darkGrey;
+            display: block;
+            margin: 8px 0 20px 0;
+               
+            }
 
 
     }
+    
+    .wl-button {
+        margin-top: 11px;
+        :after {
+        margin-top: 14px;
+        margin-left: -2px;
+        content: '';
+        border: 1px solid red;
+        position: absolute;
+        width:50px;
+        height: 35px;
+        background: transparent url("../../images/sprites.png") no-repeat;
+        background-position: -241px -319px;
+        z-index: 9999;
+        left: -10px;
+        }
+
+    }
+    
 
 }
 
@@ -397,8 +428,11 @@ ul.wl-fplabels-navigation {
             text-align: center;
             position: relative;
             margin: 0 auto;
-            width: 236px;
+            width: 100%;
             height: 315px;
+            img {
+            width: 100%;
+            }
         } 
         .swatches {
             list-style: none;
@@ -444,7 +478,7 @@ li.first {
 wl-form-container {
     width: auto;
     height: 30px;
-    background: url
+    //background: url
 }
 
  .options {
@@ -458,14 +492,18 @@ wl-form-container {
 }
 
 
-ul.wl-list-styles-numbers {
+ul.wl-list-styles-count {
     float: right;
     list-style: none;
+
     
-     li {
-
-
-     }
+    .txt {
+    font-family: $Serif;
+    font-style:italic;
+    color: $mediumGrey;
+    padding-left: 4px;
+    background-color: $white;
+    }
     
 }
 

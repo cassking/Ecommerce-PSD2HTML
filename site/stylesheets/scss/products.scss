@@ -1,0 +1,35 @@
+@import "_utilities";
+
+/*======================================================================
+    l-products
+----------------------------------------------------------------------*/
+.l-products {}
+
+/*======================================================================
+    wl-product
+----------------------------------------------------------------------*/
+.wl-product {}
+
+/*======================================================================
+    product images
+----------------------------------------------------------------------*/
+.wl-productimg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+@include respond-to(wide) {
+    .wl-productimg-smallThumb {
+        width: 60px;
+        height: 60px;
+    }
+    .wl-productimg-mediumThumb {
+        width: 100px;
+        height: 100px;
+    }
+    .wl-productimg-largeThumb {
+        width: 150px;
+        height: 150px;
+    }
+}

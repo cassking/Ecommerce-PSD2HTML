@@ -39,7 +39,7 @@ h1,
 h2,
 .h2 {
   display: inline-block;
-  margin: -4px 0 0 6px;
+  margin: -6px 0 0 6px;
   padding: 0;
   color: #424242;
   background-color: #ffffff;
@@ -56,7 +56,7 @@ h3,
   margin-bottom: 5px;
   padding: 6px 10px;
   color: #414141;
-  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 0.917em;
   /* 11px */
@@ -203,10 +203,10 @@ select:focus {
 
 .wl-button {
   display: block;
-  padding: 4px 13px 6px 13px;
-  float: left;
+  padding: 9px 19px;
+  margin: 0 auto;
   font-size: 1.417em;
-  font-family: AntiqueOliveBold, Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   text-align: center;
   line-height: 1;
@@ -214,11 +214,10 @@ select:focus {
   overflow: hidden;
   /* IE6-7 */
   cursor: pointer;
-  border-width: 3px;
+  border-width: 2px;
   -webkit-border-image: url("../../images/borders/border-hotpink.png") 10 10 round;
   -o-border-image: url("../../images/borders/border-hotpink.png") 10 10 round;
   border-image: url("../../images/borders/border-hotpink.png") 10 10 round;
-  *border-bottom: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -232,7 +231,7 @@ select:focus {
 .wl-button-xsmall {
   padding: 4px 9px 5px;
   font-size: 1em;
-  font-family: AntiqueOlive, Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
@@ -247,7 +246,7 @@ select:focus {
 .wl-button-secondary {
   padding: 4px 4px 5px;
   font-size: 1.083em;
-  font-family: AntiqueOliveBold, Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   border-color: #979797 #a4a4a4 #b0b0b0 #a5a2a2;
   background: #949494 url(../../images/layout/bg-wl-btn-secondary.png) 0 0 repeat-x; }
 
@@ -303,6 +302,33 @@ button.wl-button-tertiary {
 .clearfix:after {
   clear: both; }
 
+/*======================================================================
+    l-products
+----------------------------------------------------------------------*/
+/*======================================================================
+    wl-product
+----------------------------------------------------------------------*/
+/*======================================================================
+    product images
+----------------------------------------------------------------------*/
+.wl-productimg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden; }
+
+@media screen and (min-width: 60em) {
+  .wl-productimg-smallThumb {
+    width: 60px;
+    height: 60px; }
+
+  .wl-productimg-mediumThumb {
+    width: 100px;
+    height: 100px; }
+
+  .wl-productimg-largeThumb {
+    width: 150px;
+    height: 150px; } }
 .wl-appwrapper {
   position: relative;
   margin: 0 auto;
@@ -325,10 +351,18 @@ button.wl-button-tertiary {
   width: 80.08333%;
   min-height: 250px;
   float: right;
-  border-width: 1px 0 0 0;
-  -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
-  -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
-  border-image: url("../../images/borders/border-25.png") 10 10 round; }
+  border-width: 1px 0 0 0; }
+  .wl-appmain :before {
+    padding: 0;
+    background: url("../../images/borders/border-25.png");
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1em;
+    margin-top: -28px;
+    height: 1px;
+    width: 100%;
+    z-index: -1; }
 
 .wl-appaside {
   padding: 0;
@@ -347,38 +381,51 @@ button.wl-button-tertiary {
   -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
   border-image: url("../../images/borders/border-25.png") 10 10 round; }
 
+.wl-appaside-category-container .link-list,
+.wl-appaside-category-container .link-sublist {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
 .link-list {
   list-style-type: none;
   padding: 0;
-  margin: 0; }
-  .link-list li {
-    padding: 0;
-    margin: 0 0 20px 0; }
-    .link-list li a {
-      margin-left: -15px; }
+  margin: 0;
+  padding: 0;
+  margin: 0 0 20px 0; }
+  .link-list a {
+    color: #828282;
+    text-decoration: none; }
+
+.wl-header {
+  background: transparent;
+  text-align: center;
+  display: block;
+  margin-left: -5px;
+  padding: 0;
+  margin-top: -13px; }
+  .wl-header .txt {
+    background-color: #fff;
+    padding: 0 5px 0 5px; }
 
 .link-item {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
-  .link-item a {
-    text-decoration: none;
-    color: #828282; }
-    .link-item a:hover, .link-item a:active {
-      background-color: #f7f7f7; }
-    .link-item a .arrow {
-      display: block;
-      position: absolute;
-      top: 80px;
-      left: 125px;
-      border: 1px solid red;
-      width: 20px;
-      height: 20px;
-      background: transparent url("../../images/sprites.png") no-repeat;
-      background-position: -362px -41px; }
-  .link-item .link-item--active a .txt {
-    color: #eb5190;
-    border-top: 1px solid #eb5190;
-    border-bottom: 1px solid #eb5190; }
+  .link-item .arrow {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    width: 11px;
+    height: 8px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -80px -480px; }
+
+.link-item--active a .txt {
+  color: #eb5190;
+  border-top: 1px solid #eb5190;
+  border-bottom: 1px solid #eb5190; }
 
 .link-sublist {
   margin-top: 18px; }
@@ -442,6 +489,7 @@ ul.wl-fplabels-navigation {
       color: transparent; }
 
 .wl-appaside-email {
+  text-align: center;
   padding: 0px;
   float: left;
   width: 99%;
@@ -450,16 +498,32 @@ ul.wl-fplabels-navigation {
   -webkit-border-image: url("../../images/borders/border-pink.png") 10 10 round;
   -o-border-image: url("../../images/borders/border-pink.png") 10 10 round;
   border-image: url("../../images/borders/border-pink.png") 10 10 round; }
-  .wl-appaside-email .wl-button:before {
-    content: '';
-    border: 1px solid red;
-    position: absolute;
-    width: 50px;
-    height: 35px;
-    background: transparent url("../../images/sprites.png") no-repeat;
-    background-position: -241px -319px;
-    z-index: 9999;
-    left: -13px; }
+  .wl-appaside-email .h2 {
+    color: #ff008a;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px; }
+    .wl-appaside-email .h2 small {
+      font-family: "Lato", Arial, Helvetica, sans-serif;
+      font-style: normal;
+      text-style: normal;
+      color: #424242;
+      display: block;
+      margin: 8px 0 20px 0; }
+  .wl-appaside-email .wl-button {
+    margin-top: 11px; }
+    .wl-appaside-email .wl-button :after {
+      margin-top: 14px;
+      margin-left: -2px;
+      content: '';
+      border: 1px solid red;
+      position: absolute;
+      width: 50px;
+      height: 35px;
+      background: transparent url("../../images/sprites.png") no-repeat;
+      background-position: -241px -319px;
+      z-index: 9999;
+      left: -10px; }
 
 .wl-appwrapper-header {
   margin: 0 auto;
@@ -523,8 +587,10 @@ ul.wl-fplabels-navigation {
     text-align: center;
     position: relative;
     margin: 0 auto;
-    width: 236px;
+    width: 100%;
     height: 315px; }
+    .wl-product .image img {
+      width: 100%; }
   .wl-product .swatches {
     list-style: none;
     margin: 0; }
@@ -552,8 +618,7 @@ li.first {
 
 wl-form-container {
   width: auto;
-  height: 30px;
-  background: url; }
+  height: 30px; }
 
 .options {
   float: left;
@@ -562,6 +627,12 @@ wl-form-container {
   margin: 0;
   padding: 0; }
 
-ul.wl-list-styles-numbers {
+ul.wl-list-styles-count {
   float: right;
   list-style: none; }
+  ul.wl-list-styles-count .txt {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #828282;
+    padding-left: 4px;
+    background-color: white; }

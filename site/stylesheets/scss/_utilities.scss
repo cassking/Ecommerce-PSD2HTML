@@ -92,7 +92,7 @@ $media-query-support: true !default;
 // ==========================================================================
 // @mixin triangle
 // ==========================================================================
-@mixin triangle ($direction: right, $color: #0050bf, $size: 3px) {
+@mixin triangle ($direction: right, $color: $pink, $size: 3px) {
   @if $direction == right {
     border-color: transparent transparent transparent $color;
     _border-color: #ffffff #ffffff #ffffff $color;

@@ -44,9 +44,7 @@
     min-height: 250px;
     float: right; 
      border-width: 1px 0 0 0;
-    //-webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
-   //-o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
-   //border-image:url("../../images/borders/border-25.png") 10 10 round;
+    //border-style: solid; 
 
           :before {
     padding: 0;
@@ -55,8 +53,8 @@
     display: block;
     position: absolute;
     top: 1em;
-    margin-top: -28px;
-    height: 1px;
+    margin-top: -34px;
+    height:1px;
     width: 100%;
     z-index:-1;
 }
@@ -70,6 +68,7 @@
 
 ///ASIDE NAVIGATION
 .wl-appaside {
+     
     padding: 0; 
     float:left;
     width: 100%*(231/1200);
@@ -87,6 +86,7 @@
     height: auto;
     margin-bottom: 32px;
     border-width: 1px;
+      border-style: solid; 
      -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
     -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
     border-image:url("../../images/borders/border-25.png") 10 10 round;
@@ -140,17 +140,19 @@
 
 
         .arrow {
-        display: block;
-        position: absolute;
-        top: 10px;
-        left: 65px;
-       
+        display: inline-block;
+        position: relative;
+        margin: 0 0 1px 4px;
+      
         width: 11px;
         height: 8px;
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -80px -480px;
 
 
+        }
+        .link-item--expanded {
+            font-style:bold;
         }
 
     }
@@ -164,7 +166,20 @@
 
         }
 
- 
+ .link-item--active {
+        .arrow {
+        display: inline-block;
+        position: relative;
+        margin: 0 0 1px 4px;
+      
+        width: 11px;
+        height: 8px;
+        background: transparent url("../../images/sprites.png") no-repeat;
+        background-position: -160px -480px;
+
+
+        }
+ }
 
 
   
@@ -200,9 +215,14 @@ margin: 0 0 15px 0;
     height: 300px;
     background: $lightGrey url("../../images/TBD-bg.png") repeat-y;
       border-width: 1px;
+       border-style: solid; 
      -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
     -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
     border-image:url("../../images/borders/border-25.png") 10 10 round;
+        h2 {
+        background: transparent;
+        margin-top: 50%;
+        }
 
 
 }
@@ -218,10 +238,17 @@ margin: 0 0 15px 0;
     height: 275px;
     margin-bottom: 8px;
     border-width: 1px;
-     -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
+     border-style: solid; 
+    -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
     -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
     border-image:url("../../images/borders/border-25.png") 10 10 round;
+    .h2 {
+    display:block;
 
+    width: 70%;
+    margin: -9px auto 0;
+
+    }   
 }
 
 ul.wl-fplabels-navigation {
@@ -256,20 +283,20 @@ ul.wl-fplabels-navigation {
         text-decoration: none;
         color: transparent;
              }
-            }
+        }
     
 }
-//ASIDE SIGN UP FOR EMAIL
+//ASIDE   UP FOR EMAIL
 
 .wl-appaside-email {
-
     text-align: center;
-
-    padding: 0px; 
+    padding: 0 0 20px 0; 
     float:left;
     width: 99%;
-    height: 158px;
+    height: 156px;
     border-width: 1px;
+    border-style: solid; 
+
      -webkit-border-image:url("../../images/borders/border-pink.png") 10 10 round; //* Safari 5 */
     -o-border-image:url("../../images/borders/border-pink.png") 10 10 round; //* Opera */
     border-image:url("../../images/borders/border-pink.png") 10 10 round;
@@ -277,6 +304,7 @@ ul.wl-fplabels-navigation {
    
     .h2 {
         color: $hotPink;
+        background: transparent;
         font-size:$font_size_12px;
         text-align: center;
         margin-top: 20px;
@@ -288,26 +316,63 @@ ul.wl-fplabels-navigation {
             text-style: normal;
             color: $darkGrey;
             display: block;
-            margin: 8px 0 20px 0;
+            margin: 8px 0 19px 0;
+          
                
             }
 
 
     }
+
+    .wl-ht-text-box {
+        margin: 0 auto;
+        width: 188px;
+        height: 30px;
+         border-width: 1px;
+           border-style: solid;  
+        -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
+        -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
+        border-image:url("../../images/borders/border-25.png") 10 10 round;
+        input{
+                font-family: $Serif;
+                font-style: italic;
+                text-align: center;
+                font-size: $font_size_12px;
+                }
+        .email { 
+            border: none;
+            width: 99%;
+            height: 90%;
+
+                
+        }
+
+    }
     
     .wl-button {
-        margin-top: 11px;
+        margin-top: 10px;
+
+         border-width: 1px;
+          border-style: solid; 
+        -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
+        -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
+        border-image:url("../../images/borders/border-25.png") 10 10 round;
+        
+
         :after {
+        position: absolute;
+        left: -20px;
+        display: block;
         margin-top: 14px;
-        margin-left: -2px;
+        margin-left: -9px;
         content: '';
         border: 1px solid red;
-        position: absolute;
+        
         width:50px;
         height: 35px;
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -241px -319px;
-        z-index: 9999;
+        z-index: 100;
         left: -10px;
         }
 
@@ -317,7 +382,25 @@ ul.wl-fplabels-navigation {
 }
 
 
-
+.email-signup-button{
+    overflow: visible;
+    :after {
+        position: absolute;
+        left: -20px;
+        display: block;
+        margin-top: 14px;
+        margin-left: -9px;
+        content: '';
+        border: 1px solid red;
+        
+        width:50px;
+        height: 35px;
+        background: transparent url("../../images/sprites.png") no-repeat;
+        background-position: -241px -319px;
+        z-index: 100;
+        left: -10px;
+        }
+}
 
 
 
@@ -326,7 +409,7 @@ ul.wl-fplabels-navigation {
 // ==========================================================================
 
 .wl-appwrapper-header {
-    //border: 1px solid red;//for dev only
+   
     margin: 0 auto;
     width: 1400px;
     height: 212px;
@@ -376,7 +459,7 @@ ul.wl-fplabels-navigation {
 // ==========================================================================
 
 .wl-appfooter {
-    text-align: center; //for dev only
+    
     margin: 0 auto;
     background-color: #ccc;
     width: 1400px;
@@ -475,14 +558,14 @@ li.first {
 // Drop down menu, options
 // ==========================================================================
 
-wl-form-container {
+.wl-form-container {
     width: auto;
     height: 30px;
-    //background: url
+   border: 1px solid red;//for dev only
 }
 
  .options {
-    //border: 1px solid red;//for dev only
+   
     float: left;
     width: 460px;
     height: 27px;

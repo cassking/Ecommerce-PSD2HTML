@@ -351,17 +351,6 @@ button.wl-button-tertiary {
   min-height: 250px;
   float: right;
   border-width: 1px 0 0 0; }
-  .wl-appmain :before {
-    padding: 0;
-    background: url("../../images/borders/border-25.png");
-    content: '';
-    display: block;
-    position: absolute;
-    top: 1em;
-    margin-top: -34px;
-    height: 1px;
-    width: 100%;
-    z-index: -1; }
 
 .wl-appaside {
   padding: 0;
@@ -679,9 +668,20 @@ li.first {
     color: #424242; }
 
 .wl-form-container {
+  background: transparent;
   width: auto;
-  height: 30px;
-  border: 1px solid red; }
+  height: 30px; }
+  .wl-form-container :before {
+    padding: 0;
+    background: url("../../images/borders/border-25.png");
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1em;
+    margin-top: 45px;
+    height: 1px;
+    width: 100%;
+    z-index: -1; }
 
 .options {
   float: left;

@@ -46,18 +46,18 @@
      border-width: 1px 0 0 0;
     //border-style: solid; 
 
-          :before {
-    padding: 0;
-    background: url("../../images/borders/border-25.png") ;
-    content: '';
-    display: block;
-    position: absolute;
-    top: 1em;
-    margin-top: -34px;
-    height:1px;
-    width: 100%;
-    z-index:-1;
-}
+          //:before {
+    //padding: 0;
+    //background: url("../../images/borders/border-25.png") ;
+    //content: '';
+    //display: block;
+    //position: absolute;
+    //top: 1em;
+    //margin-top: -34px;
+    //height:1px;
+    //width: 100%;
+    //z-index:-1;
+//}
 }
 
 
@@ -559,9 +559,23 @@ li.first {
 // ==========================================================================
 
 .wl-form-container {
+background: transparent;
     width: auto;
     height: 30px;
-   border: 1px solid red;//for dev only
+  
+:before {
+    padding: 0;
+    background: url("../../images/borders/border-25.png") ;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1em;
+    margin-top: 45px;
+    height:1px;
+    width: 100%;
+    z-index:-1;
+}
+ 
 }
 
  .options {

@@ -74,12 +74,10 @@
     width: 100%*(231/1200);
     height: auto;
 
-   
-   
 }
 
 .wl-appaside-category-container {
-
+   
     padding: 0px; 
     float:left;
     width: 99%;
@@ -522,21 +520,29 @@ ul.wl-fplabels-navigation {
             margin: 0;
             dd {
                 float:left;
-                margin: 0 2px 0 0;
+                margin: 0 2px 0 -4px;
                 line-height: 1.3;
-                a {
+
+            a {
                     text-decoration: none;
                     color: $pink;
                     margin-left: 5px;
 
+
                  }
-                 
+            img {
+                 height: 20px;
+                 width: 20px;
+
+                 }
+
+            
             }
         }  
 }
 
 .info {
-    margin-top: 2px;
+    margin-top: 3px;
 
     
 }
@@ -547,7 +553,9 @@ li.first {
 
     .name {
     text-align: left;
+    margin: 4px 0 4px 0;
         a {
+       
         text-decoration: none;
         font-style:normal;
         color: $darkGrey;

@@ -481,19 +481,26 @@ li.first {
     background-color: #f7f7f7;
     color: #3e3e3e; }
 
+.link-item .link-sublist .link-item .link-sublist .link-item .link {
+  display: block;
+  padding-left: 33px; }
+  .link-item .link-sublist .link-item .link-sublist .link-item .link:hover {
+    background-color: #f7f7f7;
+    color: #3e3e3e; }
+
 .link-item .link-sublist .link-item .link-sublist .link-item--active .link-item .link {
   display: block;
   padding-left: 45px; }
   .link-item .link-sublist .link-item .link-sublist .link-item--active .link-item .link:hover {
     background-color: #f7f7f7;
     color: #3e3e3e; }
+  .link-item .link-sublist .link-item .link-sublist .link-item--active .link-item .link .txt:first-child {
+    padding-bottom: 0; }
 
 .link-group {
   position: relative;
   padding: 1px;
   margin: 0 0 15px 0; }
-  .link-group .link-sublist {
-    padding: 0.833em 0 0.833em 0; }
 
 .wl-appaside-fptrends {
   text-align: center;

@@ -161,6 +161,7 @@
     }
 
    .link-item .link-item--active a .txt {
+
     color: $pink;
    }
 
@@ -193,6 +194,15 @@
     }
     
 }
+.link-item .link-sublist .link-item .link-sublist .link-item .link {
+    display: block;
+    padding-left: 33px;
+    &:hover {
+    background-color: $lightGrey;
+    color: $defaultGrey;
+    }
+    
+}
 
 .link-item .link-sublist .link-item .link-sublist .link-item--active .link-item .link {
     display: block;
@@ -201,8 +211,13 @@
     background-color: $lightGrey;
     color: $defaultGrey;
     }
+   .txt:first-child {
+    padding-bottom: 0;
+    }
     
 }
+
+
 
 
 
@@ -211,11 +226,6 @@
 position: relative;
 padding: 1px;
 margin: 0 0 15px 0;
-.link-sublist {
-    padding:  $font_size_10px 0 $font_size_10px 0;
-}
-
-
    
 }
 

@@ -30,11 +30,6 @@
 
 
 
-.wl-dropdown {
-    float: left;
-    width: 151px;
-    height: 26px;
-}
 
 .wl-productbrowse {
     padding: 0;
@@ -106,3 +101,94 @@ li.first {
         color: $darkGrey;
         }
     }
+
+// ==========================================================================
+// Drop down menu, options
+// ==========================================================================
+
+.wl-form-container {
+background: transparent;
+    width: auto;
+    height: 30px;
+  
+:before {
+    padding: 0;
+    background: url("../../images/borders/border-25.png") ;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1em;
+    margin-top: 45px;
+    height:1px;
+    width: 100%;
+    z-index:-1;
+}
+ 
+}
+
+ .options {
+   width: 500px;
+    float: left;
+    height: 27px;
+    margin: 0;
+    padding:0;
+
+}
+
+
+ul.wl-list-styles-count {
+    float: right;
+    list-style: none;
+
+
+    
+    .txt {
+    font-family: $Serif;
+    font-style:italic;
+    color: $mediumGrey;
+    padding-left: 6px;
+    background-color: $white;
+    }
+    
+}
+// ==========================================================================
+// Application products Browse Refinements drop down menu
+// ==========================================================================
+
+
+.wl-dropdown {
+    margin-right: 5px;
+    float: left;
+    width: 151px;
+    height: 20px;
+    z-index: 100;
+
+        select {
+        background:$white;
+        height:25px;
+        border-width: 1px;
+        border-style: solid; 
+        -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari 5 */
+        -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
+        border-image:url("../../images/borders/border-25.png") 10 10 round;
+        width: 100%;
+        -webkit-appearance: none;
+        padding-left:16px;
+        font-family: $Serif;
+        font-style: italic;
+        }
+          .arrow {
+          float: right;
+          
+            display: inline-block;
+            position: relative;
+          
+            margin: -15px 10px 0 0;
+            width: 10px;
+            height: 8px;
+            background: transparent url("../../images/sprites.png") no-repeat;
+            background-position: -80px -480px;
+            z-index: 100;
+            }
+}
+

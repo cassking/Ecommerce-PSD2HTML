@@ -382,17 +382,18 @@ li.first {
     display: block;
     position: absolute;
     top: 1em;
-    margin-top: 45px;
+    margin-top: 48px;
     height: 1px;
     width: 100%;
     z-index: -1; }
 
 .options {
-  width: 500px;
+  width: 469px;
   float: left;
   height: 27px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: white; }
 
 ul.wl-list-styles-count {
   float: right;
@@ -415,9 +416,9 @@ ul.wl-list-styles-count {
     height: 25px;
     border-width: 1px;
     border-style: solid;
-    -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
-    -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
-    border-image: url("../../images/borders/border-25.png") 10 10 round;
+    -webkit-border-image: url("../../images/borders/border-50.png") 10 10 round;
+    -o-border-image: url("../../images/borders/border-50.png") 10 10 round;
+    border-image: url("../../images/borders/border-50.png") 10 10 round;
     width: 100%;
     -webkit-appearance: none;
     padding-left: 16px;

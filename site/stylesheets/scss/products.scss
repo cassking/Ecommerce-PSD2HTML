@@ -101,49 +101,41 @@
                 -moz-opacity: .5;
                 -o-opacity: .5;
                 -ms-opacity: .5;
-                border: 1px solid red;
-                z-index: 1000;
+               
+              
                     } 
                 }
 
-        .overlay-hover {
-         
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background:transparent;
-        &:hover {
-        border: 1px solid blue;
-        background: transparent url("../../images/sprites.png") no-repeat !important;
-        background-position: -174px -329px;
-        z-index: 100;
-
-        }
-        } 
+    
 
                 .quickview {
-         text-indent: -9999px;
+         text-indent: -9999em;
         display: inline-block;
         position: absolute;
         right: 3px;
         bottom: 6px;
         width: 33px;
         height: 33px;
-        //background: url("../../images/sprites.png") no-repeat;
-        //background-position: -40px -360px;
+       
         &:hover {
         
+      
+        background: url("../../images/sprites.png") no-repeat;
+        background-position: -40px -360px;
+      
+        z-index: 100;
+
+        }
+        &:active, &:focus{
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -79px -360px;
-        z-index: 100;
 
         }
         } 
 
 
 .video-link {
-    text-indent: -9999px;
+    text-indent: -9999em;
         display: inline-block;
         position: absolute;
         left: 6px;
@@ -166,7 +158,7 @@
 
 .badge {
 
-        text-indent: -9999px;
+        text-indent: -9999em;
         display: inline-block;
         position: absolute;
         right: 3px;

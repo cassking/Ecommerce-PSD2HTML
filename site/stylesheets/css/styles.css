@@ -367,24 +367,10 @@ button.wl-button-tertiary {
     -webkit-opacity: .5;
     -moz-opacity: .5;
     -o-opacity: .5;
-    -ms-opacity: .5;
-    border: 1px solid red;
-    z-index: 1000; }
-
-.overlay-hover {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: transparent; }
-  .overlay-hover:hover {
-    border: 1px solid blue;
-    background: transparent url("../../images/sprites.png") no-repeat !important;
-    background-position: -174px -329px;
-    z-index: 100; }
+    -ms-opacity: .5; }
 
 .quickview {
-  text-indent: -9999px;
+  text-indent: -9999em;
   display: inline-block;
   position: absolute;
   right: 3px;
@@ -392,12 +378,15 @@ button.wl-button-tertiary {
   width: 33px;
   height: 33px; }
   .quickview:hover {
-    background: transparent url("../../images/sprites.png") no-repeat;
-    background-position: -79px -360px;
+    background: url("../../images/sprites.png") no-repeat;
+    background-position: -40px -360px;
     z-index: 100; }
+  .quickview:active, .quickview:focus {
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -79px -360px; }
 
 .video-link {
-  text-indent: -9999px;
+  text-indent: -9999em;
   display: inline-block;
   position: absolute;
   left: 6px;
@@ -413,7 +402,7 @@ button.wl-button-tertiary {
     z-index: 100; }
 
 .badge {
-  text-indent: -9999px;
+  text-indent: -9999em;
   display: inline-block;
   position: absolute;
   right: 3px;

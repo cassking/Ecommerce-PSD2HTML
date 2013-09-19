@@ -155,8 +155,9 @@ ul.wl-list-styles-count {
 // ==========================================================================
 // Application products Browse Refinements drop down menu
 // ==========================================================================
+//for firefox only
 
-
+ 
 .wl-dropdown {
     margin-right: 5px;
     float: left;
@@ -165,19 +166,28 @@ ul.wl-list-styles-count {
     z-index: 100;
 
         select {
+        -moz-appearance: button;  //* Firefox hides arrow */
+        text-indent: 20px;  //* Firefox hides arrow */
+        text-overflow: ''; //* Firefox hides arrow */
+        -webkit-appearance: none; //* Safari   */
+        
+             
         background:$white;
         height:25px;
         border-width: 1px;
-        border-style: solid; 
-        -webkit-border-image:url("../../images/borders/border-50.png") 10 10 round; //* Safari 5 */
+        border-style: solid;
+        -moz-border-image:url("../../images/borders/border-50.png") 10 10 round; //* FFOx */ 
+        -webkit-border-image:url("../../images/borders/border-50.png") 10 10 round; //* Safari   */
         -o-border-image:url("../../images/borders/border-50.png") 10 10 round; //* Opera */
         border-image:url("../../images/borders/border-50.png") 10 10 round;
         width: 100%;
-        -webkit-appearance: none;
+
         padding-left:16px;
         font-family: $Serif;
         font-style: italic;
+
         }
+        
           .arrow {
           float: right;
           

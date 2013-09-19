@@ -120,17 +120,18 @@ $media-query-support: true !default;
 // hidden elements
 // ==========================================================================
 
-@mixin visually-hidden {
+@mixin visually-hidden() {
     position: absolute;
     left: -9999em;
 }
-@mixin js-visually-hidden {
+@mixin js-visually-hidden() {
     position: absolute;
     left: -9999em;
 }
-@mixin hidden {
-    display: none;
+@mixin hidden() {
+  display   : none; 
+  visibility  : hidden;
 }
-@mixin js-hidden {
+@mixin js-hidden() {
     display: none;
 }

@@ -502,10 +502,11 @@ ul.wl-fplabels-navigation {
 // ==========================================================================
 
 .screenreaderonly {
-    visibility:hidden;
-    display:none;
+    //visibility:hidden;
+    //display:none;
     position: absolute;
     left: -9999em;  
+    @include hidden;
 }
 
 

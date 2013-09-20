@@ -52,8 +52,8 @@ $Serif:			Georgia, "Times New Roman", Times, serif;
 // ==========================================================================
 $break-small: 767 / 16;
 $break-medium: 768 / 16;
-$break-medium-only: 959 / 16;
-$break-wide: 960 / 16;
+$break-medium-only: 1399 / 16;
+$break-wide: 1400 / 16;
 
 $media-query-support: true !default;
 
@@ -64,7 +64,7 @@ $media-query-support: true !default;
       @media screen and (max-width: #{$break-small}em) { @content; }
     }
     @else if $media == medium {
-      //@media screen and (min-width: $break-medium) { @content; }
+    
       @media screen and (min-width: #{$break-medium}em) { @content; }
     }
     @else if $media == medium-only {
@@ -89,6 +89,8 @@ $media-query-support: true !default;
 // Applies to everything below medium     @include respond-to(small) {}
 // Applies to medium and above            @include respond-to(medium) {}
 // Applies to wide and above              @include respond-to(wide) {}
+
+
 
 // ==========================================================================
 // @mixin triangle

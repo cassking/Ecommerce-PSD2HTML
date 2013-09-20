@@ -310,18 +310,6 @@ button.wl-button-tertiary {
   height: auto;
   overflow: hidden; }
 
-@media screen and (min-width: 60em) {
-  .wl-productimg-smallThumb {
-    width: 60px;
-    height: 60px; }
-
-  .wl-productimg-mediumThumb {
-    width: 100px;
-    height: 100px; }
-
-  .wl-productimg-largeThumb {
-    width: 150px;
-    height: 150px; } }
 .wl-productbrowse {
   padding: 0; }
 
@@ -363,11 +351,11 @@ button.wl-button-tertiary {
   width: 100%;
   height: 315px; }
   .overlay:hover {
-    opacity: .5;
-    -webkit-opacity: .5;
-    -moz-opacity: .5;
-    -o-opacity: .5;
-    -ms-opacity: .5; }
+    opacity: .90;
+    -webkit-opacity: .90;
+    -moz-opacity: .90;
+    -o-opacity: .90;
+    -ms-opacity: .90; }
 
 .quickview {
   text-indent: -9999em;
@@ -505,10 +493,19 @@ ul.wl-list-styles-count {
 .wl-appcontent {
   position: relative;
   overflow: hidden;
-  width: 1200px;
-  min-height: 300px;
   margin: 0 auto;
   padding: 0; }
+  @media screen and (max-width: 47.9375em) {
+    .wl-appcontent {
+      width: 47.9375;
+      min-height: 320px; } }
+  @media screen and (min-width: 48em) {
+    .wl-appcontent {
+      width: 48; } }
+  @media screen and (min-width: 87.5em) {
+    .wl-appcontent {
+      width: 1200px;
+      min-height: 465px; } }
 
 .wl-appmain {
   padding: 0px;
@@ -763,9 +760,19 @@ ul.wl-fplabels-navigation {
 
 .wl-appwrapper-header {
   margin: 0 auto;
-  width: 1400px;
-  height: 212px;
   background: white url("../../images/header-bg.jpg") no-repeat; }
+  @media screen and (max-width: 47.9375em) {
+    .wl-appwrapper-header {
+      width: 47.9375;
+      min-height: 50px; } }
+  @media screen and (min-width: 48em) {
+    .wl-appwrapper-header {
+      width: 48;
+      min-height: 100px; } }
+  @media screen and (min-width: 87.5em) {
+    .wl-appwrapper-header {
+      width: 1400px;
+      min-height: 212px; } }
 
 .home .wl-appwrapper-header {
   z-index: 400; }
@@ -789,6 +796,9 @@ ul.wl-fplabels-navigation {
     color: #eb5190; }
   .wl-breadcrumbs a.node .is-active {
     color: #3e3e3e; }
+  @media screen and (min-width: 87.5em) {
+    .wl-breadcrumbs {
+      border: 1px solid red; } }
 
 .wl-appfooter {
   margin: 0 auto;

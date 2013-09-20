@@ -31,10 +31,25 @@
 .wl-appcontent {
     position: relative;
     overflow:hidden;
-    width: 1200px;
-    min-height: 300px;
+    //width: 1200px;
+    //min-height: 300px;
     margin: 0 auto;
     padding: 0; 
+   
+    @include respond-to(small) {
+     width: $break-small;
+    min-height: 320px;
+  
+    }
+     @include respond-to(medium) {
+     width: $break-medium;
+    
+   
+    }
+     @include respond-to(wide) {
+     width: 1200px;
+    min-height: 465px;
+        }
 }
 
 .wl-appmain {
@@ -44,20 +59,7 @@
     min-height: 250px;
     float: right; 
      border-width: 1px 0 0 0;
-    //border-style: solid; 
-
-          //:before {
-    //padding: 0;
-    //background: url("../../images/borders/border-25.png") ;
-    //content: '';
-    //display: block;
-    //position: absolute;
-    //top: 1em;
-    //margin-top: -34px;
-    //height:1px;
-    //width: 100%;
-    //z-index:-1;
-//}
+    
 }
 
 
@@ -439,11 +441,31 @@ ul.wl-fplabels-navigation {
 
 .wl-appwrapper-header {
    
+    @include respond-to(small) {
+     width: $break-small;
+    min-height: 50px;
+  
+    }
+     @include respond-to(medium) {
+     width: $break-medium;
+    min-height: 100px;
+   
+    }
+    @include respond-to(wide) {
+     width: 1400px;
+    min-height: 212px;
+    
+    }
+
     margin: 0 auto;
-    width: 1400px;
-    height: 212px;
+    //width: 1400px;
+    //height: 212px;
     background: $white url("../../images/header-bg.jpg") no-repeat;
+    
 }
+
+ //@include respond-to(medium) {}
+//@include respond-to(small) {}
 
 .home .wl-appwrapper-header {
     z-index: 400;
@@ -480,6 +502,11 @@ ul.wl-fplabels-navigation {
         a.node .is-active {
             color: $defaultGrey;
             }
+
+        @include respond-to(wide) {
+         //margin: 20px 0 15px 0;
+         border: 1px solid red;
+        }
 
 }
 

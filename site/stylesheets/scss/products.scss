@@ -10,24 +10,10 @@
     height: auto;
     overflow: hidden;
 }
-@include respond-to(wide) {
-    .wl-productimg-smallThumb {
-        width: 60px;
-        height: 60px;
-    }
-    .wl-productimg-mediumThumb {
-        width: 100px;
-        height: 100px;
-    }
-    .wl-productimg-largeThumb {
-        width: 150px;
-        height: 150px;
-    }
-}
+
 // ==========================================================================
 // Application products container div and grid
 // ==========================================================================
-
 
 
 
@@ -40,6 +26,7 @@
 .wl-products {
     margin: 0;
     padding:0;
+     
 }
 
 .wl-product {
@@ -96,11 +83,11 @@
             width: 100%;
             height: 315px;
                 &:hover {
-                opacity: .5;
-                -webkit-opacity: .5;
-                -moz-opacity: .5;
-                -o-opacity: .5;
-                -ms-opacity: .5;
+                opacity: .90;
+                -webkit-opacity: .90;
+                -moz-opacity: .90;
+                -o-opacity: .90;
+                -ms-opacity: .90;
                
               
                     } 
@@ -108,7 +95,7 @@
 
     
 
-                .quickview {
+        .quickview {
          text-indent: -9999em;
         display: inline-block;
         position: absolute;

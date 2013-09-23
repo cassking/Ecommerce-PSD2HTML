@@ -48,18 +48,39 @@ $Lato:			'Lato',Arial,Helvetica,sans-serif;
 $Serif:			Georgia, "Times New Roman", Times, serif;
 
 // ==========================================================================
+// Media Queries
+// ==========================================================================
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 320px) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: 550px) and (max-width: 1075px) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: 1076px) { @content; }
+  }
+}
+
+
+// ==========================================================================
 // @mixin respond-to
 // ==========================================================================
+$break-small-only: 480/16; //for landscape phones and down
 $break-small: 767 / 16;
-$break-medium: 768 / 16;
-$break-medium-only: 1399 / 16;
-$break-wide: 1400 / 16;
+$break-medium: 768 / 16;// begin medium range for portrait tablet to landscape and desktop
+$break-medium-only: 979 / 16;// end medium range for portrait tablet to landscape and desktop
+//$break-medium-only: 1399 / 16;
+$break-wide: 1200 / 16;// large desktop 1200px and up
 
 $media-query-support: true !default;
 
 @mixin respond-to($media, $mq-support: $media-query-support) {
   @if $mq-support == true {
     // output content wrapped in media queries
+     @if $media == small-only {
+      @media screen and (max-width: #{$break-small-only}em) { @content; }
+    }
     @if $media == small {
       @media screen and (max-width: #{$break-small}em) { @content; }
     }
@@ -73,6 +94,7 @@ $media-query-support: true !default;
     @else if $media == wide {
       @media screen and (min-width: #{$break-wide}em) { @content; }
     }
+
     @else {
       @media screen and (min-width: $media) { @content; }
     }

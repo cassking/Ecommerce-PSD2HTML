@@ -19,9 +19,17 @@
 
 .wl-productbrowse {
     padding: 0;
+    @include respond-to(small) {
+           max-width: 550px; 
+            
+        }
+     @include respond-to(medium-only) {
+           max-width: 550px; 
+            
+        }
 }
 
-
+ 
 
 .wl-products {
     margin: 0;
@@ -183,9 +191,20 @@ li.first {
 // ==========================================================================
 
 .wl-form-container {
+ @include respond-to(small) { 
+  width: 470px;
+  
+    }
+  @include respond-to(medium-only) { 
+  width: 470px;
+  
+    }
 background: transparent;
     width: auto;
     height: 30px;
+
+
+    
   
 :before {
     padding: 0;
@@ -198,11 +217,23 @@ background: transparent;
     height:1px;
     width: 100%;
     z-index:-1;
+       @include respond-to(small) { 
+    background: none;
+    }
+      @include respond-to(medium-only) { 
+    background: none;
+    }
 }
  
 }
 
  .options {
+ @include respond-to(small) {
+   width: 475px;
+}
+@include respond-to(medium-only) {
+   width: 475px;
+}
    width: 469px;
     float: left;
     height: 27px;
@@ -214,6 +245,12 @@ background: transparent;
 
 
 ul.wl-list-styles-count {
+@include respond-to(small) {
+margin-top: -56px;
+}
+@include respond-to(medium-only) {
+margin-top: -55px;
+}
     float: right;
     list-style: none;
 
@@ -231,10 +268,25 @@ ul.wl-list-styles-count {
 // ==========================================================================
 // Application products Browse Refinements drop down menu
 // ==========================================================================
-//for firefox only
+
 
  
 .wl-dropdown {
+@include respond-to(small) {
+   margin-right: 11px;
+   &:last-child{
+   margin-right: 0;
+
+   }
+}
+@include respond-to(medium-only) {
+   margin-right: 11px;
+   &:last-child{
+   margin-right: 0;
+
+   }
+}
+
     margin-right: 5px;
     float: left;
     width: 151px;

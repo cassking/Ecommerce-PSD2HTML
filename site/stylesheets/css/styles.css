@@ -312,6 +312,12 @@ button.wl-button-tertiary {
 
 .wl-productbrowse {
   padding: 0; }
+  @media screen and (max-width: 47.9375em) {
+    .wl-productbrowse {
+      max-width: 550px; } }
+  @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+    .wl-productbrowse {
+      max-width: 550px; } }
 
 .wl-products {
   margin: 0;
@@ -418,6 +424,12 @@ li.first {
   background: transparent;
   width: auto;
   height: 30px; }
+  @media screen and (max-width: 47.9375em) {
+    .wl-form-container {
+      width: 470px; } }
+  @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+    .wl-form-container {
+      width: 470px; } }
   .wl-form-container :before {
     padding: 0;
     background: url("../../images/borders/border-25.png");
@@ -429,6 +441,12 @@ li.first {
     height: 1px;
     width: 100%;
     z-index: -1; }
+    @media screen and (max-width: 47.9375em) {
+      .wl-form-container :before {
+        background: none; } }
+    @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+      .wl-form-container :before {
+        background: none; } }
 
 .options {
   width: 469px;
@@ -437,10 +455,22 @@ li.first {
   margin: 0;
   padding: 0;
   background: white; }
+  @media screen and (max-width: 47.9375em) {
+    .options {
+      width: 475px; } }
+  @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+    .options {
+      width: 475px; } }
 
 ul.wl-list-styles-count {
   float: right;
   list-style: none; }
+  @media screen and (max-width: 47.9375em) {
+    ul.wl-list-styles-count {
+      margin-top: -56px; } }
+  @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+    ul.wl-list-styles-count {
+      margin-top: -55px; } }
   ul.wl-list-styles-count .txt {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
@@ -454,6 +484,16 @@ ul.wl-list-styles-count {
   width: 151px;
   height: 20px;
   z-index: 100; }
+  @media screen and (max-width: 47.9375em) {
+    .wl-dropdown {
+      margin-right: 11px; }
+      .wl-dropdown:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+    .wl-dropdown {
+      margin-right: 11px; }
+      .wl-dropdown:last-child {
+        margin-right: 0; } }
   .wl-dropdown select {
     -moz-appearance: button;
     text-indent: 20px;
@@ -493,19 +533,16 @@ ul.wl-list-styles-count {
 .wl-appcontent {
   position: relative;
   overflow: hidden;
+  width: 1200px;
+  min-height: 300px;
   margin: 0 auto;
   padding: 0; }
   @media screen and (max-width: 47.9375em) {
     .wl-appcontent {
-      width: 47.9375;
-      min-height: 320px; } }
-  @media screen and (min-width: 48em) {
+      max-width: 780px; } }
+  @media screen and (min-width: 48em) and (max-width: 61.1875em) {
     .wl-appcontent {
-      width: 48; } }
-  @media screen and (min-width: 87.5em) {
-    .wl-appcontent {
-      width: 1200px;
-      min-height: 465px; } }
+      max-width: 780px; } }
 
 .wl-appmain {
   padding: 0px;
@@ -513,6 +550,12 @@ ul.wl-list-styles-count {
   min-height: 250px;
   float: right;
   border-width: 1px 0 0 0; }
+  @media screen and (max-width: 47.9375em) {
+    .wl-appmain {
+      max-width: 700px; } }
+  @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+    .wl-appmain {
+      max-width: 700px; } }
 
 .wl-appaside {
   padding: 0;
@@ -637,8 +680,9 @@ ul.wl-list-styles-count {
 
 .wl-appaside-fplabels {
   background: white url("../../images/AsidePromo-bg.png") no-repeat center;
+  background-size: contain;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   float: left;
   width: 99%;
   height: 275px;
@@ -710,6 +754,9 @@ ul.wl-fplabels-navigation {
     -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
     -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
     border-image: url("../../images/borders/border-25.png") 10 10 round; }
+    @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+      .wl-appaside-email .wl-ht-text-box {
+        width: auto; } }
     .wl-appaside-email .wl-ht-text-box input {
       font-family: Georgia, "Times New Roman", Times, serif;
       font-style: italic;
@@ -734,8 +781,8 @@ ul.wl-fplabels-navigation {
       margin-left: -9px;
       content: '';
       border: 1px solid red;
-      width: 50px;
-      height: 35px;
+      max-width: 50px;
+      max-height: 35px;
       background: transparent url("../../images/sprites.png") no-repeat;
       background-position: -241px -319px;
       z-index: 100;
@@ -759,20 +806,23 @@ ul.wl-fplabels-navigation {
     left: -10px; }
 
 .wl-appwrapper-header {
+  border: 1px solid #ccc;
   margin: 0 auto;
-  background: white url("../../images/header-bg.jpg") no-repeat; }
+  width: 1400px;
+  height: 212px;
+  background: white url("../../images/header-bg.jpg") no-repeat center; }
   @media screen and (max-width: 47.9375em) {
     .wl-appwrapper-header {
-      width: 47.9375;
-      min-height: 50px; } }
+      width: auto;
+      border: 1px solid blue; } }
   @media screen and (min-width: 48em) {
     .wl-appwrapper-header {
-      width: 48;
-      min-height: 100px; } }
-  @media screen and (min-width: 87.5em) {
+      width: auto;
+      border: 1px solid green; } }
+  @media screen and (min-width: 75em) {
     .wl-appwrapper-header {
       width: 1400px;
-      min-height: 212px; } }
+      border: 1px solid red; } }
 
 .home .wl-appwrapper-header {
   z-index: 400; }
@@ -796,9 +846,13 @@ ul.wl-fplabels-navigation {
     color: #eb5190; }
   .wl-breadcrumbs a.node .is-active {
     color: #3e3e3e; }
-  @media screen and (min-width: 87.5em) {
+  @media screen and (max-width: 47.9375em) {
     .wl-breadcrumbs {
-      border: 1px solid red; } }
+      min-width: 350px;
+      margin-left: 10px; } }
+  @media screen and (min-width: 48em) and (max-width: 61.1875em) {
+    .wl-breadcrumbs {
+      min-width: 350px; } }
 
 .wl-appfooter {
   margin: 0 auto;

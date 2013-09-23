@@ -19,6 +19,10 @@
     margin: 0 auto;
     padding: 0;
     border: 1px solid #ccc;
+
+    
+   
+   
 }
 
 .home .wl-appwrapper {
@@ -29,36 +33,36 @@
 
 
 .wl-appcontent {
+  @include respond-to(small) { 
+    max-width:780px;//to present columns of two items at a time
+    }
+     @include respond-to(medium-only) { 
+    max-width:780px;//to present columns of two items at a time
+    }
     position: relative;
     overflow:hidden;
-    //width: 1200px;
-    //min-height: 300px;
+    width: 1200px;
+    min-height: 300px;
     margin: 0 auto;
     padding: 0; 
    
-    @include respond-to(small) {
-     width: $break-small;
-    min-height: 320px;
-  
-    }
-     @include respond-to(medium) {
-     width: $break-medium;
-    
    
-    }
-     @include respond-to(wide) {
-     width: 1200px;
-    min-height: 465px;
-        }
+    
 }
 
 .wl-appmain {
- 
+ @include respond-to(small) { 
+    max-width: 700px;//to present columns of two items
+    }
+ @include respond-to(medium-only) { 
+    max-width: 700px;//to present columns of two items
+    }
     padding: 0px; 
     width: 100%*(961/1200);
     min-height: 250px;
     float: right; 
      border-width: 1px 0 0 0;
+    
     
 }
 
@@ -70,11 +74,12 @@
 
 ///ASIDE NAVIGATION
 .wl-appaside {
-     
+    
     padding: 0; 
     float:left;
     width: 100%*(231/1200);
     height: auto;
+  
 
 }
 
@@ -261,9 +266,12 @@ margin: 0 0 15px 0;
 //ASIDE LABELS
 
 .wl-appaside-fplabels  {
+
+   
     background: $white url("../../images/AsidePromo-bg.png") no-repeat center;
-   text-align: center;
-    padding: 0px; 
+    background-size:contain;//responsive bg image
+    text-align: center;
+    padding: 0;
     float:left;
     width: 99%;
     height: 275px;
@@ -356,6 +364,9 @@ ul.wl-fplabels-navigation {
     }
 
     .wl-ht-text-box {
+        @include respond-to(medium-only) { 
+         width: auto;
+         }
         margin: 0 auto;
         width: 188px;
         height: 30px;
@@ -371,6 +382,7 @@ ul.wl-fplabels-navigation {
                 font-size: $font_size_12px;
                 }
         .email { 
+       
             border: none;
             width: 99%;
             height: 90%;
@@ -381,6 +393,10 @@ ul.wl-fplabels-navigation {
     }
     
     .wl-button {
+      @include respond-to(medium-only) { 
+        
+        
+         }
         margin-top: 10px;
 
          border-width: 1px;
@@ -391,6 +407,7 @@ ul.wl-fplabels-navigation {
         
 
         :after {
+
         position: absolute;
         left: -20px;
         display: block;
@@ -399,8 +416,8 @@ ul.wl-fplabels-navigation {
         content: '';
         border: 1px solid red;
         
-        width:50px;
-        height: 35px;
+        max-width:50px;
+        max-height: 35px;
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -241px -319px;
         z-index: 100;
@@ -415,7 +432,9 @@ ul.wl-fplabels-navigation {
 
 .email-signup-button{
     overflow: visible;
-    :after {
+
+        :after {
+       
         position: absolute;
         left: -20px;
         display: block;
@@ -440,32 +459,29 @@ ul.wl-fplabels-navigation {
 // ==========================================================================
 
 .wl-appwrapper-header {
-   
-    @include respond-to(small) {
-     width: $break-small;
-    min-height: 50px;
-  
+  border: 1px solid #ccc;   
+  margin: 0 auto;
+  width: 1400px;
+   height: 212px;
+    background: $white url("../../images/header-bg.jpg") no-repeat center;
+    //background-size:contain;//responsive bg image if needed later
+       @include respond-to(small) { 
+     width: auto;
+    border: 1px solid blue;  
     }
-     @include respond-to(medium) {
-     width: $break-medium;
-    min-height: 100px;
-   
+     @include respond-to(medium) { 
+     width: auto;
+    border: 1px solid green;  
     }
-    @include respond-to(wide) {
+    @include respond-to(wide) { 
      width: 1400px;
-    min-height: 212px;
-    
+    border: 1px solid red;  
     }
 
-    margin: 0 auto;
-    //width: 1400px;
-    //height: 212px;
-    background: $white url("../../images/header-bg.jpg") no-repeat;
-    
+
 }
 
- //@include respond-to(medium) {}
-//@include respond-to(small) {}
+
 
 .home .wl-appwrapper-header {
     z-index: 400;
@@ -502,11 +518,18 @@ ul.wl-fplabels-navigation {
         a.node .is-active {
             color: $defaultGrey;
             }
-
-        @include respond-to(wide) {
-         //margin: 20px 0 15px 0;
-         border: 1px solid red;
-        }
+            @include respond-to(small) { 
+    min-width: 350px;
+    
+   margin-left: 10px;
+    }
+  @include respond-to(medium-only) { 
+    min-width: 350px;//to push content down
+    }
+  
+    
+     
+        
 
 }
 

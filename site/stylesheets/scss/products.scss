@@ -19,12 +19,13 @@
 
 .wl-productbrowse {
     padding: 0;
-    @include respond-to(small) {
-           max-width: 550px; 
+    @include respond-to(small-only) {
+           max-width: 500px; 
             
         }
      @include respond-to(medium-only) {
-           max-width: 550px; 
+           max-width: 500px;
+
             
         }
 }
@@ -191,7 +192,7 @@ li.first {
 // ==========================================================================
 
 .wl-form-container {
- @include respond-to(small) { 
+ @include respond-to(small-only) { 
   width: 470px;
   
     }
@@ -217,7 +218,7 @@ background: transparent;
     height:1px;
     width: 100%;
     z-index:-1;
-       @include respond-to(small) { 
+       @include respond-to(small-only) { 
     background: none;
     }
       @include respond-to(medium-only) { 
@@ -228,7 +229,7 @@ background: transparent;
 }
 
  .options {
- @include respond-to(small) {
+ @include respond-to(small-only) {
    width: 475px;
 }
 @include respond-to(medium-only) {
@@ -245,11 +246,13 @@ background: transparent;
 
 
 ul.wl-list-styles-count {
-@include respond-to(small) {
+@include respond-to(small-only) {
 margin-top: -56px;
 }
 @include respond-to(medium-only) {
 margin-top: -55px;
+
+    margin-right: 20px;
 }
     float: right;
     list-style: none;
@@ -272,10 +275,14 @@ margin-top: -55px;
 
  
 .wl-dropdown {
-@include respond-to(small) {
+@include respond-to(small-only) {
+width: 235px;
+
+
    margin-right: 11px;
    &:last-child{
    margin-right: 0;
+
 
    }
 }

@@ -18,7 +18,7 @@
     position: relative;
     margin: 0 auto;
     padding: 0;
-    border: 1px solid #ccc;
+    //border: 1px solid #ccc;
 
     
    
@@ -33,12 +33,13 @@
 
 
 .wl-appcontent {
-  @include respond-to(small) { 
-    max-width: 600px;//to present columns of two items at a time
+  @include respond-to(small-only) { 
+    max-width: 300px;//to present one column at a time
     }
      @include respond-to(medium-only) { 
      
-    max-width:600px;//to present columns of two items at a time
+    max-width:700px;//to present columns of two items at a time
+ 
     }
 
     position: relative;
@@ -47,18 +48,20 @@
     min-height: 300px;
     margin: 0 auto;
     padding: 0; 
-   
+  
    
     
 }
 
 .wl-appmain {
- @include respond-to(small) { 
-    max-width: 700px;//to present columns of two items
+ @include respond-to(small-only) { 
+    max-width: 480px;//to present columns of two items
+    float: none;
     }
+
  @include respond-to(medium-only) { 
- border: 1px solid red;
-    max-width: 700px;//to present columns of two items
+ 
+    max-width: 480px;//to present columns of two items
     }
     padding: 0px; 
     width: 100%*(961/1200);
@@ -77,11 +80,20 @@
 
 ///ASIDE NAVIGATION
 .wl-appaside {
+     @include respond-to(small-only) { 
+     min-width:225px;
+    float: none;
+   }
+    @include respond-to(medium-only) { 
+     
+    min-width:218px;
     
+    }
     padding: 0; 
     float:left;
     width: 100%*(231/1200);
     height: auto;
+   
   
 
 }
@@ -194,6 +206,16 @@
 
 
 .link-item .link-sublist .link-item .link {
+ @include respond-to(small-only) { 
+   padding-top: 5px;
+    padding-bottom: 5px;
+  
+    }
+  @include respond-to(medium-only) { 
+   padding-top: 5px;
+    padding-bottom: 5px;
+  
+    }
     display: block;
     padding-left: 20px;
     padding-top: 10px;
@@ -367,9 +389,9 @@ ul.wl-fplabels-navigation {
     }
 
     .wl-ht-text-box {
-        @include respond-to(medium-only) { 
-         width: auto;
-         }
+        //@include respond-to(medium-only) { 
+        // width: auto;
+        // }
         margin: 0 auto;
         width: 188px;
         height: 30px;
@@ -468,7 +490,7 @@ ul.wl-fplabels-navigation {
    height: 212px;
     background: $white url("../../images/header-bg.jpg") no-repeat center;
     //background-size:contain;//responsive bg image if needed later
-       @include respond-to(small) { 
+       @include respond-to(small-only) { 
      width: auto;
     border: 1px solid blue;  
     }
@@ -495,6 +517,13 @@ ul.wl-fplabels-navigation {
 
 
 .wl-breadcrumbs {
+    @include respond-to(small-only) { 
+           
+ float: none;
+ margin: 0 auto;
+ margin: 3px;
+ width: auto;
+    }
     
     margin: 20px 0 15px 0;
     float: left;
@@ -521,13 +550,11 @@ ul.wl-fplabels-navigation {
         a.node .is-active {
             color: $defaultGrey;
             }
-            @include respond-to(small) { 
-    min-width: 350px;
     
-   margin-left: 10px;
-    }
   @include respond-to(medium-only) { 
     min-width: 350px;//to push content down
+    
+    margin-left: 20px;
     }
   
     
@@ -544,7 +571,7 @@ ul.wl-fplabels-navigation {
     
     margin: 0 auto;
     background-color: #ccc;
-    width: 1400px;
+    width: auto;
 }
 
 

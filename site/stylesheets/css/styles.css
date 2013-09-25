@@ -731,61 +731,109 @@ ul.wl-list-styles-count {
     background: transparent;
     margin-top: 50%; }
 
-.wl-appaside-fplabels {
-  background: white url("../../images/AsidePromo-bg.png") no-repeat center;
-  background-size: contain;
+.wl-fplabels-wrapper {
   text-align: center;
-  padding: 0;
-  float: left;
+  overflow: auto;
+  height: auto;
   width: 99%;
-  height: 275px;
-  margin-bottom: 8px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   border-width: 1px;
   border-style: solid;
   -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
   -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
   border-image: url("../../images/borders/border-25.png") 10 10 round; }
-  .wl-appaside-fplabels .h2 {
+  .wl-fplabels-wrapper .h2 {
+    position: absolute;
     display: block;
-    width: 70%;
-    margin: -9px auto 0; }
+    z-index: 1;
+    width: auto;
+    margin: -32px auto 10px; }
 
-ul.wl-fplabels-navigation {
-  overflow: hidden;
-  width: auto;
-  margin: 0 auto;
-  height: 20px;
-  border: 1px solid white;
+.wl-appaside-fplabels {
+  text-align: center;
+  padding: 0;
+  float: left;
+  width: 99%;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
+  -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
+  border-image: url("../../images/borders/border-25.png") 10 10 round;
+  /* Slideshow metrics */ }
+  .wl-appaside-fplabels .slideshow {
+    width: 230px;
+    height: 260px; }
+  .wl-appaside-fplabels .slides img {
+    width: 100%;
+    height: 100%; }
+
+button {
+  border: none; }
+
+.dots, dot-item, .dot {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display: inline; }
-  ul.wl-fplabels-navigation li:nth-child(5) {
-    background: #eb5190 url("../../images/borders/border-pink.png") repeat; }
-  ul.wl-fplabels-navigation li:first-child {
-    margin-left: 30%; }
-  ul.wl-fplabels-navigation li {
-    background: white url("../../images/borders/border-25.png") repeat;
-    float: left;
-    height: 5px;
-    width: 5px;
-    padding: 1px;
-    border-radius: 10px;
-    border: 0px solid;
-    margin-left: 6px; }
-    ul.wl-fplabels-navigation li a {
-      text-decoration: none;
-      color: transparent; }
+  border: 0;
+  background: transparent; }
+
+.dots {
+  overflow: auto;
+  position: relative;
+  width: 97%;
+  height: auto;
+  z-index: 10000;
+  bottom: -240px;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+  font-size: 0; }
+
+.dot-item {
+  list-style: none;
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.8;
+  background: transparent; }
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 6px;
+  font-size: 0;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  background-color: #f7f7f7; }
+
+dot-item:active .dot, .dot-item.active .dot {
+  background-color: #ff008a; }
+
+.no-touch .dot-item:hover .dot {
+  background-color: #828282; }
+
+.wl-fpemail-wrapper {
+  overflow: auto;
+  height: auto;
+  width: 99%;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-image: url("../../images/borders/border-pink.png") 10 10 round;
+  -o-border-image: url("../../images/borders/border-pink.png") 10 10 round;
+  border-image: url("../../images/borders/border-pink.png") 10 10 round; }
 
 .wl-appaside-email {
   text-align: center;
   padding: 0 0 20px 0;
   float: left;
   width: 99%;
-  height: 156px;
-  border-width: 1px;
-  border-style: solid;
-  -webkit-border-image: url("../../images/borders/border-pink.png") 10 10 round;
-  -o-border-image: url("../../images/borders/border-pink.png") 10 10 round;
-  border-image: url("../../images/borders/border-pink.png") 10 10 round; }
+  height: 156px; }
   .wl-appaside-email .h2 {
     color: #ff008a;
     background: transparent;

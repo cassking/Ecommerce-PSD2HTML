@@ -18,11 +18,16 @@
   	<link rel="stylesheet" href="stylesheets/_shared/_utility.css">
 	<link rel="stylesheet" href="stylesheets/_shared/ie.css">
 	<link rel="stylesheet" href="stylesheets/css/styles.css">
+     <link rel="stylesheet" href="stylesheets/css/jquery.swipeshow.css"  />
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Josefin+Sans:400,600,700,400italic,700italic|Josefin+Slab:400,600,700|IM+Fell+Double+Pica:400,400italic|Bitter:400,700,400italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	
 	<!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      <script src="js/jquery.swipeshow.min.js"></script>
+
   
 </head>
 
@@ -898,8 +903,8 @@
 					<li class="link-item link-item--jackets"><a href="#" class="link"><span class="txt">skirts</span></a></li>
 					<li class="link-item link-item--jackets"><a href="#" class="link"><span class="txt">layering</span></a></li>
 					<!--end  collapsed  li second-->
-					<!--end  expanded list li-->
-					</ul>
+    					<!--end  expanded list li-->
+    					</ul>
 					<!--end nested ul link sublist-->
 			</li>
 			<!--end first link item/link group/contains header and nested ul link sublist-->
@@ -912,28 +917,60 @@
 		<!--Aside navigation content ends-->
 
 		<!--Aside trends content begins-->
+
 		<div class="wl-appaside-fptrends wl-cf clearfix" role="complementary">
 		<h2 class="h2">Trends Creative TBD</h2>
 		</div>
 		<!--Aside trends content ends-->
 		
-		<!--Aside freepeople labels content begins-->
-		<div class="wl-appaside-fplabels wl-cf clearfix" role="complementary">
-		<h2 class="h2">Free People Labels</h2>
-		</div>
-		<ul class="wl-fplabels-navigation wl-cf clearfix">
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">6</a></li>
-			
-		</ul>
 
-		<!--Aside freepeople labels content ends-->
+		<!--Aside freepeople 1 labels content begins-->
+    <div class="wl-fplabels-wrapper">
+        <h2 class="h2">Free People Labels</h2>
+		<div class="wl-appaside-fplabels slideshow swipeshow wl-cf clearfix" role="complementary">
+		<!-- <h2 class="h2">Free People Labels</h2> -->
+      
+            <ul class="slides">
+              
+                <li class="slide">
+                    <img src="images/slides/asidePromo1.jpg" alt="Label One" />
+                </li>
+               <li class="slide">
+                    <img src="images/slides/asidePromo2.jpg" alt="Label Two" />
+                </li>
+                <li class="slide">
+                    <img src="images/slides/asidePromo6.jpg" alt="Label Three" />
+                </li>
+               <li class="slide">
+                    <img src="images/AsidePromo-bg.png" alt="Label Four" />
+                </li>
+                 <li class="slide">
+                    <img src="images/slides/asidePromo4.jpg" alt="Label Five" />
+                </li>
+               <li class="slide">
+                    <img src="images/slides/asidePromo5.jpg" alt="Label Six" />
+                </li>
+                <li class="slide">
+                    <img src="images/AsidePromo-bg.png" alt="Label Seven" />
+                </li>
+               <li class="slide">
+                    <img src="images/slides/asidePromo6.jpg" alt="Label Three" />
+                </li>
+            </ul>
+            <!--<button class='previous'></button>
+            <button class='next'></button>-->
+            <div class="dots"></div>
+      
+		</div>
+        
+    </div>
+       
+	
+
+		<!--Aside freepeople labels 1 content ends-->
 
 		<!--Aside freepeople sign up for email content begins-->
+        <div class="wl-fpemail-wrapper">
 		<div class="wl-appaside-email wl-cf" role="complementary">
 		
 		<form action="#" method="post" class="wl-email-signup">
@@ -949,9 +986,10 @@
 	        </button>
 
 	    </div>
-	</form>
+	   </form>
 
-		</div><!--Aside freepeople sign up for email content ends-->
+		</div>
+    </div><!--Aside freepeople sign up for email content ends-->
 
 		</div><!--Aside  navigation content begins-->
 		
@@ -967,6 +1005,15 @@
 	<!--SLI footer ends-->
 
 	<!--All JS starts-->
+    <script>
+    (function($) {
+      $(".version").text($.swipeshow.version);
+      $(".slideshow").swipeshow({ mouse: true, interval: 6000 });
+
+
+
+    })(jQuery);
+  </script>
 	<!--All JS ends-->
 
 </body>

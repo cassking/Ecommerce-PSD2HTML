@@ -15,298 +15,224 @@
 // Application products container div and grid
 // ==========================================================================
 
-
-
 .wl-productbrowse {
     padding: 0;
     @include respond-to(small-only) {
-           max-width: 500px; 
-            
-        }
-     @include respond-to(medium-only) {
-           max-width: 500px;
-
-            
+    max-width: 500px;        
+    }
+    @include respond-to(medium-only) {
+    max-width: 500px;       
         }
 }
-
- 
-
 .wl-products {
     margin: 0;
-    padding:0;
-     
+    padding:0;    
 }
-
 .wl-product {
     list-style: none;
     float: left;
     padding: 0;
     margin-left: 4px;
-        .image{
-            text-align: center;
-            position: relative;
-            margin: 0 auto;
-            width: 100%;
-            height: 315px;
+    .image {
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 315px;
             img {
             width: 100%;
-
-            }
-
-            
+            }    
         } 
-        .swatches {
-            list-style: none;
-            margin: 0;
-            dd {
-                float:left;
-                margin: 0 2px 0 -4px;
-                line-height: 1.3;
-
+    .swatches {
+        list-style: none;
+        margin: 0;
+        dd {
+            float:left;
+            margin: 0 2px 0 -4px;
+            line-height: 1.3;
             a {
-                    text-decoration: none;
-                    color: $pink;
-                    margin-left: 5px;
-
-
-
-                 }
+                text-decoration: none;
+                color: $pink;
+                margin-left: 5px;
+                }
             img {
                  height: 20px;
                  width: 20px;
-                 
-
-                 }
-
-            
-            }
-        }  
-}
-
-       
-    .overlay  {
-
-            position: relative;
-            margin: 0 auto;
-            width: 100%;
-            height: 315px;
-                &:hover {
-                opacity: .90;
-                -webkit-opacity: .90;
-                -moz-opacity: .90;
-                -o-opacity: .90;
-                -ms-opacity: .90;
-               
-              
-                    } 
                 }
-
-    
-
-        .quickview {
-         text-indent: -9999em;
-        display: inline-block;
-        position: absolute;
-        right: 3px;
-        bottom: 6px;
-        width: 33px;
-        height: 33px;
-       
+            }
+    }  
+}     
+.overlay  {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 315px;
         &:hover {
-        
-      
+            opacity: .90;
+            -webkit-opacity: .90;
+            -moz-opacity: .90;
+            -o-opacity: .90;
+            -ms-opacity: .90;
+        } 
+}
+.quickview {
+    text-indent: -9999em;
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    bottom: 6px;
+    width: 33px;
+    height: 33px; 
+        &:hover {
         background: url("../../images/sprites.png") no-repeat;
         background-position: -40px -360px;
-      
         z-index: 100;
-
         }
-        &:active, &:focus{
+        &:active, &:focus {
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -79px -360px;
-
         }
-        } 
-
-
+} 
 .video-link {
     text-indent: -9999em;
-        display: inline-block;
-        position: absolute;
-        left: 6px;
-        top: 6px;
-       
-        width: 25px;
-        height: 25px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -307px -277px;
-        z-index: 100;
-        &:hover {
-        
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 25px;
+    height: 25px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -307px -277px;
+    z-index: 100;
+    &:hover {  
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -277px -277px;
         z-index: 100;
-
-        }      
+    }      
     
 }
-
 .badge {
-
-        text-indent: -9999em;
-        display: inline-block;
-        position: absolute;
-        right: 3px;
-        top: 6px;
-       
-        width: 37px;
-        height: 37px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -75px -317px;
-
-                 }
-
-
+    text-indent: -9999em;
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    width: 37px;
+    height: 37px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -75px -317px;
+}
 .info {
     margin-top: 3px;   
 }
 
 li.first {
-        margin-left: 0;
-    }
-
-    .name {
+    margin-left: 0;
+}
+.name {
     text-align: left;
     margin: 4px 0 4px 0;
-        a {
-       
+    a {
         text-decoration: none;
         font-style:normal;
         color: $darkGrey;
-        }
     }
+}
 
 // ==========================================================================
 // Drop down menu, options
 // ==========================================================================
 
 .wl-form-container {
- @include respond-to(small-only) { 
-  width: 470px;
-  
+    @include respond-to(small-only) { 
+    width: 470px;
     }
-  @include respond-to(medium-only) { 
-  width: 470px;
-  
+    @include respond-to(medium-only) { 
+    width: 470px;
     }
-background: transparent;
+    background: transparent;
     width: auto;
     height: 30px;
-
-
-    
-  
-:before {
-    padding: 0;
-    background: url("../../images/borders/border-25.png") ;
-    content: '';
-    display: block;
-    position: absolute;
-    top: 1em;
-    margin-top: 48px;
-    height:1px;
-    width: 100%;
-    z-index:-1;
-       @include respond-to(small-only) { 
-    background: none;
-    }
-      @include respond-to(medium-only) { 
-    background: none;
+    :before {
+        padding: 0;
+        background: url("../../images/borders/border-25.png") ;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 1em;
+        margin-top: 48px;
+        height:1px;
+        width: 100%;
+        z-index:-1;
+            @include respond-to(small-only) { 
+            background: none;
+            }
+            @include respond-to(medium-only) { 
+            background: none;
+            }
     }
 }
- 
-}
-
- .options {
- @include respond-to(small-only) {
-   width: 475px;
-}
-@include respond-to(medium-only) {
-   width: 475px;
-}
-   width: 469px;
+.options {
+    @include respond-to(small-only) {
+    width: 475px;
+    }
+    @include respond-to(medium-only) {
+    width: 475px;
+    }
+    width: 469px;
     float: left;
     height: 27px;
     margin: 0;
     padding:0;
     background:$white;
-
 }
-
-
 ul.wl-list-styles-count {
-@include respond-to(small-only) {
-margin-top: -56px;
-}
-@include respond-to(medium-only) {
-margin-top: -55px;
-
-    margin-right: 20px;
-}
+    @include respond-to(small-only) {
+        margin-top: -56px;
+    }
+    @include respond-to(medium-only) {
+        margin-top: -55px;
+        margin-right: 20px;
+    }
     float: right;
     list-style: none;
-
-
-    
     .txt {
-    font-family: $Serif;
-    font-style:italic;
-    color: $mediumGrey;
-    padding-left: 6px;
-    background-color: $white;
-    }
-    
+        font-family: $Serif;
+        font-style:italic;
+        color: $mediumGrey;
+        padding-left: 6px;
+        background-color: $white;
+    }   
 }
+
 // ==========================================================================
 // Application products Browse Refinements drop down menu
 // ==========================================================================
 
-
- 
 .wl-dropdown {
-@include respond-to(small-only) {
-width: 235px;
-
-
-   margin-right: 11px;
-   &:last-child{
-   margin-right: 0;
-
-
-   }
-}
-@include respond-to(medium-only) {
-   margin-right: 11px;
-   &:last-child{
-   margin-right: 0;
-
-   }
-}
-
+    @include respond-to(small-only) {
+        width: 235px;
+        margin-right: 11px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @include respond-to(medium-only) {
+        margin-right: 11px;
+            &:last-child {
+            margin-right: 0;
+            }
+    }
     margin-right: 5px;
     float: left;
     width: 151px;
     height: 20px;
     z-index: 100;
-
-        select {
+    select {
         -moz-appearance: button;  //* Firefox hides arrow */
         text-indent: 20px;  //* Firefox hides arrow */
         text-overflow: ''; //* Firefox hides arrow */
-        -webkit-appearance: none; //* Safari   */
-        
-             
+        -webkit-appearance: none; //* Safari   */    
         background:$white;
         height:25px;
         border-width: 1px;
@@ -316,26 +242,18 @@ width: 235px;
         -o-border-image:url("../../images/borders/border-50.png") 10 10 round; //* Opera */
         border-image:url("../../images/borders/border-50.png") 10 10 round;
         width: 100%;
-
         padding-left:16px;
         font-family: $Serif;
         font-style: italic;
-
-        }
-        
-          .arrow {
-          float: right;
-           
-          
-            display:  block;
-            position: relative;
-          
-            margin: -15px 10px 0 0;
-            width: 10px;
-            height: 6px;
-            background: transparent url("../../images/sprites.png") no-repeat;
-            background-position: -80px -480px;
-          
-            }
+    }   
+    .arrow {
+        float: right;
+        display:  block;
+        position: relative;
+        margin: -15px 10px 0 0;
+        width: 10px;
+        height: 6px;
+        background: transparent url("../../images/sprites.png") no-repeat;
+        background-position: -80px -480px;
+    }
 }
-

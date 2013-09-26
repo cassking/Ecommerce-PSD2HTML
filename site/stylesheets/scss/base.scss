@@ -195,6 +195,7 @@ form {
         button {
             overflow: visible; /* IE6-7 */
             cursor: pointer;
+            border: none; /* FOR SLIDESHOW */
         }
         textarea {
             vertical-align: top;

@@ -173,7 +173,9 @@ textarea {
 button {
   overflow: visible;
   /* IE6-7 */
-  cursor: pointer; }
+  cursor: pointer;
+  border: none;
+  /* FOR SLIDESHOW */ }
 
 textarea {
   vertical-align: top; }
@@ -733,13 +735,14 @@ ul.wl-list-styles-count {
 
 .wl-fplabels-wrapper {
   text-align: center;
+  visibility: visible;
   overflow: auto;
   height: auto;
   width: 99%;
-  padding-bottom: 20px;
+  padding-bottom: 1px;
   padding-top: 20px;
   margin-bottom: 20px;
-  border-width: 1px;
+  border-width: 1px 1px 0 1px;
   border-style: solid;
   -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
   -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
@@ -749,28 +752,20 @@ ul.wl-list-styles-count {
     display: block;
     z-index: 1;
     width: auto;
-    margin: -32px auto 10px; }
+    margin: -32px auto 10px;
+    padding: 0 3px 0 3px; }
 
 .wl-appaside-fplabels {
   text-align: center;
   padding: 0;
   float: left;
-  width: 99%;
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
-  -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
-  border-image: url("../../images/borders/border-25.png") 10 10 round;
-  /* Slideshow metrics */ }
+  width: 99%; }
   .wl-appaside-fplabels .slideshow {
     width: 230px;
     height: 260px; }
   .wl-appaside-fplabels .slides img {
     width: 100%;
     height: 100%; }
-
-button {
-  border: none; }
 
 .dots, dot-item, .dot {
   margin: 0;
@@ -780,16 +775,22 @@ button {
   background: transparent; }
 
 .dots {
+  background: white;
   overflow: auto;
   position: relative;
-  width: 97%;
+  width: 100%;
   height: auto;
   z-index: 10000;
   bottom: -240px;
   margin: 0 auto;
   text-align: center;
   list-style: none;
-  font-size: 0; }
+  font-size: 0;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
+  -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
+  border-image: url("../../images/borders/border-25.png") 10 10 round; }
 
 .dot-item {
   list-style: none;
@@ -804,15 +805,16 @@ button {
 
 .dot {
   display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
   font-size: 0;
   border: solid 1px rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   background-color: #f7f7f7; }
 
-dot-item:active .dot, .dot-item.active .dot {
+.dot-item:active .dot,
+.dot-item.active .dot {
   background-color: #ff008a; }
 
 .no-touch .dot-item:hover .dot {
@@ -871,20 +873,6 @@ dot-item:active .dot, .dot-item.active .dot {
     -webkit-border-image: url("../../images/borders/border-25.png") 10 10 round;
     -o-border-image: url("../../images/borders/border-25.png") 10 10 round;
     border-image: url("../../images/borders/border-25.png") 10 10 round; }
-    .wl-appaside-email .wl-button :after {
-      position: absolute;
-      left: -20px;
-      display: block;
-      margin-top: 14px;
-      margin-left: -9px;
-      content: '';
-      border: 1px solid red;
-      max-width: 50px;
-      max-height: 35px;
-      background: transparent url("../../images/sprites.png") no-repeat;
-      background-position: -241px -319px;
-      z-index: 100;
-      left: -10px; }
 
 .email-signup-button {
   overflow: visible; }

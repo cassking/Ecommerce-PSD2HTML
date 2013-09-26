@@ -422,26 +422,6 @@ li.first {
   @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
     .wl-form-container {
       width: 470px; } }
-  .wl-form-container :before {
-    padding: 0;
-    background: url("../../images/borders/border-25.png");
-    content: '';
-    display: block;
-    position: absolute;
-    top: 1em;
-    margin-top: 48px;
-    height: 1px;
-    width: 100%;
-    z-index: -1; }
-    @media screen and (max-width: 30em) {
-      .wl-form-container :before {
-        background: none; } }
-    @media screen and (min-width: small-only) {
-      .wl-form-container :before {
-        background: none; } }
-    @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
-      .wl-form-container :before {
-        background: none; } }
 
 .options {
   width: 469px;
@@ -463,6 +443,27 @@ li.first {
 ul.wl-list-styles-count {
   float: right;
   list-style: none; }
+  ul.wl-list-styles-count :before {
+    padding: 0;
+    background: url("../../images/borders/border-25.png");
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1em;
+    margin-left: -450px;
+    margin-top: 48px;
+    height: 1px;
+    width: 450px;
+    z-index: -1; }
+    @media screen and (max-width: 30em) {
+      ul.wl-list-styles-count :before {
+        background: none; } }
+    @media screen and (min-width: small-only) {
+      ul.wl-list-styles-count :before {
+        background: none; } }
+    @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
+      ul.wl-list-styles-count :before {
+        background: none; } }
   @media screen and (max-width: 30em) {
     ul.wl-list-styles-count {
       margin-top: -56px; } }

@@ -84,13 +84,13 @@
     width: 33px;
     height: 33px; 
         &:hover {
-        background: url("../../images/sprites.png") no-repeat;
-        background-position: -40px -360px;
-        z-index: 100;
+            background: url("../../images/sprites.png") no-repeat;
+            background-position: -40px -360px;
+            z-index: 100;
         }
         &:active, &:focus {
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -79px -360px;
+            background: transparent url("../../images/sprites.png") no-repeat;
+            background-position: -79px -360px;
         }
 } 
 .video-link {
@@ -145,39 +145,22 @@ li.first {
 
 .wl-form-container {
     @include respond-to(small-only) { 
-    width: 470px;
+        width: 470px;
     }
     @include respond-to(medium-only) { 
-    width: 470px;
+        width: 470px;
     }
     background: transparent;
     width: auto;
     height: 30px;
-    :before {
-        padding: 0;
-        background: url("../../images/borders/border-25.png") ;
-        content: '';
-        display: block;
-        position: absolute;
-        top: 1em;
-        margin-top: 48px;
-        height:1px;
-        width: 100%;
-        z-index:-1;
-            @include respond-to(small-only) { 
-            background: none;
-            }
-            @include respond-to(medium-only) { 
-            background: none;
-            }
-    }
+
 }
 .options {
     @include respond-to(small-only) {
-    width: 475px;
+        width: 475px;
     }
     @include respond-to(medium-only) {
-    width: 475px;
+        width: 475px;
     }
     width: 469px;
     float: left;
@@ -187,6 +170,25 @@ li.first {
     background:$white;
 }
 ul.wl-list-styles-count {
+    :before {
+        padding: 0;
+        background: url("../../images/borders/border-25.png") ;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 1em;
+        margin-left: -450px;
+        margin-top: 48px;
+        height:1px;
+        width: 450px;
+        z-index:-1;
+        @include respond-to(small-only) { 
+            background: none;
+        }
+        @include respond-to(medium-only) { 
+            background: none;
+        }
+    }
     @include respond-to(small-only) {
         margin-top: -56px;
     }
@@ -204,6 +206,10 @@ ul.wl-list-styles-count {
         background-color: $white;
     }   
 }
+
+
+    
+
 
 // ==========================================================================
 // Application products Browse Refinements drop down menu

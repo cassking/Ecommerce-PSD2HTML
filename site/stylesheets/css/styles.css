@@ -273,34 +273,18 @@ button.wl-button-tertiary {
 /*======================================================================
 	CLEARFIX
 ----------------------------------------------------------------------*/
-.clearfix {
-  display: block;
-  *zoom: 1; }
-
+.wl-cf:after,
 .clearfix:after {
-  content: ".";
-  display: block;
-  height: 0.1px;
-  clear: both;
-  font-size: 0;
-  visibility: hidden; }
+  clear: both; }
 
-.wl-cf,
-.clearfix {
+.wl-cf, .clearfix {
   zoom: 1; }
 
-.wl-cf:before,
-.wl-cf:after,
-.clearfix:before,
-.clearfix:after {
-  display: block;
-  height: 0;
-  content: ".";
-  overflow: hidden;
-  visibility: hidden; }
+.wl-cf:before, .clearfix:before, .wl-cf:after, .clearfix:after {
+  content: "";
+  display: table; }
 
-.wl-cf:after,
-.clearfix:after {
+.wl-cf:after, .clearfix:after {
   clear: both; }
 
 /*======================================================================
@@ -556,7 +540,7 @@ ul.wl-list-styles-count {
 
 .wl-appcontent {
   position: relative;
-  overflow: hidden;
+  overflow: inherit;
   width: 1200px;
   min-height: 300px;
   margin: 0 auto;
@@ -779,6 +763,7 @@ ul.wl-list-styles-count {
   overflow: auto;
   position: relative;
   width: 100%;
+  padding: 0 2px 0 2px;
   height: auto;
   z-index: 10000;
   bottom: -240px;
@@ -880,16 +865,14 @@ ul.wl-list-styles-count {
     position: absolute;
     left: -20px;
     display: block;
-    margin-top: 14px;
-    margin-left: -9px;
+    margin-top: -24px;
+    margin-left: -6px;
     content: '';
-    border: 1px solid red;
     width: 50px;
     height: 35px;
     background: transparent url("../../images/sprites.png") no-repeat;
     background-position: -241px -319px;
-    z-index: 100;
-    left: -10px; }
+    z-index: 100; }
 
 .wl-appwrapper-header {
   border: 1px solid #ccc;

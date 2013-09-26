@@ -29,7 +29,8 @@
         max-width:700px;//to present columns of two items at a time
     }
     position: relative;
-    overflow:hidden;
+    //display: table;
+    overflow:inherit;
     width: 1200px;
     min-height: 300px;
     margin: 0 auto;
@@ -277,6 +278,7 @@
     overflow: auto;
     position: relative;
     width: 100%;
+    padding: 0 2px 0 2px;
     height: auto;
     z-index: 10000;
     bottom:-240px;
@@ -389,19 +391,17 @@
 .email-signup-button{
     overflow: visible;
     :after {
-    position: absolute;
-    left: -20px;
-    display: block;
-    margin-top: 14px;
-    margin-left: -9px;
-    content: '';
-    border: 1px solid red;  
-    width:50px;
-    height: 35px;
-    background: transparent url("../../images/sprites.png") no-repeat;
-    background-position: -241px -319px;
-    z-index: 100;
-    left: -10px;
+        position: absolute;
+        left: -20px;
+        display: block;
+        margin-top: -24px;
+        margin-left: -6px;
+        content: '';
+        width:50px;
+        height: 35px;
+        background: transparent url("../../images/sprites.png") no-repeat;
+        background-position: -241px -319px;
+        z-index: 100;
     }
 }
 

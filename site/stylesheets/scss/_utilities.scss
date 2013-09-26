@@ -37,7 +37,6 @@ $black: #000000;
 $lightGrey: #f7f7f7;
 $lightBlue: #cafef4;
 
-
 // ==========================================================================
 // Font Stacks
 // ==========================================================================
@@ -47,8 +46,6 @@ $josefinSlab:  'Josefin Slab', Arial, Helvetica, sans-serif;
 $Lato:			'Lato',Arial,Helvetica,sans-serif;
 $Serif:			Georgia, "Times New Roman", Times, serif;
 
-
-
 // ==========================================================================
 // @mixin respond-to
 // ==========================================================================
@@ -56,9 +53,7 @@ $break-small-only: 480/16; //for landscape phones and down
 $break-small: 481 / 16;//end small range
 $break-medium: 481 / 16;// begin medium range for portrait tablet to landscape and desktop
 $break-medium-only: 979 / 16;// end medium range for portrait tablet to landscape and desktop
-
 $break-wide: 980 / 16;// large desktops 1200px and up
-
 $media-query-support: true !default;
 
 @mixin respond-to($media, $mq-support: $media-query-support) {
@@ -97,8 +92,6 @@ $media-query-support: true !default;
 // Applies to everything below small 480   @include respond-to(small-only) {}
 // Applies to small to medium 481 to 979   @include respond-to(medium-only) {}
 // Applies to wide above 1200 and up        @include respond-to(wide) {}
-
-
 
 // ==========================================================================
 // @mixin triangle

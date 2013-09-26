@@ -1,35 +1,48 @@
 /*======================================================================
 	CLEARFIX
 ----------------------------------------------------------------------*/
-.clearfix {
-	display: block;
-	*zoom: 1;
-}
+//.clearfix {
+//	display: block;
+//	*zoom: 1;
+//}
+//.clearfix:after {
+//	content: ".";
+//	display: block;
+//	height: 0.1px;
+//	clear: both;
+//	font-size: 0;
+//	visibility: hidden;
+//}
+
+//.wl-cf,
+//.clearfix {
+//    zoom: 1;
+//}
+//.wl-cf:before,
+//.wl-cf:after,
+//.clearfix:before,
+//.clearfix:after {
+//    display: block;
+//    height: 0;
+//    content: ".";
+//    overflow: hidden;
+//    visibility: hidden;
+//}
+
+.wl-cf:after,
 .clearfix:after {
-	content: ".";
-	display: block;
-	height: 0.1px;
-	clear: both;
-	font-size: 0;
-	visibility: hidden;
+    clear: both;
 }
 
-.wl-cf,
-.clearfix {
+.wl-cf,.clearfix {
     zoom: 1;
 }
-.wl-cf:before,
-.wl-cf:after,
-.clearfix:before,
-.clearfix:after {
-    display: block;
-    height: 0;
-    content: ".";
-    overflow: hidden;
-    visibility: hidden;
+
+.wl-cf:before,.clearfix:before,.wl-cf:after,.clearfix:after {
+    content: "";
+    display: table;
 }
 
-.wl-cf:after,
-.clearfix:after {
+.wl-cf:after,.clearfix:after {
     clear: both;
 }

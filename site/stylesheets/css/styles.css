@@ -432,10 +432,20 @@ li.first {
   background: white; }
   @media screen and (max-width: 30em) {
     .options {
-      width: 475px; } }
+      width: 238px;
+      position: scroll;
+      top: 90px;
+      height: auto;
+      padding-bottom: 6px;
+      z-index: 100; } }
   @media screen and (min-width: small-only) {
     .options {
-      width: 475px; } }
+      width: 238px;
+      position: scroll;
+      top: 90px;
+      height: auto;
+      padding-bottom: 6px;
+      z-index: 100; } }
   @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
     .options {
       width: 475px; } }
@@ -883,11 +893,15 @@ ul.wl-list-styles-count {
   background: white url("../../images/header-bg.jpg") no-repeat center; }
   @media screen and (max-width: 30em) {
     .wl-appwrapper-header {
+      background: white url("../../images/header-bg.jpg") no-repeat center bottom;
       width: auto;
+      height: 100px;
       border: 1px solid blue; } }
   @media screen and (min-width: small-only) {
     .wl-appwrapper-header {
+      background: white url("../../images/header-bg.jpg") no-repeat center bottom;
       width: auto;
+      height: 100px;
       border: 1px solid blue; } }
   @media screen and (min-width: 30.0625em) {
     .wl-appwrapper-header {
@@ -908,14 +922,14 @@ ul.wl-list-styles-count {
   @media screen and (max-width: 30em) {
     .wl-breadcrumbs {
       float: none;
-      margin: 0 auto;
-      margin: 3px;
+      font-size: 0.917em;
+      margin: 3px 3px 3px 0;
       width: auto; } }
   @media screen and (min-width: small-only) {
     .wl-breadcrumbs {
       float: none;
-      margin: 0 auto;
-      margin: 3px;
+      font-size: 0.917em;
+      margin: 3px 3px 3px 0;
       width: auto; } }
   .wl-breadcrumbs ol {
     margin: 0;

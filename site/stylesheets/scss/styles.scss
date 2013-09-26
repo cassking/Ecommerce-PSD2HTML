@@ -417,7 +417,9 @@
     background: $white url("../../images/header-bg.jpg") no-repeat center;
     //background-size:contain;//responsive bg image if needed later
        @include respond-to(small-only) { 
+       background: $white url("../../images/header-bg.jpg") no-repeat center bottom;
         width: auto;
+        height:100px;
         border: 1px solid blue;  
         }
         @include respond-to(medium) { 
@@ -440,8 +442,9 @@
 .wl-breadcrumbs {
     @include respond-to(small-only) { 
     float: none;
-    margin: 0 auto;
-    margin: 3px;
+    font-size: 0.917em;
+    //margin: 0 auto;
+    margin: 3px 3px 3px 0;
     width: auto;
     }    
     margin: 20px 0 15px 0;

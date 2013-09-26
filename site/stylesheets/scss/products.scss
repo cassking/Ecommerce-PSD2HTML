@@ -157,7 +157,14 @@ li.first {
 }
 .options {
     @include respond-to(small-only) {
-        width: 475px;
+        width: 238px;
+        position: scroll;
+       
+        top: 90px;
+        height: auto;
+        padding-bottom: 6px;
+        z-index: 100;
+        //border: 1px solid green;
     }
     @include respond-to(medium-only) {
         width: 475px;
@@ -204,7 +211,7 @@ ul.wl-list-styles-count {
         color: $mediumGrey;
         padding-left: 6px;
         background-color: $white;
-    }   
+    } 
 }
 
 

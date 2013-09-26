@@ -321,8 +321,17 @@ button.wl-button-tertiary {
     text-align: center;
     position: relative;
     margin: 0 auto;
-    width: 100%;
+    width: 236px;
     height: 315px; }
+    @media screen and (max-width: 30em) {
+      .wl-product .image {
+        min-width: 236px; } }
+    @media screen and (min-width: small-only) {
+      .wl-product .image {
+        min-width: 236px; } }
+    @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
+      .wl-product .image {
+        min-width: 236px; } }
     .wl-product .image img {
       width: 100%; }
   .wl-product .swatches {

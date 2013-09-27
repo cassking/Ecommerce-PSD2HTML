@@ -654,21 +654,21 @@ ul.wl-list-styles-count {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
   .link-item .arrow {
-    display: inline-block;
+    display: none;
     position: relative;
     margin: 0 0 1px 5px;
     width: 11px;
     height: 8px;
     background: transparent url("../../images/sprites.png") no-repeat;
     background-position: -80px -480px; }
-  .link-item .link-item--expanded a .txt {
+  .link-item .link-item--dresses a .txt {
     color: #3e3e3e; }
 
-.link-item .link-item--active a .txt {
+.link-item .link-item--shop-by-shape a .txt {
   color: #eb5190; }
 
-.link-item--active .arrow {
-  display: inline-block;
+.link-item--shop-by-shape .arrow {
+  display: none;
   position: relative;
   margin: 0 0 1px 5px;
   width: 11px;
@@ -707,13 +707,13 @@ ul.link-list li li ul.link-sublist {
     background-color: #f7f7f7;
     color: #3e3e3e; }
 
-.link-item .link-sublist .link-item .link-sublist .link-item--active .link-item .link {
+.link-item .link-sublist .link-item .link-sublist .link-item--shop-by-shape .link-item .link {
   display: block;
   padding-left: 45px; }
-  .link-item .link-sublist .link-item .link-sublist .link-item--active .link-item .link:hover {
+  .link-item .link-sublist .link-item .link-sublist .link-item--shop-by-shape .link-item .link:hover {
     background-color: #f7f7f7;
     color: #3e3e3e; }
-  .link-item .link-sublist .link-item .link-sublist .link-item--active .link-item .link .txt:first-child {
+  .link-item .link-sublist .link-item .link-sublist .link-item--shop-by-shape .link-item .link .txt:first-child {
     padding-bottom: 0; }
 
 .link-group {
@@ -732,6 +732,12 @@ ul.link-list li:hover ul li ul li ul li ul.link-sublist {
 ul.link-list li ul:hover li ul.link-sublist,
 ul.link-list li ul:hover li li:hover ul.link-sublist {
   display: block; }
+
+ul.link-list li ul:hover li a.link span.arrow {
+  display: inline-block; }
+
+ul.link-list li ul:hover li li a.link span.arrow {
+  display: inline-block; }
 
 .wl-appaside-fptrends {
   text-align: center;

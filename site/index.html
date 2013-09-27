@@ -27,11 +27,19 @@
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
       <script src="js/jquery.swipeshow.min.js"></script>
+      <script src="js/jquery.aside-menu.js"></script>
 
   
 </head>
 
 <body class="l-products">
+    <!--This fixes flickering in Firefox before jQuery kicks in:source http://monc.se/kitchen/152/avoiding-flickering-in-jquery-->
+    <script>
+ document.write('<style type="text/css">body{display:none}</style>');
+jQuery(function($) {
+$('body').css('display','block');
+});
+</script>
 	<ul id="navaccessibility" class="screenreaderonly">
 		<li><a href="#"></a></li>
 		<li><a href="#"></a></li>	
@@ -864,7 +872,7 @@
 					<!--start nested ul link sublist-->
 					<ul class="link-sublist">
 						<!--start  expanded list li first-->
-						<li class="link-item link-item--dresses--expanded link-item--expanded"> 
+						<li class="link-item link-item--dresses"> 
 						<a href="#" class="link">
 						<span class="txt">dresses</span>
 						<span class="arrow"></span>
@@ -878,7 +886,7 @@
 							<li class="link-item link-item--nightout"><a href="#" class="link">night out</a> </li>
 							<li class="link-item link-item--knitjersey"><a href="#" class="link">knit &amp; jersey</a> </li>
 						<!--start new li that will hold nested ul with shapes-->
-							<li class="link-item link-item--shop-by-shape link-item--active">
+							<li class="link-item link-item--shop-by-shape">
 								<a href="#" class="link"> 
 									<span class="txt">shop by shape</span>
 									<span class="arrow"></span>
@@ -896,7 +904,20 @@
 					</li> 
 					<!--end  expanded list li first-->
 					<!--start  collapsed  li second through end of list-->
-					<li class="link-item link-item--tops"><a href="#" class="link"><span class="txt">tops</span></a></li>
+					<li class="link-item link-item--tops">
+                        <a href="#" class="link">
+                            <span class="txt">tops</span>
+                        </a>
+                            <!--start nested ul link sublist tops items-->
+                            <ul class="link-sublist">
+                            <li class="link-item link-item--tops1"><a href="#" class="link">the tee shop</a> </li>  
+                            <li class="link-item link-item--tops2"><a href="#" class="link">shirts</a> </li>    
+                            <li class="link-item link-item--tops3"><a href="#" class="link">blouses</a> </li>   
+                            <li class="link-item link-item--tops4"><a href="#" class="link">sweatshirts</a> </li>
+                            <li class="link-item link-item--tops5"><a href="#" class="link">maxi tops &amp; tunics</a> </li>
+                            </ul> 
+<!--end nested ul link sublist tops items-->
+                    </li>
 					<li class="link-item link-item--sweaters"><a href="#" class="link"><span class="txt">sweaters</span></a></li>
 					<li class="link-item link-item--jackets"><a href="#" class="link"><span class="txt">jackets</span></a></li>
 					<li class="link-item link-item--tops"><a href="#" class="link"><span class="txt">denim shop this is an example of wrapping</span></a></li>

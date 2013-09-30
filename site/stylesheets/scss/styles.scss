@@ -318,14 +318,14 @@ ul.link-list li ul:hover li li a.link span.arrow {
     height: 100%;
     }
 }
-.dots, dot-item, .dot {
+.dots, .dotstwo, dot-item, .dot {
     margin: 0;
     padding: 0;
     list-style: none;
     border: 0;
     background: transparent;
 } 
-.dots {
+.dots, .dotstwo {
     background: $white;
     //position: absolute;
     overflow: auto;

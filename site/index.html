@@ -29,11 +29,18 @@
       <script src="js/jquery.swipeshow.min.js"></script>
       <script src="js/jquery.aside-menu.js"></script>
 
+
   
 </head>
 
 <body class="l-products">
     <!--This fixes flickering in Firefox before jQuery kicks in:source http://monc.se/kitchen/152/avoiding-flickering-in-jquery-->
+      <script>
+ document.write('<style type="text/css">ul.link-list{display:none}</style>');
+jQuery(function($) {
+$('ul.link-list').css('display','block');
+});
+</script>
  
 	<ul id="navaccessibility" class="screenreaderonly">
 		<li><a href="#"></a></li>
@@ -1030,12 +1037,7 @@
     
     })(jQuery);
   </script>
-     <script>
- document.write('<style type="text/css">body{display:none}</style>');
-jQuery(function($) {
-$('body').css('display','block');
-});
-</script>
+
 	<!--All JS ends-->
 
 </body>

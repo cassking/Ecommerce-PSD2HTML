@@ -19,15 +19,19 @@
 	<link rel="stylesheet" href="stylesheets/_shared/ie.css">
 	<link rel="stylesheet" href="stylesheets/css/styles.css">
      <link rel="stylesheet" href="stylesheets/css/jquery.swipeshow.css"  />
+     
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Josefin+Sans:400,600,700,400italic,700italic|Josefin+Slab:400,600,700|IM+Fell+Double+Pica:400,400italic|Bitter:400,700,400italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	
 	<!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-      <script src="js/jquery.swipeshow.min.js"></script>
-      <script src="js/jquery.aside-menu.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="js/jquery.swipeshow.min.js"></script>
+        <script src="js/jquery.aside-menu.js"></script>
+
+        
+ 
 
 </head>
 
@@ -74,7 +78,7 @@ $('ul.link-list').css('display','block');
 				<div class="options clearfix"> <form name="freepeopleform" action="#" method="POST">
 						<div class="wl-dropdown">
 							 
-							<select name="dropdown1 ">
+							<select name="dropdown1" id="menu-select--sort">
                         <option selected="selected">Sort by</option>
 						<option value="Dress one">Dress one</option>
 						<option value="Dress two">Dress two</option>
@@ -85,7 +89,7 @@ $('ul.link-list').css('display','block');
 						<span class="arrow"></span>
 
 						</div>
-						<div class="wl-dropdown">
+						<div class="wl-dropdown" id="menu-select--size">
 						<select name="dropdown2">
                         <option selected="selected">Shop by size</option>
 						<option value="Dress one">Dress one</option>
@@ -95,7 +99,7 @@ $('ul.link-list').css('display','block');
 						<span class="arrow"></span>
 						</div>
 						<div class="wl-dropdown">
-						<select name="dropdown3">
+						<select name="dropdown3" id="menu-select--color">
                         <option selected="selected">Shop by Color</option>
 						<option value="Dress one">Dress one</option>
 						<option value="Dress two">Dress two</option>
@@ -870,29 +874,29 @@ $('ul.link-list').css('display','block');
 				    </h2>
                        
 					<!--start nested ul link sublist-->
-					<ul class="link-sublist">
+					<ul class="link-sublist sublist--category--one">
 						<!--start  expanded list li first-->
 						<li class="link-item link-item--dresses"> 
 						<a href="#" class="link">
 						<span class="txt">dresses</span>
-						<span class="arrow"></span>
+						<span class="arrow arrow--dresses"></span>
 						</a>
                        
 
 						<!--start nested ul link sublist of items-->
-						<ul class="link-sublist">
+						<ul class="link-sublist sublist--dresses-style">
 							<li class="link-item link-item--day"><a href="#" class="link"> day</a> </li>
 							<li class="link-item link-item--party"><a href="#" class="link">party</a> </li>
 							<li class="link-item link-item--nightout"><a href="#" class="link">night out</a> </li>
 							<li class="link-item link-item--knitjersey"><a href="#" class="link">knit &amp; jersey</a> </li>
-						<!--start new li that will hold nested ul with shapes-->
+						      <!--start new li that will hold nested ul with shapes-->
 							<li class="link-item link-item--shop-by-shape">
 								<a href="#" class="link"> 
 									<span class="txt">shop by shape</span>
-									<span class="arrow"></span>
+									<span class="arrow arrow--shape"></span>
 								</a>
 									<!--start nested ul link sublist by shape items-->
-									<ul class="link-sublist">
+									<ul class="link-sublist sublist--shape-style">
 									<li class="link-item link-item--shape1"><a href="#" class="link">maxi</a> </li>	
 									<li class="link-item link-item--shape2"><a href="#" class="link">fit n' flare</a> </li>	
 									<li class="link-item link-item--shape3"><a href="#" class="link">body con</a> </li>	
@@ -907,16 +911,17 @@ $('ul.link-list').css('display','block');
 					<li class="link-item link-item--tops">
                         <a href="#" class="link">
                             <span class="txt">tops</span>
+                            <span class="arrow arrow--tops"></span>
                         </a>
                             <!--start nested ul link sublist tops items-->
-                            <ul class="link-sublist">
+                            <ul class="link-sublist sublist--tops-style">
                             <li class="link-item link-item--tops1"><a href="#" class="link">the tee shop</a> </li>  
                             <li class="link-item link-item--tops2"><a href="#" class="link">shirts</a> </li>    
                             <li class="link-item link-item--tops3"><a href="#" class="link">blouses</a> </li>   
                             <li class="link-item link-item--tops4"><a href="#" class="link">sweatshirts</a> </li>
                             <li class="link-item link-item--tops5"><a href="#" class="link">maxi tops &amp; tunics</a> </li>
                             </ul> 
-<!--end nested ul link sublist tops items-->
+                            <!--end nested ul link sublist tops items-->
                     </li>
 					<li class="link-item link-item--sweaters"><a href="#" class="link"><span class="txt">sweaters</span></a></li>
 					<li class="link-item link-item--jackets"><a href="#" class="link"><span class="txt">jackets</span></a></li>
@@ -1034,9 +1039,11 @@ $('ul.link-list').css('display','block');
     (function($) {
       $(".version").text($.swipeshow.version);
       $(".slideshow").swipeshow({ mouse: true, interval: 6000 }); 
+
     
     })(jQuery);
-  </script>
+    </script>
+
 
 	<!--All JS ends-->
 

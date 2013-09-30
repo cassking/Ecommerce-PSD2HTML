@@ -123,7 +123,6 @@
     text-transform: uppercase;
         .arrow {
         display: none;
-        //display: inline-block;
         position: relative;
         margin: 0 0 1px 5px;
         width: 11px;
@@ -141,7 +140,6 @@
 .link-item--shop-by-shape {
         .arrow {
         display:none;
-        //display: inline-block;
         position: relative;
         margin: 0 0 1px 5px;
         width: 11px;
@@ -229,9 +227,6 @@ ul.link-list li ul:hover li a.link span.arrow {
 ul.link-list li ul:hover li li a.link span.arrow {
     display: inline-block;    
 }
-// ===================================================
-//PERSISTENT ARROWS
-// ===================================================
 
 // ==============
 // ASIDE TRENDS
@@ -268,11 +263,12 @@ ul.link-list li ul:hover li li a.link span.arrow {
     display:block;
     z-index: 1;
     width: auto;
+    left: 33px;
     margin: -32px auto 10px ;
     padding: 0 3px 0 3px;
     }
     visibility: visible;
-    overflow: auto;
+    overflow: hidden;
     height: auto;
     width: 99%;
     padding-bottom: 1px;
@@ -328,7 +324,7 @@ ul.link-list li ul:hover li li a.link span.arrow {
 .dots, .dotstwo {
     background: $white;
     //position: absolute;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     width: 100%;
     padding: 0 2px 0 2px;

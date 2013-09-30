@@ -271,7 +271,7 @@ button.wl-button-tertiary {
   cursor: default; }
 
 /*======================================================================
-	CLEARFIX
+	CLEARFIX Updated
 ----------------------------------------------------------------------*/
 .wl-cf:after,
 .clearfix:after {
@@ -761,7 +761,7 @@ ul.link-list li ul:hover li li a.link span.arrow {
 .wl-fplabels-wrapper {
   text-align: center;
   visibility: visible;
-  overflow: auto;
+  overflow: hidden;
   height: auto;
   width: 99%;
   padding-bottom: 1px;
@@ -777,6 +777,7 @@ ul.link-list li ul:hover li li a.link span.arrow {
     display: block;
     z-index: 1;
     width: auto;
+    left: 33px;
     margin: -32px auto 10px;
     padding: 0 3px 0 3px; }
 
@@ -801,7 +802,7 @@ ul.link-list li ul:hover li li a.link span.arrow {
 
 .dots, .dotstwo {
   background: white;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
   width: 100%;
   padding: 0 2px 0 2px;

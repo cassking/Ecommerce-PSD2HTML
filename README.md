@@ -1,4 +1,4 @@
-Ecommerce Site PSD to HTML Excercise 
+Ecommerce Site PSD to HTML Exercise 
 ==================================
 ** SCREENSHOTS OF WORK IN PROGRESS FOUND IN /images/ **
 ScreenShotSeptember18_2013.png

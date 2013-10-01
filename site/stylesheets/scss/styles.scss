@@ -137,6 +137,7 @@
 .link-item .link-item--shop-by-shape a .txt {
     color: $pink;
 }
+
 .link-item--shop-by-shape {
         .arrow {
         display:none;
@@ -146,7 +147,32 @@
         height: 8px;
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -160px -480px;
-        }     
+        }  
+          
+}
+
+
+
+.accordionExpanded {
+    .arrow {
+        display: inline-block;
+        position: relative;
+          margin: 0 0 1px 5px;
+        width: 11px;
+        height: 8px;
+        background: transparent url("../../images/sprites.png") no-repeat;
+        background-position: -80px -480px;
+        } 
+       .arrow--shape {
+        display: inline-block;
+        position: relative;
+        margin: 0 0 1px 5px;
+        width: 11px;
+        height: 8px;
+        background: transparent url("../../images/sprites.png") no-repeat;
+        background-position: -160px -480px;
+        } 
+    
 }
 ul.link-list li li  ul.link-sublist {
     display: none;
@@ -222,13 +248,14 @@ ul.link-list li li  ul.link-sublist {
 // ASIDE NAVIGATION ARROWS HOVER 
 // ===================================================
 //GREY
-ul.link-list li ul:hover li a.link span.arrow {
-    display: inline-block;   
-}
+//ul.link-list li ul:hover li a.link span.arrow {
+  //  display: inline-block;   
+//}
 //PINK
-ul.link-list li ul:hover li li a.link span.arrow {
-    display: inline-block;    
-}
+//ul.link-list li ul:hover li li a.link span.arrow {
+   // display: inline-block;    
+//}
+
 
 // ==============
 // ASIDE TRENDS

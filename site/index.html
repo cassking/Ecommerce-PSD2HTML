@@ -1054,7 +1054,7 @@ $('ul.link-list').css('display','block');
                 $(this).next('ul').slideToggle('fast');
                 $(this).parent().siblings('li').children('ul:visible').slideUp('fast')
                 .parent('li').find('a').removeClass('accordionExpanded');
-                return true;
+                return false;//remains closed until clicked
             });
         });
   </script>

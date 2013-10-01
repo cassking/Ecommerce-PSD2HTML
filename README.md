@@ -1,9 +1,6 @@
 Ecommerce Site PSD to HTML Exercise 
 ==================================
-** SCREENSHOTS OF WORK IN PROGRESS FOUND IN /images/ **
-ScreenShotSeptember18_2013.png
-ScreenShotSeptember16_2013.png
-
+** SCREENSHOTS OF WORK IN PROGRESS FOUND IN /Screenshots/ **
 Taking a PSD file and converting to HTML.
 Working with Patterns, SASS, OOCSS, git
 ----------------------------------------

@@ -27,8 +27,10 @@
   <![endif]-->
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
         <script src="js/jquery.swipeshow.min.js"></script>
-        <script src="js/jquery.aside-menu.js"></script>
+       <!--// <script src="js/jquery.aside-menu.js"></script>//-->
 
         
  
@@ -864,7 +866,6 @@ $('ul.link-list').css('display','block');
 		
 		<div class="wl-appaside-category-container wl-cf clearfix"> 
 
-
 			<ul class="link-list">
 				<!--start secondary nav main ul-->
 				<!--start first link item/link group/contains header and nested ul link sublist-->
@@ -938,7 +939,7 @@ $('ul.link-list').css('display','block');
 			<!--end first link item/link group/contains header and nested ul link sublist-->
 			</ul>
 			<!--end secondary nav main ul-->
-
+       
 		</div>
 		
 
@@ -1021,7 +1022,7 @@ $('ul.link-list').css('display','block');
 		</div>
     </div><!--Aside freepeople sign up for email content ends-->
 
-		</div><!--Aside  navigation content begins-->
+		</div><!--Aside  wl-appaside wl-cf content ends-->
 		
 	</div>
 	
@@ -1043,7 +1044,20 @@ $('ul.link-list').css('display','block');
     
     })(jQuery);
     </script>
-
+         <script>
+    $(document).ready(function() {
+            $('ul.link-list li li > ul').hide();    //hide all nested ul's
+            $('ul.link-list li > ul li a[class=current]').parents('ul').show().prev('a').addClass('accordionExpanded');  //show the ul if it has a current link in it (current page/section should be shown expanded)
+            $('ul.link-list li:has(ul)').addClass('accordion');  //so we can style plus/minus icons
+            $('ul.link-list li:has(ul) > a').click(function() {
+                $(this).toggleClass('accordionExpanded'); //for CSS bgimage, but only on first a (sub li>a's don't need the class)
+                $(this).next('ul').slideToggle('fast');
+                $(this).parent().siblings('li').children('ul:visible').slideUp('fast')
+                .parent('li').find('a').removeClass('accordionExpanded');
+                return true;
+            });
+        });
+  </script>
 
 	<!--All JS ends-->
 

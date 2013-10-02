@@ -137,7 +137,6 @@
 .link-item .link-item--shop-by-shape a .txt {
     color: $pink;
 }
-
 .link-item--shop-by-shape {
         .arrow {
         display:none;
@@ -150,14 +149,12 @@
         }  
           
 }
-
-
-
+//*THIS FOR USE WITH FP LABELS SWIPESHOW SCRIPT*//
 .accordionExpanded {
     .arrow {
         display: inline-block;
         position: relative;
-          margin: 0 0 1px 5px;
+        margin: 0 0 1px 5px;
         width: 11px;
         height: 8px;
         background: transparent url("../../images/sprites.png") no-repeat;
@@ -176,10 +173,8 @@
 }
 ul.link-list li li  ul.link-sublist {
     display: none;
- 
 }
 .link-item .link-sublist .link-item .link {
-
     @include respond-to(small-only) { 
     padding-top: 5px;
     padding-bottom: 5px;
@@ -196,17 +191,14 @@ ul.link-list li li  ul.link-sublist {
     background-color: $lightGrey;
     color: $defaultGrey;
     }  
-
 }
 .link-item .link-sublist .link-item .link-sublist .link-item .link {
-
     display: block;
     padding-left: 33px;
     &:hover {
     background-color: $lightGrey;
     color: $defaultGrey;
     }  
-
 }
 .link-item .link-sublist .link-item .link-sublist .link-item--shop-by-shape .link-item .link {
     display: block;
@@ -225,38 +217,6 @@ ul.link-list li li  ul.link-sublist {
     padding: 1px;
     margin: 0 0 15px 0;   
 }
-
-// ==========================================================================
-// ASIDE NAVIGATION HOVER STYLES
-// ==========================================================================
-
-
-//ul.link-list li.link-item ul.link-sublist {
-  //  top:auto;
-//}
-//ul.link-list li:hover ul li ul.link-sublist,
-//ul.link-list li:hover ul li ul li ul.link-sublist,
-//ul.link-list li:hover ul li ul li ul li ul.link-sublist {
- //   display:none;
-//}
-//ul.link-list li ul:hover li ul.link-sublist,
-//ul.link-list li  ul:hover li li:hover ul.link-sublist {
- //   display: block;
-//}
-
-// ===================================================
-// ASIDE NAVIGATION ARROWS HOVER 
-// ===================================================
-//GREY
-//ul.link-list li ul:hover li a.link span.arrow {
-  //  display: inline-block;   
-//}
-//PINK
-//ul.link-list li ul:hover li li a.link span.arrow {
-   // display: inline-block;    
-//}
-
-
 // ==============
 // ASIDE TRENDS
 // ==============

@@ -91,7 +91,7 @@ $media-query-support: true !default;
 // Use the following syntax to represent media queries:
 // Applies to everything below small 480   @include respond-to(small-only) {}
 // Applies to small to medium 481 to 979   @include respond-to(medium-only) {}
-// Applies to wide above 1200 and up        @include respond-to(wide) {}
+// Applies to wide above 980...1200 and up        @include respond-to(wide) {}
 
 // ==========================================================================
 // @mixin triangle

@@ -10,15 +10,16 @@
 	<link rel="apple-touch-icon" href="/resources/us/images/layout/mobile/favicon_iphone.png"/>
   	<meta name="description" content="...">
   	<meta name="author" content="...">
-  	<link rel="stylesheet" href="stylesheets/_shared/_defaults.css">
-  	<link rel="stylesheet" href="stylesheets/_shared/_utility.css">
-	<link rel="stylesheet" href="stylesheets/_shared/ie.css">
-	<link rel="stylesheet" href="stylesheets/css/styles.css">
+  	<link rel="stylesheet" href="stylesheets/_shared/_defaults.css" />
+  	<link rel="stylesheet" href="stylesheets/_shared/_utility.css" />
+	<link rel="stylesheet" href="stylesheets/_shared/ie.css" />
+	<link rel="stylesheet" href="stylesheets/css/styles.css" />
     <link rel="stylesheet" href="stylesheets/css/jquery.swipeshow.css"  />
+    <link rel="stylesheet" href="stylesheets/css/mobilemenu.css"  />
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Josefin+Sans:400,600,700,400italic,700italic|Josefin+Slab:400,600,700|IM+Fell+Double+Pica:400,400italic|Bitter:400,700,400italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/jquery.swipeshow.min.js"></script>
 </head>
 <body class="l-products">
@@ -759,7 +760,8 @@
         <!--Aside  navigation content begins-->
         <div class="wl-appaside wl-cf" role="complementary">		
             <div class="wl-appaside-category-container wl-cf clearfix"> 
-                    <ul class="link-list">
+             <button class="nav-button">Toggle Navigation</button>
+                    <ul class="link-list mobile-nav">
 				    <!--start secondary nav main ul-->
 				    <!--start first link item/link group/contains header and nested ul link sublist-->
 				        <li class="link-item link-item--by-category link-group">
@@ -867,10 +869,12 @@
                             </li>
                     </ul> 
                     <div class="dots"></div>
+                    <div class="dots-lr-border"></div> 
                 </div>    
-                <div class="dotstwo"></div> 
+          
             </div>
             <!--Aside freepeople labels 1 content ends-->
+           
             <!--Aside freepeople sign up for email content begins-->
             <div class="wl-fpemail-wrapper">
                 <div class="wl-appaside-email wl-cf" role="complementary">
@@ -894,6 +898,12 @@
 	<!--SLI footer ends-->
 	<!--All JS starts-->
     <script>
+    $(document).ready(function() {
+        $('.dots-lr-border').offset().top;
+        $('.dots-lr-border').offset().left;
+    })(jQuery);
+    </script>
+    <script>
     (function($) {
       $(".version").text($.swipeshow.version);
       $(".slideshow").swipeshow({ mouse: true, interval: 6000 });
@@ -915,9 +925,18 @@
     </script>
     <script>
         $(".slideshow").swipeshow({
-        $dots: $("div.dotstwo")
+        $dots: $("div.dots")
         });  
     </script>
+
+        <script>
+        $(document).ready(function(){
+            $(".nav-button").click(function () {
+            $(".nav-button,.mobile-nav").toggleClass("open");
+            });    
+        });
+    </script>
+  
 	<!--All JS ends-->
 </body>
 </html>

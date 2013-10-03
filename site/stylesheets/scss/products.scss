@@ -18,7 +18,10 @@
 .wl-productbrowse {
     padding: 0;
     @include respond-to(small-only) {
-    max-width: 500px;        
+    margin: 0 auto;
+    float: none;
+    max-width: 500px;
+    min-width: 445px;        
     }
     @include respond-to(medium-only) {
     max-width: 500px;       
@@ -35,7 +38,8 @@
     margin-left: 4px;
     .image {
         @include respond-to(small-only) {
-            min-width: 236px;  //prevents resizing in Safari when scaling page      
+            max-width: 150px; 
+            max-height:197px;     
         }
         @include respond-to(medium-only) {
              min-width: 236px;  //prevents resizing in Safari when scaling page         
@@ -43,7 +47,6 @@
         text-align: center;
         position: relative;
         margin: 0 auto;
-        //width: 100%;
         width: 236px;
         height: 315px;
             img {
@@ -51,6 +54,10 @@
             }    
         } 
     .swatches {
+
+      @include respond-to(small-only) {
+        display:none;
+      }
         list-style: none;
         margin: 0;
         dd {
@@ -70,6 +77,12 @@
     }  
 }     
 .overlay  {
+      @include respond-to(small-only) {
+       max-height: 190px;
+      }  
+    
+
+
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -130,7 +143,37 @@
     background-position: -75px -317px;
 }
 .info {
-    margin-top: 3px;   
+ @include respond-to(small-only) {
+    max-width: 150px;
+    margin-left: 2px;
+
+        h2 {
+            font-size: $font_size_11px;
+        }
+        div.equalheightgroup {
+            height:20px;
+        }
+   
+}
+    margin-top: 3px;
+    .equalheightgroup {
+        min-height:40px;
+        @include respond-to(small-only) {
+            min-height:20px;
+        }
+    }
+    .price {
+        @include respond-to(small-only) {
+            :after{
+                display:block;
+                content: "more colors";
+                font-family: $Lato;
+                font-size:$font_size_9px;
+                text-transform: uppercase;
+                color: $hotPink;
+            }
+        }
+    }  
 }
 
 li.first {
@@ -227,11 +270,12 @@ ul.wl-list-styles-count {
 
 .wl-dropdown {
     @include respond-to(small-only) {
-        width: 235px;
-        margin-right: 11px;
-        &:last-child {
-            margin-right: 0;
-        }
+    display:none;
+        //width: 235px;
+        //margin-right: 11px;
+        //&:last-child {
+            //margin-right: 0;
+        //}
     }
     @include respond-to(medium-only) {
         margin-right: 11px;

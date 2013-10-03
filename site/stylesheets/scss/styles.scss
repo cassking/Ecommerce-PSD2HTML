@@ -229,7 +229,8 @@ ul.link-list li li  ul.link-sublist {
         display: block;
         position: absolute;
         top: 7px;
-        left: -5px;
+        left: 7px;
+        //left: -5px;
         width: 50px;
         height: 35px;
         background: url("../../images/menu-icon-large.png"), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
@@ -268,8 +269,7 @@ ul.link-list li li  ul.link-sublist {
                 display: block; 
             }
         }
-
-        width: 90%;
+        width: 100%;
         float: none;
         background-color: #ffffff; /* change the menu color */
         display: block;
@@ -280,7 +280,8 @@ ul.link-list li li  ul.link-sublist {
         box-shadow: 0 1px 2px rgba(0,0,0,.6);
         position: absolute;
         top: 0px;
-        left: -17px;
+        left: 0px;
+        //left: -17px;
         z-index: 998;
         clear: both;
         border-width: 1px;
@@ -294,7 +295,6 @@ ul.link-list li li  ul.link-sublist {
         ul li ul li {
             a  {
                 .txt {
-                    color:#ffffff;
                     font-weight: bold;
                 }
             }
@@ -309,7 +309,9 @@ ul.link-list li li  ul.link-sublist {
                     padding: 0;
                     a {
                         border: 0 none;
-                        font-size: 12px;
+                        //font-size: $font_size_18px;
+                        //font-size: 12px;
+                        font-size:medium;
                         padding: 10px 5%;
                         font-weight: normal;
                     }
@@ -318,7 +320,7 @@ ul.link-list li li  ul.link-sublist {
                 display: block;
                 width: 90%;
                 padding: 10px 5%;
-                font-size: 14px;
+                font-size: $font_size_18px;
                 font-weight: bold;
                 text-decoration: none;
                 border-bottom: 1px solid rgba(0,0,0,.2);
@@ -380,18 +382,6 @@ ul.link-list li li  ul.link-sublist {
     left: 33px;
     margin: -32px auto 10px ;
     padding: 0 3px 0 3px;
-    }
-    .dots-lr-border {
-    
-    display:block;
-    
-    width: 250px;
-    height: 20px;
-    backround: transparent;
-    border-color: red;
-    border-style: solid;
-    border-width: 10px;
-
     }
     visibility: visible;
     overflow: hidden;

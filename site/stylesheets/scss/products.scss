@@ -246,7 +246,7 @@ ul.wl-list-styles-count {
     z-index: 100;
     select {
         -moz-appearance: button;  //* Firefox hides arrow */
-        text-indent: 20px;  //* Firefox hides arrow */
+        text-indent: 5px;  //* Firefox hides arrow */
         text-overflow: ''; //* Firefox hides arrow */
         -webkit-appearance: none; //* Safari   */    
         background:$white;

@@ -43,16 +43,12 @@
 	/* Navigation Bar
 	-------------------------------------------------------- */
 
-	body { padding-top: 50px; } 
+	body { padding-top: 20px; } 
 
 	.mobile-nav {
-		width: 100%;
+		width: 90%;
 		float: none;
 		background-color: #ffffff; /* change the menu color */
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-		background-image:    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-		background-image:     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-		background-image:      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
 		display: block;
 		height: 50px;
 		margin: 0;
@@ -80,7 +76,7 @@
 	.mobile-nav li {
 		display: none;
 		width: 100%;
-		font-family: Arial;
+	
 	}
 	.mobile-nav li a {
 		display: block;
@@ -88,14 +84,11 @@
 		padding: 10px 5%;
 		font-size: 14px;
 		font-weight: bold;
-		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
-		color: white;
 		text-decoration: none;
 		border-bottom: 1px solid rgba(0,0,0,.2);
 		border-top: 1px solid rgba(255,255,255,.1); 
 	}
 	.mobile-nav li a:hover {
-		background-color: rgba(0,0,0,.5);
 		border-top-color: transparent;
 	}
 	.mobile-nav > li:first-child {
@@ -115,20 +108,14 @@
 	/* Submenus – optional .parent class indicates dropdowns */
 
 	.mobile-nav > li:hover > a {
-		background: rgba(0,0,0,.5);
+		
 		border-bottom-color: transparent;
 	}
-	.mobile-nav li.parent > a:after {
-		content: "▼";
-		color: rgba(255,255,255,.5);
-		float: right;
-	}
-	.mobile-nav li.parent > a:hover {
-		background: rgba(0,0,0,.75);
-	}
+
+	
 	.mobile-nav li ul {
 		display: none;
-		background: rgba(0,0,0,.5);
+		background-color:  #f7f7f7;
 		border-top: 0 none;
 		padding: 0;
 	}

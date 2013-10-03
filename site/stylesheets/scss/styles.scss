@@ -93,8 +93,7 @@
 // ASIDE NAVIGATION LISTS AND LINKS
 // ==========================================================================
 
-//*TOP LEVEL MENU*//
-
+// TOP LEVEL MENU
 .link-list{
     list-style-type: none;
     margin: 0;
@@ -150,7 +149,7 @@
         }  
           
 }
-//*THIS FOR USE WITH FP LABELS SWIPESHOW SCRIPT*//
+// THIS FOR USE WITH FP LABELS SWIPESHOW SCRIPT
 .accordionExpanded {
     .arrow {
         display: inline-block;
@@ -221,9 +220,10 @@ ul.link-list li li  ul.link-sublist {
 // ==========================================================================
 // ASIDE NAVIGATION FOR MOBILE VIEW
 // ==========================================================================
+// Hide the navigation button by default
 .nav-button { 
     display: none; 
-} // Hide the navigation button by default
+}
  @include respond-to(small-only) {
     .nav-button {
         display: block;
@@ -257,8 +257,7 @@ ul.link-list li li  ul.link-sublist {
             background: url("../../images/close-icon-large.png"),      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: 21px, 100%;
-            
+            background-size: 21px, 100%;   
         }
     } 
     .mobile-nav {
@@ -281,7 +280,6 @@ ul.link-list li li  ul.link-sublist {
         position: absolute;
         top: 0px;
         left: 0px;
-        //left: -17px;
         z-index: 998;
         clear: both;
         border-width: 1px;
@@ -401,9 +399,7 @@ ul.link-list li li  ul.link-sublist {
     padding: 0;
     float:left;
     width: 99%;
-    // =================================
     // ASIDE LABELS SLIDESHOW METRICS 
-    // =================================
     .slideshow {
         width: 230px;
         height: 260px;
@@ -422,7 +418,6 @@ ul.link-list li li  ul.link-sublist {
 } 
 .dots, .dotstwo {
     background: $white;
-    //position: absolute;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -474,7 +469,6 @@ ul.link-list li li  ul.link-sublist {
 // =================================
 .wl-fpemail-wrapper {
     overflow: auto;
-    //visibility: visible;
     height: auto;
     width: 99%;
     border-width: 1px;
@@ -504,9 +498,6 @@ ul.link-list li li  ul.link-sublist {
             }
     }
     .wl-ht-text-box {
-        //@include respond-to(medium-only) { 
-        // width: auto;
-        //}
         margin: 0 auto;
         width: 188px;
         height: 30px;
@@ -637,7 +628,7 @@ ul.link-list li li  ul.link-sublist {
 }
 
 // ==========================================================================
-// Accsessibility Menu #navaccessibility 
+// Accessibility Menu #navaccessibility 
 // ==========================================================================
 
 .screenreaderonly {

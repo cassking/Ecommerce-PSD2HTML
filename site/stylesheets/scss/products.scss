@@ -80,9 +80,6 @@
       @include respond-to(small-only) {
        max-height: 190px;
       }  
-    
-
-
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -128,8 +125,7 @@
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -277px -277px;
         z-index: 100;
-    }      
-    
+    }          
 }
 .badge {
     text-indent: -9999em;
@@ -152,8 +148,7 @@
         }
         div.equalheightgroup {
             height:20px;
-        }
-   
+        }   
 }
     margin-top: 3px;
     .equalheightgroup {
@@ -175,7 +170,6 @@
         }
     }  
 }
-
 li.first {
     margin-left: 0;
 }
@@ -203,7 +197,6 @@ li.first {
     background: transparent;
     width: auto;
     height: 30px;
-
 }
 .options {
     @include respond-to(small-only) {
@@ -271,11 +264,6 @@ ul.wl-list-styles-count {
 .wl-dropdown {
     @include respond-to(small-only) {
     display:none;
-        //width: 235px;
-        //margin-right: 11px;
-        //&:last-child {
-            //margin-right: 0;
-        //}
     }
     @include respond-to(medium-only) {
         margin-right: 11px;

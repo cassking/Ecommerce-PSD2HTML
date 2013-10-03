@@ -107,7 +107,7 @@
         text-decoration: none; 
         }
 }
-.wl-header {
+.wl-heading--list {
     background: transparent;
     text-align:center;
     display: block;
@@ -289,7 +289,7 @@ ul.link-list li li  ul.link-sublist {
         -webkit-border-image:url("../../images/borders/border-50.png") 10 10 round; /* Safari  */
         -o-border-image:url("../../images/borders/border-50.png") 10 10 round; /* Opera */
         border-image:url("../../images/borders/border-50.png") 10 10 round;
-        .wl-header {
+        .wl-heading--list {
             display:none;
         }
         ul li ul li {

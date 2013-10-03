@@ -693,14 +693,14 @@ ul.wl-list-styles-count {
     .link-list a:hover {
       background-color: #cafef4; }
 
-.wl-header {
+.wl-heading--list {
   background: transparent;
   text-align: center;
   display: block;
   margin-left: -5px;
   padding: 0;
   margin-top: -13px; }
-  .wl-header .txt {
+  .wl-heading--list .txt {
     background-color: #fff;
     padding: 0 7px 0 7px; }
 
@@ -856,7 +856,7 @@ ul.link-list li li ul.link-sublist {
       padding-top: 50px; }
       .mobile-nav.open li {
         display: block; }
-    .mobile-nav .wl-header {
+    .mobile-nav .wl-heading--list {
       display: none; }
     .mobile-nav ul li ul li a .txt {
       font-weight: bold; }
@@ -951,7 +951,7 @@ ul.link-list li li ul.link-sublist {
       padding-top: 50px; }
       .mobile-nav.open li {
         display: block; }
-    .mobile-nav .wl-header {
+    .mobile-nav .wl-heading--list {
       display: none; }
     .mobile-nav ul li ul li a .txt {
       font-weight: bold; }

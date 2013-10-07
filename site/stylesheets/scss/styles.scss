@@ -231,9 +231,9 @@ ul.link-list li li  ul.link-sublist {
     .nav-heading {
         position: fixed;
         top: 70px;
+        left: 100px;
         z-index: 999;
         margin:0;
-        padding-left:20px;
         display: block;
         font-family:$Lato;
         font-size: $font_size_18px;

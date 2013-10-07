@@ -506,8 +506,8 @@ li.first {
       min-width: 480px;
       margin: 0;
       height: 40px;
-      top: 10px;
-      left: 14px;
+      top: 8px;
+      left: 5px;
       padding-bottom: 6px;
       z-index: 100; } }
   @media screen and (min-width: small-only) {
@@ -517,8 +517,8 @@ li.first {
       min-width: 480px;
       margin: 0;
       height: 40px;
-      top: 10px;
-      left: 14px;
+      top: 8px;
+      left: 5px;
       padding-bottom: 6px;
       z-index: 100; } }
   @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
@@ -838,9 +838,9 @@ ul.link-list li li ul.link-sublist {
   .nav-heading {
     position: fixed;
     top: 70px;
+    left: 100px;
     z-index: 999;
     margin: 0;
-    padding-left: 20px;
     display: block;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 1.5em;
@@ -946,9 +946,9 @@ ul.link-list li li ul.link-sublist {
   .nav-heading {
     position: fixed;
     top: 70px;
+    left: 100px;
     z-index: 999;
     margin: 0;
-    padding-left: 20px;
     display: block;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 1.5em;

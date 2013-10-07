@@ -506,7 +506,7 @@ li.first {
       min-width: 480px;
       margin: 0;
       height: 40px;
-      top: 8px;
+      top: 5px;
       left: 5px;
       padding-bottom: 6px;
       z-index: 100; } }
@@ -517,7 +517,7 @@ li.first {
       min-width: 480px;
       margin: 0;
       height: 40px;
-      top: 8px;
+      top: 5px;
       left: 5px;
       padding-bottom: 6px;
       z-index: 100; } }
@@ -574,37 +574,37 @@ ul.wl-list-styles-count {
   z-index: 100; }
   @media screen and (max-width: 30em) {
     .wl-dropdown {
-      width: 120px; }
+      width: 110px; }
       .wl-dropdown select#menu-select--sort {
-        height: 43px;
+        height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
       .wl-dropdown select#menu-select--size {
-        height: 43px;
+        height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
       .wl-dropdown select#menu-select--color {
-        height: 43px;
+        height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); } }
   @media screen and (min-width: small-only) {
     .wl-dropdown {
-      width: 120px; }
+      width: 110px; }
       .wl-dropdown select#menu-select--sort {
-        height: 43px;
+        height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
       .wl-dropdown select#menu-select--size {
-        height: 43px;
+        height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
       .wl-dropdown select#menu-select--color {
-        height: 43px;
+        height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); } }

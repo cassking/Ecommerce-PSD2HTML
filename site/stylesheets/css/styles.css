@@ -503,7 +503,7 @@ li.first {
     .options {
       background: transparent;
       position: fixed;
-      width: 100%;
+      min-width: 480px;
       margin: 0;
       height: 40px;
       top: 10px;
@@ -514,7 +514,7 @@ li.first {
     .options {
       background: transparent;
       position: fixed;
-      width: 100%;
+      min-width: 480px;
       margin: 0;
       height: 40px;
       top: 10px;

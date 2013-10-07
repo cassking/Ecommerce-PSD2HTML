@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="stylesheets/css/jquery.swipeshow.css"  />
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Josefin+Sans:400,600,700,400italic,700italic|Josefin+Slab:400,600,700|IM+Fell+Double+Pica:400,400italic|Bitter:400,700,400italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/jquery.swipeshow.min.js"></script>
 </head>
 <body class="l-products">
@@ -65,8 +65,8 @@
                         </select>
 						<span class="arrow"></span>
                     </div>
-					<div class="wl-dropdown" id="menu-select--size">
-						<select name="dropdown2">
+					<div class="wl-dropdown">
+						<select name="dropdown2" id="menu-select--size">
                             <option selected="selected">Shop by size</option>
 						  <option value="Dress one">Dress one</option>
 						  <option value="Dress two">Dress two</option>
@@ -758,7 +758,8 @@
         <!--SLI content ends-->
         <!--Aside  navigation content begins-->
         <div class="wl-appaside wl-cf" role="complementary">		
-            <div class="wl-appaside-category-container wl-cf clearfix"> 
+            <div class="wl-appaside-category-container wl-cf clearfix">
+            <h2 class="nav-heading"><span class="txt">shop by category</span></h2>
              <button class="nav-button">Toggle Navigation</button>
                     <ul class="link-list mobile-nav">
 				    <!--start secondary nav main ul-->

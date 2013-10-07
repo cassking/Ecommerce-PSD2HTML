@@ -159,7 +159,7 @@
     }
     .price {
         @include respond-to(small-only) {
-            :after{
+            :after {
                 display:block;
                 content: "more colors";
                 font-family: $Lato;
@@ -200,14 +200,14 @@ li.first {
 }
 .options {
     @include respond-to(small-only) {
-        width: 238px;
-        position: scroll;
-       
-        top: 90px;
-        height: auto;
+        background: transparent;
+        position: fixed;
+        width:475px;
+        height: 40px;
+        top: 10px;
+        left: 8px;
         padding-bottom: 6px;
         z-index: 100;
-        //border: 1px solid green;
     }
     @include respond-to(medium-only) {
         width: 475px;
@@ -263,8 +263,26 @@ ul.wl-list-styles-count {
 
 .wl-dropdown {
     @include respond-to(small-only) {
-    display:none;
-    }
+        width: 140px;
+          select#menu-select--sort {
+            height:40px;
+            -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+            -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+            box-shadow: 0 2px 3px rgba(0,0,0,.6);
+          }
+           select#menu-select--size{
+            height:40px;
+            -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+            -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+            box-shadow: 0 2px 3px rgba(0,0,0,.6);
+          }
+           select#menu-select--color{
+            height:40px;
+            -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+            -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+            box-shadow: 0 2px 3px rgba(0,0,0,.6);
+          }
+        }
     @include respond-to(medium-only) {
         margin-right: 11px;
             &:last-child {

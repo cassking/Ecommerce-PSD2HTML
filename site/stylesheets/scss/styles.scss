@@ -220,17 +220,30 @@ ul.link-list li li  ul.link-sublist {
 // ==========================================================================
 // ASIDE NAVIGATION FOR MOBILE VIEW
 // ==========================================================================
-// Hide the navigation button by default
+// Hide the navigation button and heading by default
 .nav-button { 
     display: none; 
 }
+.nav-heading {
+    display:none;
+}
  @include respond-to(small-only) {
+    .nav-heading {
+        position: fixed;
+        top: 70px;
+        z-index: 999;
+        margin:0;
+        padding:0;
+        display: block;
+        font-family:$Lato;
+        font-size: $font_size_18px;
+        text-transform: uppercase;
+    }
     .nav-button {
         display: block;
-        position: absolute;
-        top: 7px;
-        left: 7px;
-        //left: -5px;
+        position: fixed;
+        top: 64px;
+        left: 10px;
         width: 50px;
         height: 35px;
         background: url("../../images/menu-icon-large.png"), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
@@ -276,9 +289,11 @@ ul.link-list li li  ul.link-sublist {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        box-shadow: 0 1px 2px rgba(0,0,0,.6);
-        position: absolute;
-        top: 0px;
+        -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+        -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+        box-shadow: 0 2px 3px rgba(0,0,0,.6);
+        position: fixed;
+        top: 55px;
         left: 0px;
         z-index: 998;
         clear: both;
@@ -579,14 +594,15 @@ ul.link-list li li  ul.link-sublist {
 // ==========================================================================
 // Application breadcrumb navigation
 // ==========================================================================
-
 .wl-breadcrumbs {
     @include respond-to(small-only) { 
     float: none;
     font-size: 0.917em;
-    //margin: 0 auto;
     margin: 3px 3px 3px 0;
     width: auto;
+    ol.clearfix {
+        display:none;
+    }
     }    
     margin: 20px 0 15px 0;
     float: left;

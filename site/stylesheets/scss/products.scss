@@ -202,10 +202,11 @@ li.first {
     @include respond-to(small-only) {
         background: transparent;
         position: fixed;
-        width:475px;
+        width:100%;
+        margin: 0;
         height: 40px;
         top: 10px;
-        left: 8px;
+        left: 14px;
         padding-bottom: 6px;
         z-index: 100;
     }
@@ -263,7 +264,7 @@ ul.wl-list-styles-count {
 
 .wl-dropdown {
     @include respond-to(small-only) {
-        width: 140px;
+        width: 130px;
           select#menu-select--sort {
             height:40px;
             -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);

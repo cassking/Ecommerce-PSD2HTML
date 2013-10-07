@@ -576,38 +576,48 @@ ul.wl-list-styles-count {
     .wl-dropdown {
       width: 110px; }
       .wl-dropdown select#menu-select--sort {
+        font-family: "Lato", Arial, Helvetica, sans-serif;
         height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
       .wl-dropdown select#menu-select--size {
+        font-family: "Lato", Arial, Helvetica, sans-serif;
         height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
       .wl-dropdown select#menu-select--color {
+        font-family: "Lato", Arial, Helvetica, sans-serif;
         height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); } }
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+      .wl-dropdown span.arrow {
+        margin: -25px 10px 0 0; } }
   @media screen and (min-width: small-only) {
     .wl-dropdown {
       width: 110px; }
       .wl-dropdown select#menu-select--sort {
+        font-family: "Lato", Arial, Helvetica, sans-serif;
         height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
       .wl-dropdown select#menu-select--size {
+        font-family: "Lato", Arial, Helvetica, sans-serif;
         height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
       .wl-dropdown select#menu-select--color {
+        font-family: "Lato", Arial, Helvetica, sans-serif;
         height: 45px;
         -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
         -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); } }
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+      .wl-dropdown span.arrow {
+        margin: -25px 10px 0 0; } }
   @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
     .wl-dropdown {
       margin-right: 11px; }

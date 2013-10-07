@@ -265,24 +265,30 @@ ul.wl-list-styles-count {
 .wl-dropdown {
     @include respond-to(small-only) {
         width: 110px;
-          select#menu-select--sort {
+        select#menu-select--sort {
+            font-family:$Lato;
             height:45px;
             -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
             -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
             box-shadow: 0 2px 3px rgba(0,0,0,.6);
           }
-           select#menu-select--size{
+        select#menu-select--size {
+            font-family:$Lato;
             height:45px;
             -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
             -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
             box-shadow: 0 2px 3px rgba(0,0,0,.6);
           }
-           select#menu-select--color{
+        select#menu-select--color {
+            font-family:$Lato;
             height:45px;
             -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
             -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
             box-shadow: 0 2px 3px rgba(0,0,0,.6);
           }
+        span.arrow {
+            margin: -25px 10px 0 0;
+            }
         }
     @include respond-to(medium-only) {
         margin-right: 11px;

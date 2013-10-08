@@ -20,8 +20,8 @@
     <!--[if (lt IE 9)&(!IEMobile)]>
     <link rel="stylesheet" type="text/css" media="all" href="/resources/weblinc/stylesheets/css/no-media-queries.css" />
     <![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/jquery.swipeshow.min.js"></script>
 </head>
 <body class="l-products">
@@ -108,18 +108,13 @@
                                 		<div class="equalheightgroup wl-cf">
                                 			<dl class="swatches clearfix"> <!--start color swatches-->
                                     		<dd>
-                                                    <a class="swatch" href="http://images4.freepeople.com/is/image/FreePeople/28209864_040_a?$browse-lt$" title="Deep Sea Blue" rel="nofollow">
-                                                        <img src="http://images1.freepeople.com/is/image/FreePeople/28209864_040_swatch?$swatch-sm$" alt="Deep Sea Blue" data-color-option-id="BEE1C344-4601-4985-97DB-EB5BCFE2AD06">
-                                                    </a>
+                                               
                                             </dd>
                                             <dd>
-                                                    <a class="swatch" href="http://images1.freepeople.com/is/image/FreePeople/28209864_070_a?$browse-lt$" title="Inca Gold" rel="nofollow">
-                                                        <img src="http://images3.freepeople.com/is/image/FreePeople/28209864_070_swatch?$swatch-sm$" alt="Inca Gold" data-color-option-id="B075318A-4CE8-403C-90AB-69F77886252D">
-                                                    </a>
-                                            </dd>
+                                                  
                                             <dd>
                                                     <a class="swatch text" href="#" title="#" rel="nofollow">
-                                                     +4
+                                                    
                                                     </a>
                                             </dd>
                                 		</dl><!--end color swatches-->
@@ -934,7 +929,36 @@
             });    
         });
     </script>
-   
+   <script>
+
+   $(function(){
+  // Bind the resize event. When the window size changes, update its corresponding
+  // info div.
+  $(window).resize(function(){
+    var elem = $(this);
+    
+    // Update the info div width and height - replace this with your own code
+    // to do something useful!
+    $('span.info').text( 'more text here' + elem.width() + ', momre text here ' + elem.height() );
+  });
+  
+  // Updates the info div immediately.
+  $(window).resize();
+});
+
+
+   </script>
+
+<script>
+$(function(){
+    if ($('a.text').length) {
+    $("a.text").text("more colors here");
+}
+});
+
+
+</script>
+  
   
 	<!--All JS ends-->
 </body>

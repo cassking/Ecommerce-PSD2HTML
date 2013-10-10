@@ -54,40 +54,56 @@
 		<div class="wl-appmain wl-cf" role="main">
 			<div class="wl-productbrowse clearfix" data-source="v-product-browsepagetemplate">
 				<div class="wl-form-container clearfix">
-				<div class="wl-form-options clearfix"> 
-                    <form name="freepeopleform" action="#" method="POST">
-    					<div class="wl-dropdown"> 
-    						<select name="dropdown1" id="menu-select--sort">
-                                <option selected="selected">Sort by</option>
-                                <option value="Dress one">Dress one</option>
-                                <option value="Dress two">Dress two</option>
-                                <option value="Dress three">Dress three</option>
-                            </select>
-    						<span class="arrow"></span>
-                        </div>
-    					<div class="wl-dropdown" id="menu-select--size">
-    						<select name="dropdown2">
-                                <option selected="selected">Shop by size</option>
-        						<option value="Dress one">Dress one</option>
-        						<option value="Dress two">Dress two</option>
-        						<option value="Dress three">Dress three</option>
-    						</select>
-    						<span class="arrow"></span>
-    					</div>
-    					<div class="wl-dropdown">
-    						<select name="dropdown3" id="menu-select--color">
-                                <option selected="selected">Shop by Color</option>
-        						<option value="Dress one">Dress one</option>
-        						<option value="Dress two">Dress two</option>
-        						<option value="Dress three">Dress three</option>
-    						</select>
-    						<span class="arrow"></span>
-    					</div>
-					</form>
-				</div>
-				<ul class="wl-list-styles-count">
-                    <li><span class="txt">76 Styles</span></li>
-                </ul>
+    				<div class="wl-property-group--row wl-property-group wl-form-options clearfix"> 
+                        <form name="freepeopleform" action="we" method="POST">
+        					<div class="wl-dropdown wl-property"> 
+                                <label for="sort" id="sort" class="select-sort">
+                                    <div class="wl-value">
+                						<select name="dropdown1" id="menu-select--sort">
+                                            <option selected="selected">Sort by</option>
+                                            <option value="Dress one">Dress one</option>
+                                            <option value="Dress two">Dress two</option>
+                                            <option value="Dress three">Dress three</option>
+                                        </select>
+                                    </div>
+        						<span class="arrow"></span>
+                            </div>
+        					<div class="wl-dropdown wl-property" id="menu-select--size">
+                                <label for="size" id="size" class="select-size">
+                                    <div class="wl-value">
+                						<select name="dropdown2">
+                                            <option selected="selected">Shop by size</option>
+                    						<option value="Dress one">Dress one</option>
+                    						<option value="Dress two">Dress two</option>
+                    						<option value="Dress three">Dress three</option>
+                						</select>
+                                    </div>
+        						<span class="arrow"></span>
+        					</div>
+        					<div class="wl-dropdown wl-property">
+                                <label for="color" id="color" class="select-color">
+                                    <div class="wl-value">
+                						<select name="dropdown3" id="menu-select--color">
+                                            <option selected="selected">Shop by Color</option>
+                    						<option value="Dress one">Dress one</option>
+                    						<option value="Dress two">Dress two</option>
+                    						<option value="Dress three">Dress three</option>
+                						</select>
+                                    </div>
+        						<span class="arrow"></span>
+        					</div>
+                            <div class="wl-action">
+                                <noscript>
+                                    <input type="submit" value="Submit" id="submit" class="button" />
+                                </noscript>
+                            </div>
+    					</form>
+    				</div>
+				
+                    <ul class="wl-list-styles-count">
+                        <li class="txt">76 Styles</li>
+                    </ul>
+                
 				</div>
 				<div class="products-grid wl-productfeed wl-cf" data-source="v-product-thumbnails">
 					<div class="products-wrap">

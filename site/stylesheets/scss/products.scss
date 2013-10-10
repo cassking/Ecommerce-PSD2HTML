@@ -195,7 +195,15 @@ li.first {
     width: auto;
     height: 30px;
 }
-.wl-form-options {
+.wl-property-group--row, 
+.wl-property-group,
+.wl-property,
+.wl-action {
+    padding: 0;
+    margin: 0;
+}
+
+ .wl-form-options{
     @include respond-to(small-only) {
         width: 238px;
         top: 90px;
@@ -204,9 +212,10 @@ li.first {
         z-index: 100;
     }
     @include respond-to(medium-only) {
-        width: 475px;
+        min-width: 475px;
     }
-    width: 469px;
+   
+    width: 470px;
     float: left;
     height: 27px;
     margin: 0;
@@ -239,7 +248,7 @@ li.first {
     }
     float: right;
     list-style: none;
-    li .txt {
+    .txt {
         font-family: $Serif;
         font-style:italic;
         color: $mediumGrey;
@@ -247,6 +256,7 @@ li.first {
         background-color: $white;
     } 
 }
+
 
 // ==========================================================================
 // Application products Browse Refinements drop down menu
@@ -257,7 +267,7 @@ li.first {
     display:none;
     }
     @include respond-to(medium-only) {
-        margin-right: 11px;
+        margin-right: 7px;
             &:last-child {
             margin-right: 0;
             }

@@ -485,66 +485,66 @@ li.first {
   @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
     .wl-form-container {
       width: 470px; } }
-
-.wl-form-options {
-  width: 469px;
-  float: left;
-  height: 27px;
-  margin: 0;
-  padding: 0;
-  background: white; }
-  @media screen and (max-width: 30em) {
-    .wl-form-options {
-      width: 238px;
-      top: 90px;
-      height: auto;
-      padding-bottom: 6px;
-      z-index: 100; } }
-  @media screen and (min-width: small-only) {
-    .wl-form-options {
-      width: 238px;
-      top: 90px;
-      height: auto;
-      padding-bottom: 6px;
-      z-index: 100; } }
-  @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
-    .wl-form-options {
-      width: 475px; } }
-
-.wl-list-styles-count {
-  float: right;
-  list-style: none; }
-  .wl-list-styles-count :before {
+  .wl-form-container .wl-form-options {
+    width: 100%;
+    float: left;
+    height: 27px;
+    margin: 0;
     padding: 0;
-    background: url("../../images/borders/border-25.png");
-    content: '';
-    display: block;
-    position: absolute;
-    top: 1em;
-    margin-left: -450px;
-    margin-top: 48px;
-    height: 1px;
-    width: 450px;
-    z-index: -1; }
+    background: white; }
+    @media screen and (max-width: 30em) {
+      .wl-form-container .wl-form-options {
+        width: 238px;
+        top: 90px;
+        height: auto;
+        padding-bottom: 6px;
+        z-index: 100; } }
+    @media screen and (min-width: small-only) {
+      .wl-form-container .wl-form-options {
+        width: 238px;
+        top: 90px;
+        height: auto;
+        padding-bottom: 6px;
+        z-index: 100; } }
     @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
-      .wl-list-styles-count :before {
-        background: none; } }
-  @media screen and (max-width: 30em) {
-    .wl-list-styles-count {
-      margin-top: -56px; } }
-  @media screen and (min-width: small-only) {
-    .wl-list-styles-count {
-      margin-top: -56px; } }
-  @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
-    .wl-list-styles-count {
-      margin-top: -55px;
-      margin-right: 20px; } }
-  .wl-list-styles-count li .txt {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
-    color: #828282;
-    padding-left: 6px;
-    background-color: white; }
+      .wl-form-container .wl-form-options {
+        width: 475px; } }
+  .wl-form-container .wl-list-styles-count {
+    border: 1px solid red;
+    margin-top: -55px;
+    float: right;
+    list-style: none; }
+    .wl-form-container .wl-list-styles-count :before {
+      padding: 0;
+      background: url("../../images/borders/border-25.png");
+      content: '';
+      display: block;
+      position: absolute;
+      top: 1em;
+      margin-left: -450px;
+      margin-top: 48px;
+      height: 1px;
+      width: 450px;
+      z-index: -1; }
+      @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
+        .wl-form-container .wl-list-styles-count :before {
+          background: none; } }
+    @media screen and (max-width: 30em) {
+      .wl-form-container .wl-list-styles-count {
+        margin-top: -56px; } }
+    @media screen and (min-width: small-only) {
+      .wl-form-container .wl-list-styles-count {
+        margin-top: -56px; } }
+    @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
+      .wl-form-container .wl-list-styles-count {
+        margin-top: -55px;
+        margin-right: 20px; } }
+    .wl-form-container .wl-list-styles-count li .txt {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-style: italic;
+      color: red;
+      padding-left: 6px;
+      background-color: white; }
 
 .wl-dropdown {
   margin-right: 5px;

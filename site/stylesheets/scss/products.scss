@@ -188,10 +188,7 @@ li.first {
 // ==========================================================================
 
 .wl-form-container {
-    @include respond-to(small-only) { 
-        width: 470px;
-    }
-    @include respond-to(medium-only) { 
+   @include respond-to(medium-only) { 
         width: 470px;
     }
     background: transparent;
@@ -220,7 +217,7 @@ li.first {
     padding:0;
     background:$white;
 }
-ul.wl-list-styles-count {
+.wl-list-styles-count {
     :before {
         padding: 0;
         background: url("../../images/borders/border-25.png") ;
@@ -233,9 +230,6 @@ ul.wl-list-styles-count {
         height:1px;
         width: 450px;
         z-index:-1;
-        @include respond-to(small-only) { 
-            background: none;
-        }
         @include respond-to(medium-only) { 
             background: none;
         }
@@ -249,7 +243,7 @@ ul.wl-list-styles-count {
     }
     float: right;
     list-style: none;
-    .txt {
+    li .txt {
         font-family: $Serif;
         font-style:italic;
         color: $mediumGrey;

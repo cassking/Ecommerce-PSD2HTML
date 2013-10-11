@@ -2,13 +2,13 @@
 
 
 /*======================================================================
-    product images
+product images
 ----------------------------------------------------------------------*/
 .wl-productimg {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 // ==========================================================================
@@ -16,170 +16,168 @@
 // ==========================================================================
 
 .wl-productbrowse {
-    padding: 0;
-    @include respond-to(small-only) {
+  padding: 0;
+  @include respond-to(small-only) {
     margin: 0 auto;
     float: none;
     max-width: 500px;
     min-width: 445px;        
-    }
-    @include respond-to(medium-only) {
-    max-width: 500px;       
-        }
+}
+@include respond-to(medium-only) {
+  max-width: 500px;       
+}
 }
 .wl-products {
-    margin: 0;
-    padding:0;    
+  margin: 0;
+  padding:0;    
 }
 .wl-product {
-    list-style: none;
-    float: left;
-    padding: 0;
-    margin-left: 4px;
-    .image {
-        @include respond-to(small-only) {
-            max-width: 150px; 
-            max-height:197px;     
-        }
-        @include respond-to(medium-only) {
-             min-width: 236px;  //prevents resizing in Safari when scaling page         
-        }
-        text-align: center;
-        position: relative;
-        margin: 0 auto;
-        width: 236px;
-        height: 315px;
-            img {
-            width: 100%;
-            }    
-        } 
-    .swatches {
-
-      @include respond-to(small-only) {
-        display:none;
-      }
-        list-style: none;
-        margin: 0;
-        dd {
-            float:left;
-            margin: 0 2px 0 -4px;
-            line-height: 1.3;
-            a {
-                text-decoration: none;
-                color: $pink;
-                margin-left: 5px;
-                }
-            img {
-                 height: 20px;
-                 width: 20px;
-                }
-            }
-    }  
+  list-style: none;
+  float: left;
+  padding: 0;
+  margin-left: 4px;
+  .image {
+    @include respond-to(small-only) {
+      max-width: 150px; 
+      max-height:197px;     
+  }
+  @include respond-to(medium-only) {
+    min-width: 236px;  //prevents resizing in Safari when scaling page         
+  }
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: 236px;
+  height: 315px;
+    img {
+      width: 100%;
+    }    
+  } 
+  .swatches {
+    @include respond-to(small-only) {
+      display:none;
+  }
+  list-style: none;
+  margin: 0;
+    dd {
+      float:left;
+      margin: 0 2px 0 -4px;
+      line-height: 1.3;
+    a {
+      text-decoration: none;
+      color: $pink;
+      margin-left: 5px;
+    }
+    img {
+      height: 20px;
+      width: 20px;
+    }
+    }
+  }  
 }     
 .overlay  {
-      @include respond-to(small-only) {
-       max-height: 190px;
-      }  
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    height: 315px;
-        &:hover {
-            opacity: .90;
-            -webkit-opacity: .90;
-            -moz-opacity: .90;
-            -o-opacity: .90;
-            -ms-opacity: .90;
-        } 
+  @include respond-to(small-only) {
+    max-height: 190px;
+}  
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 315px;
+    &:hover {
+      opacity: .90;
+      -webkit-opacity: .90;
+      -moz-opacity: .90;
+      -o-opacity: .90;
+      -ms-opacity: .90;
+    } 
 }
 .quickview {
-    text-indent: -9999em;
-    display: inline-block;
-    position: absolute;
-    right: 3px;
-    bottom: 6px;
-    width: 33px;
-    height: 33px; 
-        &:hover {
-            background: url("../../images/sprites.png") no-repeat;
-            background-position: -40px -360px;
-            z-index: 100;
-        }
-        &:active, &:focus {
-            background: transparent url("../../images/sprites.png") no-repeat;
-            background-position: -79px -360px;
-        }
+  text-indent: -9999em;
+  display: inline-block;
+  position: absolute;
+  right: 3px;
+  bottom: 6px;
+  width: 33px;
+  height: 33px; 
+    &:hover {
+      background: url("../../images/sprites.png") no-repeat;
+      background-position: -40px -360px;
+      z-index: 100;
+    }
+    &:active, &:focus {
+      background: transparent url("../../images/sprites.png") no-repeat;
+      background-position: -79px -360px;
+    }
 } 
 .video-link {
-    text-indent: -9999em;
-    display: inline-block;
-    position: absolute;
-    left: 6px;
-    top: 6px;
-    width: 25px;
-    height: 25px;
-    background: transparent url("../../images/sprites.png") no-repeat;
-    background-position: -307px -277px;
-    z-index: 100;
+  text-indent: -9999em;
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 25px;
+  height: 25px;
+  background: transparent url("../../images/sprites.png") no-repeat;
+  background-position: -307px -277px;
+  z-index: 100;
     &:hover {  
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -277px -277px;
-        z-index: 100;
-    }          
+      background: transparent url("../../images/sprites.png") no-repeat;
+      background-position: -277px -277px;
+      z-index: 100;
+  }          
 }
 .badge {
-    text-indent: -9999em;
-    display: inline-block;
-    position: absolute;
-    right: 3px;
-    top: 6px;
-    width: 37px;
-    height: 37px;
-    background: transparent url("../../images/sprites.png") no-repeat;
-    background-position: -75px -317px;
+  text-indent: -9999em;
+  display: inline-block;
+  position: absolute;
+  right: 3px;
+  top: 6px;
+  width: 37px;
+  height: 37px;
+  background: transparent url("../../images/sprites.png") no-repeat;
+  background-position: -75px -317px;
 }
 .info {
- @include respond-to(small-only) {
+  @include respond-to(small-only) {
     max-width: 150px;
     margin-left: 2px;
-
-        h2 {
-            font-size: $font_size_11px;
-        }
-        div.equalheightgroup {
-            height:20px;
-        }   
-}
-    margin-top: 3px;
-    .equalheightgroup {
-        min-height:40px;
-        @include respond-to(small-only) {
-            min-height:20px;
-        }
+      h2 {
+        font-size: $font_size_11px;
+      }
+    div.equalheightgroup {
+      height:20px;
+    }   
+  }
+  margin-top: 3px;
+  .equalheightgroup {
+    min-height:40px;
+    @include respond-to(small-only) {
+      min-height:20px;
     }
-    .price {
-        @include respond-to(small-only) {
-            :after {
-                display:block;
-                content: "more colors";
-                font-family: $Lato;
-                font-size:$font_size_9px;
-                text-transform: uppercase;
-                color: $hotPink;
-            }
-        }
-    }  
+  }
+  .price {
+    @include respond-to(small-only) {
+      :after {
+          display:block;
+          content: "more colors";
+          font-family: $Lato;
+          font-size:$font_size_9px;
+          text-transform: uppercase;
+          color: $hotPink;
+      }
+    }
+  }  
 }
 li.first {
-    margin-left: 0;
+  margin-left: 0;
 }
 .name {
-    text-align: left;
-    margin: 4px 0 4px 0;
+  text-align: left;
+  margin: 4px 0 4px 0;
     a {
-        text-decoration: none;
-        font-style:normal;
-        color: $darkGrey;
+      text-decoration: none;
+      font-style:normal;
+      color: $darkGrey;
     }
 }
 
@@ -188,87 +186,87 @@ li.first {
 // ==========================================================================
 
 .wl-form-container {
-   @include respond-to(medium-only) { 
-        width: 470px;
-    }
-    background: transparent;
-    width: auto;
-    height: 30px;
+  @include respond-to(medium-only) { 
+    width: 470px;
+  }
+  background: transparent;
+  width: auto;
+  height: 30px;
 }
 .wl-property-group--row, 
 .wl-property-group,
 .wl-property,
 .wl-action {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .wl-action { 
-    position: absolute;
-    left: 705px;
-    z-index: 99999;
-        input.wl-button { 
-            padding: 3px;
-            width: 80px;   
-        }
+  position: absolute;
+  left: 705px;
+  z-index: 99999;
+    input.wl-button { 
+      padding: 3px;
+      width: 80px;   
+    }
 }
 .wl-form-options {
-    @include respond-to(small-only) {
-        background: transparent;
-        position: fixed;
-        min-width:480px;
-        margin: 0;
-        height: 40px;
-        top: 5px;
-        left: 5px;
-        padding-bottom: 6px;
-        z-index: 100;
-    }
-    @include respond-to(medium-only) {
-        width: 475px;
-    }
-    width: 469px;
-    float: left;
-    height: 27px;
+  @include respond-to(small-only) {
+    background: transparent;
+    position: fixed;
+    min-width:480px;
     margin: 0;
-    padding:0;
-    background:$white;
+    height: 40px;
+    top: 5px;
+    left: 5px;
+    padding-bottom: 6px;
+    z-index: 100;
+  }
+  @include respond-to(medium-only) {
+    width: 475px;
+  }
+  width: 469px;
+  float: left;
+  height: 27px;
+  margin: 0;
+  padding:0;
+  background:$white;
 }
 .wl-list-styles-count {
+  :before {
+    padding: 0;
+    background: url("../../images/borders/border-25.png") ;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1em;
+    margin-left: -450px;
+    margin-top: 48px;
+    height:1px;
+    width: 450px;
+    z-index:-1;
+      @include respond-to(medium-only) { 
+        background: none;
+      }
+  }
+  @include respond-to(small-only) {
+    margin-top: -56px;
     :before {
-        padding: 0;
-        background: url("../../images/borders/border-25.png") ;
-        content: '';
-        display: block;
-        position: absolute;
-        top: 1em;
-        margin-left: -450px;
-        margin-top: 48px;
-        height:1px;
-        width: 450px;
-        z-index:-1;
-        @include respond-to(medium-only) { 
-            background: none;
-        }
+      background:none ;
     }
-    @include respond-to(small-only) {
-        margin-top: -56px;
-       :before {
-        background:none ;
-        }
-    }
-    @include respond-to(medium-only) {
-        margin-top: -55px;
-        margin-right: 20px;
-    }
-    float: right;
-    list-style: none;
-    .txt {
-        font-family: $Serif;
-        font-style:italic;
-        color: $mediumGrey;
-        padding-left: 6px;
-        background-color: $white;
-    } 
+  }
+  @include respond-to(medium-only) {
+    margin-top: -55px;
+    margin-right: 20px;
+  }
+  float: right;
+  list-style: none;
+  .txt {
+    font-family: $Serif;
+    font-style:italic;
+    color: $mediumGrey;
+    padding-left: 6px;
+    background-color: $white;
+  } 
 }
 
 // ==========================================================================
@@ -276,57 +274,57 @@ li.first {
 // ==========================================================================
 
 .wl-dropdown {
-    @include respond-to(small-only) {
-        width: 110px;
-        .wl-value select{
-        text-indent: 0;
-            font-family:$Lato;
-            height: 45px;
-            -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
-            -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
-            box-shadow: 0 2px 3px rgba(0,0,0,.6);
-          }
-        span.arrow {
-            margin: -25px 10px 0 0;
-            }
-        }
-    @include respond-to(medium-only) {
-        margin-right: 7px;
-            &:last-child {
-            margin-right: 0;
-            }
+  @include respond-to(small-only) {
+    width: 110px;
+    .wl-value select{
+      text-indent: 0;
+      font-family:$Lato;
+      height: 45px;
+      -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+      -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+      box-shadow: 0 2px 3px rgba(0,0,0,.6);
     }
-    margin-right: 5px;
-    float: left;
-    width: 151px;
-    height: 20px;
-    z-index: 100;
-    select {
-        -moz-appearance: button;  //* Firefox hides arrow */
-        text-indent: 5px;  //* Firefox hides arrow */
-        text-overflow: ''; //* Firefox hides arrow */
-        -webkit-appearance: none; //* Safari   */    
-        background:$white;
-        height:25px;
-        border-width: 1px;
-        border-style: solid;
-        -moz-border-image:url("../../images/borders/border-50.png") 10 10 round; //* FFOx */ 
-        -webkit-border-image:url("../../images/borders/border-50.png") 10 10 round; //* Safari   */
-        -o-border-image:url("../../images/borders/border-50.png") 10 10 round; //* Opera */
-        border-image:url("../../images/borders/border-50.png") 10 10 round;
-        width: 100%;
-        padding-left:16px;
-        font-family: $Serif;
-        font-style: italic;
-    }   
-    .arrow {
-        float: right;
-        display:  block;
-        position: relative;
-        margin: -15px 10px 0 0;
-        width: 10px;
-        height: 6px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -80px -480px;
+    span.arrow {
+    margin: -25px 10px 0 0;
     }
+  }
+  @include respond-to(medium-only) {
+    margin-right: 7px;
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+  margin-right: 5px;
+  float: left;
+  width: 151px;
+  height: 20px;
+  z-index: 100;
+  select {
+    -moz-appearance: button;  //* Firefox hides arrow */
+    text-indent: 5px;  //* Firefox hides arrow */
+    text-overflow: ''; //* Firefox hides arrow */
+    -webkit-appearance: none; //* Safari   */    
+    background:$white;
+    height:25px;
+    border-width: 1px;
+    border-style: solid;
+    -moz-border-image:url("../../images/borders/border-50.png") 10 10 round; //* FFOx */ 
+    -webkit-border-image:url("../../images/borders/border-50.png") 10 10 round; //* Safari   */
+    -o-border-image:url("../../images/borders/border-50.png") 10 10 round; //* Opera */
+    border-image:url("../../images/borders/border-50.png") 10 10 round;
+    width: 100%;
+    padding-left:16px;
+    font-family: $Serif;
+    font-style: italic;
+  }   
+  .arrow {
+    float: right;
+    display:  block;
+    position: relative;
+    margin: -15px 10px 0 0;
+    width: 10px;
+    height: 6px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -80px -480px;
+  }
 }

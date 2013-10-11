@@ -14,9 +14,7 @@
     position: relative;
     margin: 0 auto;
     padding: 0;
-    //border: 1px solid #ccc; 
 }
-
 .home .wl-appwrapper {
     z-index: 400;
 }
@@ -29,7 +27,6 @@
         max-width:700px;//to present columns of two items at a time
     }
     position: relative;
-    //display: table;
     overflow:inherit;
     width: 1200px;
     min-height: 300px;
@@ -58,11 +55,11 @@
 ///ASIDE NAVIGATION
 .wl-appaside {
     @include respond-to(small-only) { 
-    min-width:225px;
-    float: none;
+        min-width:225px;
+        float: none;
     }
     @include respond-to(medium-only) { 
-    min-width:218px;   
+        min-width:218px;   
     }
     padding: 0; 
     float:left;
@@ -99,262 +96,259 @@
     margin: 0;
     padding: 0; 
         a {
-        &:hover {
-        background-color: $lightBlue;
-        }
+            &:hover {
+                background-color: $lightBlue;
+            }
         color: #828282;
         text-decoration: none; 
         }
 }
 .wl-heading--list {
-    background: transparent;
-    text-align:center;
-    display: block;
-    margin-left:-5px;
-    padding: 0;
-    margin-top: -13px;
-       .txt {
-        background-color: #fff;
-        padding: 0 7px 0 7px;
-       }
+  background: transparent;
+  text-align:center;
+  display: block;
+  margin-left:-5px;
+  padding: 0;
+  margin-top: -13px;
+  .txt {
+    background-color: #fff;
+    padding: 0 7px 0 7px;
+  }
 }
 .link-item {
-    font-family: $Lato;
-    text-transform: uppercase;
-        .arrow {
-        display: none;
-        position: relative;
-        margin: 0 0 1px 5px;
-        width: 11px;
-        height: 8px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -80px -480px;
-        }
-        .link-item--dresses a .txt {
-        color: $defaultGrey;
-        }
+  font-family: $Lato;
+  text-transform: uppercase;
+  .arrow {
+    display: none;
+    position: relative;
+    margin: 0 0 1px 5px;
+    width: 11px;
+    height: 8px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -80px -480px;
+  }
+  .link-item--dresses a .txt {
+    color: $defaultGrey;
+  }
 }
 .link-item .link-item--shop-by-shape a .txt {
-    color: $pink;
+  color: $pink;
 }
 .link-item--shop-by-shape {
-        .arrow {
-        display:none;
-        position: relative;
-        margin: 0 0 1px 5px;
-        width: 11px;
-        height: 8px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -160px -480px;
-        }  
-          
+  .arrow {
+    display:none;
+    position: relative;
+    margin: 0 0 1px 5px;
+    width: 11px;
+    height: 8px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -160px -480px;
+  }  
+
 }
 // THIS FOR USE WITH FP LABELS SWIPESHOW SCRIPT
 .accordionExpanded {
-    .arrow {
-        display: inline-block;
-        position: relative;
-        margin: 0 0 1px 5px;
-        width: 11px;
-        height: 8px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -80px -480px;
-        } 
-       .arrow--shape {
-        display: inline-block;
-        position: relative;
-        margin: 0 0 1px 5px;
-        width: 11px;
-        height: 8px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -160px -480px;
-        } 
-    
+  .arrow {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 1px 5px;
+    width: 11px;
+    height: 8px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -80px -480px;
+  } 
+  .arrow--shape {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 1px 5px;
+    width: 11px;
+    height: 8px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -160px -480px;
+  } 
+
 }
 ul.link-list li li  ul.link-sublist {
-    display: none;
+  display: none;
 }
 .link-item .link-sublist .link-item .link {
-    @include respond-to(small-only) { 
+  @include respond-to(small-only) { 
     padding-top: 5px;
     padding-bottom: 5px;
-    }
-    @include respond-to(medium-only) { 
+  }
+  @include respond-to(medium-only) { 
     padding-top: 5px;
     padding-bottom: 5px;
-    }
-    display: block;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    &:hover {
+  }
+  display: block;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &:hover {
     background-color: $lightGrey;
     color: $defaultGrey;
-    }  
+  }  
 }
 .link-item .link-sublist .link-item .link-sublist .link-item .link {
-    display: block;
-    padding-left: 33px;
-    &:hover {
+  display: block;
+  padding-left: 33px;
+  &:hover {
     background-color: $lightGrey;
     color: $defaultGrey;
-    }  
+  }  
 }
 .link-item .link-sublist .link-item .link-sublist .link-item--shop-by-shape .link-item .link {
-    display: block;
-    padding-left: 45px;
-    &:hover {
+  display: block;
+  padding-left: 45px;
+  &:hover {
     background-color: $lightGrey;
     color: $defaultGrey;
-    }
-   .txt:first-child {
+  }
+  .txt:first-child {
     padding-bottom: 0;
-    }   
+  }   
 }
 .link-group {
- 
-    position: relative;
-    padding: 1px;
-    margin: 0 0 15px 0;   
+position: relative;
+padding: 1px;
+margin: 0 0 15px 0;   
 }
 // ==========================================================================
 // ASIDE NAVIGATION FOR MOBILE VIEW
 // ==========================================================================
 // Hide the navigation button and heading by default
 .nav-button { 
-    display: none; 
+  display: none; 
 }
 .nav-heading {
-    display:none;
+  display:none;
 }
- @include respond-to(small-only) {
-    .nav-heading {
-        position: fixed;
-        top: 70px;
-        left: 100px;
-        z-index: 999;
-        margin:0;
-        display: block;
-        font-family:$Lato;
-        font-size: $font_size_18px;
-        text-transform: uppercase;
+@include respond-to(small-only) {
+  .nav-heading {
+    position: fixed;
+    top: 70px;
+    left: 100px;
+    z-index: 999;
+    margin:0;
+    display: block;
+    font-family:$Lato;
+    font-size: $font_size_18px;
+    text-transform: uppercase;
+  }
+  .nav-button {
+    display: block;
+    position: fixed;
+    top: 64px;
+    left: 10px;
+    width: 50px;
+    height: 35px;
+    background: url("../../images/menu-icon-large.png"), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    background: url("../../images/menu-icon-large.png"),    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    background: url("../../images/menu-icon-large.png"),     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    background: url("../../images/menu-icon-large.png"),      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 21px, 100%;
+    cursor: pointer;
+    border: 0 none;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
+    border-radius: 5px;
+    z-index: 999;
+    text-indent: -9999px;
+    &:hover {
+      background-color: rgba(0,0,0,.1); 
     }
-    .nav-button {
-        display: block;
-        position: fixed;
-        top: 64px;
-        left: 10px;
-        width: 50px;
-        height: 35px;
-        background: url("../../images/menu-icon-large.png"), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-        background: url("../../images/menu-icon-large.png"),    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-        background: url("../../images/menu-icon-large.png"),     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-        background: url("../../images/menu-icon-large.png"),      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 21px, 100%;
-        cursor: pointer;
-        border: 0 none;
-        border-bottom: 1px solid rgba(255,255,255,.1);
-        box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
-        border-radius: 5px;
-        z-index: 999;
-        text-indent: -9999px;
-        &:hover {
-            background-color: rgba(0,0,0,.1); 
+    .open {
+      background: url("../../images/close-icon-large.png"), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+      background: url("../../images/close-icon-large.png"),    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+      background: url("../../images/close-icon-large.png"),     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+      background: url("../../images/close-icon-large.png"),      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 21px, 100%;   
+    }
+  } 
+  .mobile-nav {
+    &.open {
+      height: auto; 
+      padding-top: 50px;
+      li { 
+          display: block; 
+      }
+    }
+    width: 100%;
+    float: none;
+    background-color: #ffffff; /* change the menu color */
+    display: block;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
+    box-shadow: 0 2px 3px rgba(0,0,0,.6);
+    position: fixed;
+    top: 55px;
+    left: 0px;
+    z-index: 998;
+    clear: both;
+    border-width: 1px;
+    border-style: solid; 
+    -webkit-border-image:url("../../images/borders/border-50.png") 10 10 round; /* Safari  */
+    -o-border-image:url("../../images/borders/border-50.png") 10 10 round; /* Opera */
+    border-image:url("../../images/borders/border-50.png") 10 10 round;
+    .wl-heading--list {
+      display:none;
+    }
+    ul li ul li {
+    a  {
+        .txt {
+            font-weight: bold;
         }
-        .open {
-            background: url("../../images/close-icon-large.png"), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-            background: url("../../images/close-icon-large.png"),    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-            background: url("../../images/close-icon-large.png"),     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-            background: url("../../images/close-icon-large.png"),      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: 21px, 100%;   
-        }
-    } 
-    .mobile-nav {
-        &.open {
-            height: auto; 
-            padding-top: 50px;
-            li { 
-                display: block; 
-            }
-        }
-        width: 100%;
-        float: none;
-        background-color: #ffffff; /* change the menu color */
-        display: block;
-        height: 50px;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        -moz-box-shadow: 0 2px 3px rgba(0,0,0,.6);
-        -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.6);
-        box-shadow: 0 2px 3px rgba(0,0,0,.6);
-        position: fixed;
-        top: 55px;
-        left: 0px;
-        z-index: 998;
-        clear: both;
-        border-width: 1px;
-        border-style: solid; 
-        -webkit-border-image:url("../../images/borders/border-50.png") 10 10 round; /* Safari  */
-        -o-border-image:url("../../images/borders/border-50.png") 10 10 round; /* Opera */
-        border-image:url("../../images/borders/border-50.png") 10 10 round;
-        .wl-heading--list {
-            display:none;
-        }
-        ul li ul li {
-            a  {
-                .txt {
-                    font-weight: bold;
-                }
-            }
-        }
-        li {
+    }
+    }
+    li {
+    display: none;
+    width: 100%;
+        ul {
             display: none;
-            width: 100%;
-                ul {
-                    display: none;
-                    background-color:  #f7f7f7;
-                    border-top: 0 none;
-                    padding: 0;
-                    a {
-                        border: 0 none;
-                        //font-size: $font_size_18px;
-                        //font-size: 12px;
-                        font-size:medium;
-                        padding: 10px 5%;
-                        font-weight: normal;
-                    }
-                }
+            background-color:  #f7f7f7;
+            border-top: 0 none;
+            padding: 0;
             a {
-                display: block;
-                width: 90%;
-                padding: 10px 5%;
-                font-size: $font_size_18px;
-                font-weight: bold;
-                text-decoration: none;
-                border-bottom: 1px solid rgba(0,0,0,.2);
-                border-top: 1px solid rgba(255,255,255,.1); 
-                &:hover {
-                    border-top-color: transparent;
-                    a {
-                        border-bottom-color: transparent;
-                    }
-                }
+              border: 0 none;
+              font-size:medium;
+              padding: 10px 5%;
+              font-weight: normal;
             }
-            &:hover {
-                ul {
-                    background-color: #ffffff;
-                 display: block;
-                    border-top: 0 none;
-                }
+        }
+    a {
+        display: block;
+        width: 90%;
+        padding: 10px 5%;
+        font-size: $font_size_18px;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        border-top: 1px solid rgba(255,255,255,.1); 
+        &:hover {
+            border-top-color: transparent;
+            a {
+                border-bottom-color: transparent;
             }
         }
     }
-       
+      &:hover {
+          ul {
+              background-color: #ffffff;
+              display: block;
+              border-top: 0 none;
+          }
+      }
+    }
+  }
+
 }
 
 // ==============
@@ -362,32 +356,32 @@ ul.link-list li li  ul.link-sublist {
 // ==============
 
 .wl-appaside-fptrends {
-    text-align: center;
-    font-family: $Serif;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding: 0px; 
-    float:left;
-    width: 99%;
-    height: 300px;
-    background: $lightGrey url("../../images/TBD-bg.png") repeat-y;
-    border-width: 1px;
-    border-style: solid; 
-    -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
-    -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
-    border-image:url("../../images/borders/border-25.png") 10 10 round;
-    h2 {
-        background: transparent;
-        margin-top: 50%;
-    }
+  text-align: center;
+  font-family: $Serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 0px; 
+  float:left;
+  width: 99%;
+  height: 300px;
+  background: $lightGrey url("../../images/TBD-bg.png") repeat-y;
+  border-width: 1px;
+  border-style: solid; 
+  -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
+  -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
+  border-image:url("../../images/borders/border-25.png") 10 10 round;
+  h2 {
+    background: transparent;
+    margin-top: 50%;
+  }
 }
 // ===============
 // ASIDE LABELS
 // ===============
 
 .wl-fplabels-wrapper {
-    text-align: center;
-    .h2 {
+  text-align: center;
+  .h2 {
     position: absolute;
     display:block;
     z-index: 1;
@@ -395,170 +389,168 @@ ul.link-list li li  ul.link-sublist {
     left: 33px;
     margin: -32px auto 10px ;
     padding: 0 3px 0 3px;
-    }
-    visibility: visible;
-    overflow: hidden;
-    height: auto;
-    width: 99%;
-    padding-bottom: 1px;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    border-width: 1px 1px 0 1px;
-    border-style: solid; 
-    -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
-    -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
-    border-image:url("../../images/borders/border-25.png") 10 10 round;
+  }
+  visibility: visible;
+  overflow: hidden;
+  height: auto;
+  width: 99%;
+  padding-bottom: 1px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-width: 1px 1px 0 1px;
+  border-style: solid; 
+  -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
+  -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
+  border-image:url("../../images/borders/border-25.png") 10 10 round;
 }
 .wl-appaside-fplabels  { 
-    text-align: center;
-    padding: 0;
-    float:left;
-    width: 99%;
-    // ASIDE LABELS SLIDESHOW METRICS 
-    .slideshow {
-        width: 230px;
-        height: 260px;
-    }
-    .slides img {
-        width: 100%;
-        height: 100%;
-    }
+  text-align: center;
+  padding: 0;
+  float:left;
+  width: 99%;
+  // ASIDE LABELS SLIDESHOW METRICS 
+  .slideshow {
+    width: 230px;
+    height: 260px;
+  }
+  .slides img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .dots, .dotstwo, dot-item, .dot {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border: 0;
-    background: transparent;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  background: transparent;
 } 
 .dots, .dotstwo {
-    background: $white;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding: 0 2px 0 2px;
-    height: auto;
-    z-index: 10000;
-    bottom:-240px;
-    margin: 0 auto;
-    text-align: center;
-    list-style: none;
-    font-size: 0;
-    border-width: 1px 0 0 0;
-    border-style: solid;    
-    -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
-    -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
-    border-image:url("../../images/borders/border-25.png") 10 10 round;
+  background: $white;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 0 2px 0 2px;
+  height: auto;
+  z-index: 10000;
+  bottom:-240px;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+  font-size: 0;
+  border-width: 1px 0 0 0;
+  border-style: solid;    
+  -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
+  -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
+  border-image:url("../../images/borders/border-25.png") 10 10 round;
 }
 .dot-item {
-    list-style: none;
-    display: inline-block;
-    width: 18px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    cursor: pointer;
-    opacity: 0.8;
-    background: transparent;
+  list-style: none;
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.8;
+  background: transparent;
 }
 .dot {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border-radius: 4px;
-    font-size: 0;
-    border: solid 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    background-color:#f7f7f7;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  font-size: 0;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  background-color:#f7f7f7;
 }
 .dot-item:active .dot,
 .dot-item.active .dot {
-    background-color: #ff008a;
+  background-color: #ff008a;
 }
 .no-touch .dot-item:hover .dot {
-    background-color:  #828282;
+  background-color:  #828282;
 }
 
 // =================================
 // ASIDE SIGN UP FOR EMAILS
 // =================================
 .wl-fpemail-wrapper {
-    overflow: auto;
-    height: auto;
-    width: 99%;
-    border-width: 1px;
-    border-style: solid; 
-    -webkit-border-image:url("../../images/borders/border-pink.png") 10 10 round; //* Safari */
-    -o-border-image:url("../../images/borders/border-pink.png") 10 10 round; //* Opera */
-    border-image:url("../../images/borders/border-pink.png") 10 10 round;
+  overflow: auto;
+  height: auto;
+  width: 99%;
+  border-width: 1px;
+  border-style: solid; 
+  -webkit-border-image:url("../../images/borders/border-pink.png") 10 10 round; //* Safari */
+  -o-border-image:url("../../images/borders/border-pink.png") 10 10 round; //* Opera */
+  border-image:url("../../images/borders/border-pink.png") 10 10 round;
 }
 .wl-appaside-email {
+  text-align: center;
+  padding: 0 0 20px 0; 
+  float:left;
+  width: 99%;
+  height: 156px;
+  .h2 {
+    color: $hotPink;
+    background: transparent;
+    font-size:$font_size_12px;
     text-align: center;
-    padding: 0 0 20px 0; 
-    float:left;
-    width: 99%;
-    height: 156px;
-    .h2 {
-        color: $hotPink;
-        background: transparent;
-        font-size:$font_size_12px;
-        text-align: center;
-        margin-top: 20px;
-        small {
-            font-family: $Lato;
-            font-style: normal;
-            color: $darkGrey;
-            display: block;
-            margin: 8px 0 19px 0;   
-            }
+    margin-top: 20px;
+    small {
+      font-family: $Lato;
+      font-style: normal;
+      color: $darkGrey;
+      display: block;
+      margin: 8px 0 19px 0;   
     }
-    .wl-ht-text-box {
-        margin: 0 auto;
-        width: 188px;
-        height: 30px;
-        border-width: 1px;
-        border-style: solid;  
-        -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
-        -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
-        border-image:url("../../images/borders/border-25.png") 10 10 round;
-            input{
-                font-family: $Serif;
-                font-style: italic;
-                text-align: center;
-                font-size: $font_size_12px;
-            }
-            .email { 
-                border: none;
-                width: 99%;
-                height: 90%;        
-            }
-    }
-    .wl-button {
-        @include respond-to(medium-only) {              
-        }
-    margin-top: 10px;
+  }
+  .wl-ht-text-box {
+    margin: 0 auto;
+    width: 188px;
+    height: 30px;
     border-width: 1px;
-    border-style: solid; 
+    border-style: solid;  
     -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
     -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
-    border-image:url("../../images/borders/border-25.png") 10 10 round;              
+    border-image:url("../../images/borders/border-25.png") 10 10 round;
+    input{
+        font-family: $Serif;
+        font-style: italic;
+        text-align: center;
+        font-size: $font_size_12px;
     }
+    .email { 
+        border: none;
+        width: 99%;
+        height: 90%;        
+    }
+  }
+  .wl-button {
+  margin-top: 10px;
+  border-width: 1px;
+  border-style: solid; 
+  -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
+  -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
+  border-image:url("../../images/borders/border-25.png") 10 10 round;              
+  }
 }
-.email-signup-button{
-    overflow: visible;
-    :after {
-        position: absolute;
-        left: -20px;
-        display: block;
-        margin-top: -24px;
-        margin-left: -6px;
-        content: '';
-        width:50px;
-        height: 35px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -241px -319px;
-        z-index: 100;
-    }
+.email-signup-button {
+  overflow: visible;
+  :after {
+    position: absolute;
+    left: -20px;
+    display: block;
+    margin-top: -24px;
+    margin-left: -6px;
+    content: '';
+    width:50px;
+    height: 35px;
+    background: transparent url("../../images/sprites.png") no-repeat;
+    background-position: -241px -319px;
+    z-index: 100;
+  }
 }
 
 // ==========================================================================
@@ -566,71 +558,68 @@ ul.link-list li li  ul.link-sublist {
 // ==========================================================================
 
 .wl-appwrapper-header {
-    border: 1px solid #ccc;   
-    margin: 0 auto;
+  border: 1px solid #ccc;   
+  margin: 0 auto;
+  width: 1400px;
+  height: 212px;
+  background: $white url("../../images/header-bg.jpg") no-repeat center;
+  //background-size:contain;//responsive bg image if needed later
+  @include respond-to(small-only) { 
+    background: $white url("../../images/header-bg.jpg") no-repeat center bottom;
+    width: auto;
+    height:100px; 
+  }
+  @include respond-to(medium) { 
+    width: auto;
+  }
+  @include respond-to(wide) { 
     width: 1400px;
-    height: 212px;
-    background: $white url("../../images/header-bg.jpg") no-repeat center;
-    //background-size:contain;//responsive bg image if needed later
-       @include respond-to(small-only) { 
-       background: $white url("../../images/header-bg.jpg") no-repeat center bottom;
-        width: auto;
-        height:100px;
-        border: 1px solid blue;  
-        }
-        @include respond-to(medium) { 
-        width: auto;
-        border: 1px solid green;  
-        }
-        @include respond-to(wide) { 
-        width: 1400px;
-        border: 1px solid red;  
-        }
+  }
 }
 .home .wl-appwrapper-header {
-    z-index: 400;
+  z-index: 400;
 }
 
 // ==========================================================================
 // Application breadcrumb navigation
 // ==========================================================================
 .wl-breadcrumbs {
-    @include respond-to(small-only) { 
-    float: none;
-    font-size: 0.917em;
-    margin: 3px 3px 3px 0;
-    width: auto;
+  @include respond-to(small-only) { 
+  float: none;
+  font-size: 0.917em;
+  margin: 3px 3px 3px 0;
+  width: auto;
     ol.clearfix {
-        display:none;
+      display:none;
     }
-    }    
-    margin: 20px 0 15px 0;
+  }    
+  margin: 20px 0 15px 0;
+  float: left;
+  font-family: $Serif;
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline;
+    margin: 0 5px 0 0;
     float: left;
-    font-family: $Serif;
-    ol {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
+    .ico {
+      margin-left: 8px;
     }
-    li {
-        display: inline;
-        margin: 0 5px 0 0;
-        float: left;
-        .ico {
-            margin-left: 8px;
-        }
-    }
-    a {
-        text-decoration: none;
-        color: $pink;
-    }
-    a.node .is-active {
-        color: $defaultGrey;
-    }
-    @include respond-to(medium-only) { 
+  }
+  a {
+    text-decoration: none;
+    color: $pink;
+  }
+  a.node .is-active {
+    color: $defaultGrey;
+  }
+  @include respond-to(medium-only) { 
     min-width: 350px;//to push content down
     margin-left: 20px;
-    }        
+  }        
 }
 
 // ==========================================================================
@@ -638,9 +627,9 @@ ul.link-list li li  ul.link-sublist {
 // ==========================================================================
 
 .wl-appfooter {  
-    margin: 0 auto;
-    background-color: #ccc;
-    width: auto;
+  margin: 0 auto;
+  background-color: #ccc;
+  width: auto;
 }
 
 // ==========================================================================
@@ -648,7 +637,7 @@ ul.link-list li li  ul.link-sublist {
 // ==========================================================================
 
 .screenreaderonly {
-    position: absolute;
-    left: -9999em;  
-    @include hidden;
+  position: absolute;
+  left: -9999em;  
+  @include hidden;
 }

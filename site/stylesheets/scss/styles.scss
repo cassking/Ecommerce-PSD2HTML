@@ -29,12 +29,11 @@
         max-width:700px;//to present columns of two items at a time
     }
     position: relative;
-    //display: table;
-    overflow:inherit;
+    margin: 0 auto;
+    padding: 0; 
     width: 1200px;
     min-height: 300px;
-    margin: 0 auto;
-    padding: 0;    
+    overflow:inherit;  
 }
 .wl-appmain {
     @include respond-to(small-only) { 
@@ -65,16 +64,16 @@
     min-width:218px;   
     }
     padding: 0; 
-    float:left;
     width: 100%*(231/1200);
     height: auto;
+    float:left;
 }
 .wl-appaside-category-container { 
     padding: 0px; 
-    float:left;
+    margin-bottom: 32px; 
     width: 99%;
-    height: auto;
-    margin-bottom: 32px;
+    height: auto; 
+    float:left;
     border-width: 1px;
     border-style: solid; 
     -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
@@ -107,12 +106,12 @@
         }
 }
 .wl-heading--list {
-    background: transparent;
-    text-align:center;
     display: block;
     margin-left:-5px;
-    padding: 0;
     margin-top: -13px;
+    padding: 0;
+    background: transparent;
+    text-align: enter;
        .txt {
         background-color: #fff;
         padding: 0 7px 0 7px;
@@ -122,16 +121,16 @@
     font-family: $Lato;
     text-transform: uppercase;
         .arrow {
-        display: none;
-        position: relative;
-        margin: 0 0 1px 5px;
-        width: 11px;
-        height: 8px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -80px -480px;
+            display: none;
+            position: relative;
+            margin: 0 0 1px 5px;
+            width: 11px;
+            height: 8px;
+            background: transparent url("../../images/sprites.png") no-repeat;
+            background-position: -80px -480px;
         }
         .link-item--dresses a .txt {
-        color: $defaultGrey;
+            color: $defaultGrey;
         }
 }
 .link-item .link-item--shop-by-shape a .txt {
@@ -139,13 +138,13 @@
 }
 .link-item--shop-by-shape {
         .arrow {
-        display:none;
-        position: relative;
-        margin: 0 0 1px 5px;
-        width: 11px;
-        height: 8px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -160px -480px;
+            display:none;
+            position: relative;
+            margin: 0 0 1px 5px;
+            width: 11px;
+            height: 8px;
+            background: transparent url("../../images/sprites.png") no-repeat;
+            background-position: -160px -480px;
         }  
           
 }
@@ -159,15 +158,15 @@
         height: 8px;
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -80px -480px;
-        } 
+    } 
        .arrow--shape {
-        display: inline-block;
-        position: relative;
-        margin: 0 0 1px 5px;
-        width: 11px;
-        height: 8px;
-        background: transparent url("../../images/sprites.png") no-repeat;
-        background-position: -160px -480px;
+            display: inline-block;
+            position: relative;
+            margin: 0 0 1px 5px;
+            width: 11px;
+            height: 8px;
+            background: transparent url("../../images/sprites.png") no-repeat;
+            background-position: -160px -480px;
         } 
     
 }
@@ -176,43 +175,42 @@ ul.link-list li li  ul.link-sublist {
 }
 .link-item .link-sublist .link-item .link {
     @include respond-to(small-only) { 
-    padding-top: 5px;
-    padding-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     @include respond-to(medium-only) { 
-    padding-top: 5px;
-    padding-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     display: block;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     &:hover {
-    background-color: $lightGrey;
-    color: $defaultGrey;
+        background-color: $lightGrey;
+        color: $defaultGrey;
     }  
 }
 .link-item .link-sublist .link-item .link-sublist .link-item .link {
     display: block;
     padding-left: 33px;
     &:hover {
-    background-color: $lightGrey;
-    color: $defaultGrey;
+        background-color: $lightGrey;
+        color: $defaultGrey;
     }  
 }
 .link-item .link-sublist .link-item .link-sublist .link-item--shop-by-shape .link-item .link {
     display: block;
     padding-left: 45px;
     &:hover {
-    background-color: $lightGrey;
-    color: $defaultGrey;
+        background-color: $lightGrey;
+        color: $defaultGrey;
     }
    .txt:first-child {
-    padding-bottom: 0;
+        padding-bottom: 0;
     }   
 }
 .link-group {
- 
     position: relative;
     padding: 1px;
     margin: 0 0 15px 0;   
@@ -230,7 +228,6 @@ ul.link-list li li  ul.link-sublist {
         position: absolute;
         top: 7px;
         left: 7px;
-        //left: -5px;
         width: 50px;
         height: 35px;
         background: url("../../images/menu-icon-large.png"), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
@@ -268,18 +265,18 @@ ul.link-list li li  ul.link-sublist {
                 display: block; 
             }
         }
-        width: 100%;
-        float: none;
-        background-color: #ffffff; /* change the menu color */
-        display: block;
-        height: 50px;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        box-shadow: 0 1px 2px rgba(0,0,0,.6);
         position: absolute;
         top: 0px;
         left: 0px;
+        display: block;
+        width: 100%; 
+        height: 50px;
+        margin: 0;
+        padding: 0;
+        float: none; 
+        background-color: #ffffff; /* change the menu color */
+        overflow: hidden;
+        box-shadow: 0 1px 2px rgba(0,0,0,.6);
         z-index: 998;
         clear: both;
         border-width: 1px;
@@ -306,18 +303,16 @@ ul.link-list li li  ul.link-sublist {
                     border-top: 0 none;
                     padding: 0;
                     a {
-                        border: 0 none;
-                        //font-size: $font_size_18px;
-                        //font-size: 12px;
-                        font-size:medium;
                         padding: 10px 5%;
+                        border: 0 none;
+                        font-size:medium;
                         font-weight: normal;
                     }
                 }
             a {
                 display: block;
-                width: 90%;
                 padding: 10px 5%;
+                width: 90%;
                 font-size: $font_size_18px;
                 font-weight: bold;
                 text-decoration: none;
@@ -347,14 +342,14 @@ ul.link-list li li  ul.link-sublist {
 // ==============
 
 .wl-appaside-fptrends {
+    margin-bottom: 20px;
+    padding: 0px; 
+    width: 99%;
+    height: 300px; 
+    float:left;
     text-align: center;
     font-family: $Serif;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    padding: 0px; 
-    float:left;
-    width: 99%;
-    height: 300px;
     background: $lightGrey url("../../images/TBD-bg.png") repeat-y;
     border-width: 1px;
     border-style: solid; 
@@ -362,8 +357,8 @@ ul.link-list li li  ul.link-sublist {
     -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
     border-image:url("../../images/borders/border-25.png") 10 10 round;
     h2 {
-        background: transparent;
-        margin-top: 50%;
+         margin-top: 50%;
+         background: transparent;  
     }
 }
 // ===============
@@ -373,21 +368,21 @@ ul.link-list li li  ul.link-sublist {
 .wl-fplabels-wrapper {
     text-align: center;
     .h2 {
-    position: absolute;
-    display:block;
-    z-index: 1;
-    width: auto;
-    left: 33px;
-    margin: -32px auto 10px ;
-    padding: 0 3px 0 3px;
+        position: absolute;
+        display:block;
+        left: 33px;
+        margin: -32px auto 10px ;
+        padding: 0 3px 0 3px;
+        width: auto;
+        z-index: 1;    
     }
-    visibility: visible;
-    overflow: hidden;
-    height: auto;
-    width: 99%;
     padding-bottom: 1px;
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
+    height: auto;
+    width: 99%;
+    visibility: visible;
+    overflow: hidden;
     border-width: 1px 1px 0 1px;
     border-style: solid; 
     -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
@@ -395,10 +390,10 @@ ul.link-list li li  ul.link-sublist {
     border-image:url("../../images/borders/border-25.png") 10 10 round;
 }
 .wl-appaside-fplabels  { 
-    text-align: center;
     padding: 0;
-    float:left;
     width: 99%;
+    float:left;
+    text-align: center;
     // ASIDE LABELS SLIDESHOW METRICS 
     .slideshow {
         width: 230px;
@@ -417,34 +412,34 @@ ul.link-list li li  ul.link-sublist {
     background: transparent;
 } 
 .dots, .dotstwo {
-    background: $white;
-    overflow: hidden;
     position: relative;
-    width: 100%;
-    padding: 0 2px 0 2px;
-    height: auto;
-    z-index: 10000;
     bottom:-240px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto; 
+    padding: 0 2px 0 2px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     list-style: none;
+    background: $white;
+    text-align: center;
     font-size: 0;
     border-width: 1px 0 0 0;
     border-style: solid;    
     -webkit-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Safari  */
     -o-border-image:url("../../images/borders/border-25.png") 10 10 round; //* Opera */
     border-image:url("../../images/borders/border-25.png") 10 10 round;
+    z-index: 10000;
 }
 .dot-item {
-    list-style: none;
     display: inline-block;
     width: 18px;
     height: 20px;
     line-height: 20px;
     text-align: center;
+    list-style: none;
+    background: transparent; 
     cursor: pointer;
     opacity: 0.8;
-    background: transparent;
 }
 .dot {
     display: inline-block;
@@ -468,9 +463,9 @@ ul.link-list li li  ul.link-sublist {
 // ASIDE SIGN UP FOR EMAILS
 // =================================
 .wl-fpemail-wrapper {
-    overflow: auto;
     height: auto;
     width: 99%;
+    overflow: auto;
     border-width: 1px;
     border-style: solid; 
     -webkit-border-image:url("../../images/borders/border-pink.png") 10 10 round; //* Safari */
@@ -478,23 +473,23 @@ ul.link-list li li  ul.link-sublist {
     border-image:url("../../images/borders/border-pink.png") 10 10 round;
 }
 .wl-appaside-email {
-    text-align: center;
-    padding: 0 0 20px 0; 
-    float:left;
     width: 99%;
     height: 156px;
+    padding: 0 0 20px 0; 
+    float:left;
+    text-align: center;
     .h2 {
+        margin-top: 20px;
         color: $hotPink;
         background: transparent;
         font-size:$font_size_12px;
         text-align: center;
-        margin-top: 20px;
         small {
+            display: block;
+            margin: 8px 0 19px 0; 
             font-family: $Lato;
             font-style: normal;
             color: $darkGrey;
-            display: block;
-            margin: 8px 0 19px 0;   
             }
     }
     .wl-ht-text-box {
@@ -509,13 +504,13 @@ ul.link-list li li  ul.link-sublist {
             input{
                 font-family: $Serif;
                 font-style: italic;
-                text-align: center;
                 font-size: $font_size_12px;
+                text-align: center;
             }
             .email { 
-                border: none;
                 width: 99%;
-                height: 90%;        
+                height: 90%;
+                border: none;           
             }
     }
     .wl-button {
@@ -535,11 +530,11 @@ ul.link-list li li  ul.link-sublist {
         position: absolute;
         left: -20px;
         display: block;
+        width:50px;
+        height: 35px;
         margin-top: -24px;
         margin-left: -6px;
         content: '';
-        width:50px;
-        height: 35px;
         background: transparent url("../../images/sprites.png") no-repeat;
         background-position: -241px -319px;
         z-index: 100;
@@ -551,25 +546,22 @@ ul.link-list li li  ul.link-sublist {
 // ==========================================================================
 
 .wl-appwrapper-header {
-    border: 1px solid #ccc;   
     margin: 0 auto;
     width: 1400px;
     height: 212px;
+    border: 1px solid #ccc; 
     background: $white url("../../images/header-bg.jpg") no-repeat center;
     //background-size:contain;//responsive bg image if needed later
        @include respond-to(small-only) { 
-       background: $white url("../../images/header-bg.jpg") no-repeat center bottom;
-        width: auto;
-        height:100px;
-        border: 1px solid blue;  
+            width: auto;
+            height:100px;
+            background: $white url("../../images/header-bg.jpg") no-repeat center bottom;  
         }
         @include respond-to(medium) { 
-        width: auto;
-        border: 1px solid green;  
+            width: auto;
         }
         @include respond-to(wide) { 
-        width: 1400px;
-        border: 1px solid red;  
+            width: 1400px;
         }
 }
 .home .wl-appwrapper-header {
@@ -582,11 +574,10 @@ ul.link-list li li  ul.link-sublist {
 
 .wl-breadcrumbs {
     @include respond-to(small-only) { 
-    float: none;
-    font-size: 0.917em;
-    //margin: 0 auto;
-    margin: 3px 3px 3px 0;
-    width: auto;
+        margin: 3px 3px 3px 0;
+        width: auto;
+        float: none; 
+        font-size: 0.917em;
     }    
     margin: 20px 0 15px 0;
     float: left;
@@ -612,8 +603,8 @@ ul.link-list li li  ul.link-sublist {
         color: $defaultGrey;
     }
     @include respond-to(medium-only) { 
-    min-width: 350px;//to push content down
-    margin-left: 20px;
+        margin-left: 20px;
+        min-width: 350px;//to push content down    
     }        
 }
 
@@ -623,8 +614,8 @@ ul.link-list li li  ul.link-sublist {
 
 .wl-appfooter {  
     margin: 0 auto;
-    background-color: #ccc;
     width: auto;
+    background-color: #ccc;
 }
 
 // ==========================================================================

@@ -503,7 +503,7 @@ li.first {
   height: 30px;
   background: transparent; }
 
-/* line 200, ../scss/products.scss */
+/* line 199, ../scss/products.scss */
 .wl-property-group--row,
 .wl-property-group,
 .wl-property,
@@ -511,22 +511,22 @@ li.first {
   padding: 0;
   margin: 0; }
 
-/* line 204, ../scss/products.scss */
+/* line 203, ../scss/products.scss */
 .wl-form-container .wl-property-group--row {
   height: 80px;
   background-color: rgba(0, 0, 0, 0.1); }
 
-/* line 210, ../scss/products.scss */
+/* line 209, ../scss/products.scss */
 .wl-action {
   position: absolute;
   left: 705px;
   z-index: 99999; }
-  /* line 214, ../scss/products.scss */
+  /* line 213, ../scss/products.scss */
   .wl-action input.wl-button {
     padding: 3px;
     width: 80px; }
 
-/* line 219, ../scss/products.scss */
+/* line 218, ../scss/products.scss */
 .wl-form-options {
   position: fixed;
   top: 5px;
@@ -545,14 +545,14 @@ li.first {
   float: left;
   background: white; }
 
-/* line 241, ../scss/products.scss */
+/* line 240, ../scss/products.scss */
 .wl-list-styles-count {
   margin-top: -56px;
   margin-top: -55px;
   margin-right: 20px;
   float: right;
   list-style: none; }
-  /* line 242, ../scss/products.scss */
+  /* line 241, ../scss/products.scss */
   .wl-list-styles-count :before {
     display: block;
     position: absolute;
@@ -566,10 +566,10 @@ li.first {
     content: '';
     z-index: -1;
     background: none; }
-  /* line 260, ../scss/products.scss */
+  /* line 259, ../scss/products.scss */
   .wl-list-styles-count :before {
     background: none; }
-  /* line 270, ../scss/products.scss */
+  /* line 269, ../scss/products.scss */
   .wl-list-styles-count .txt {
     padding-left: 6px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -577,7 +577,7 @@ li.first {
     color: #828282;
     background-color: white; }
 
-/* line 283, ../scss/products.scss */
+/* line 282, ../scss/products.scss */
 .wl-dropdown {
   width: 110px;
   margin-right: 7px;
@@ -586,7 +586,7 @@ li.first {
   height: 20px;
   float: left;
   z-index: 100; }
-  /* line 286, ../scss/products.scss */
+  /* line 285, ../scss/products.scss */
   .wl-dropdown .wl-value select {
     height: 45px;
     text-indent: 0;
@@ -594,13 +594,13 @@ li.first {
     -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
-  /* line 294, ../scss/products.scss */
+  /* line 293, ../scss/products.scss */
   .wl-dropdown span.arrow {
     margin: -25px 10px 0 0; }
-  /* line 300, ../scss/products.scss */
+  /* line 299, ../scss/products.scss */
   .wl-dropdown:last-child {
     margin-right: 0; }
-  /* line 309, ../scss/products.scss */
+  /* line 308, ../scss/products.scss */
   .wl-dropdown select {
     padding-left: 16px;
     width: 100%;
@@ -618,7 +618,7 @@ li.first {
     border-image: url("../../images/borders/border-50.png") 10 10 round;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic; }
-  /* line 327, ../scss/products.scss */
+  /* line 326, ../scss/products.scss */
   .wl-dropdown .arrow {
     display: block;
     position: relative;
@@ -1134,7 +1134,7 @@ li.first {
   height: 30px;
   background: transparent; }
 
-/* line 200, ../scss/products.scss */
+/* line 199, ../scss/products.scss */
 .wl-property-group--row,
 .wl-property-group,
 .wl-property,
@@ -1142,22 +1142,22 @@ li.first {
   padding: 0;
   margin: 0; }
 
-/* line 204, ../scss/products.scss */
+/* line 203, ../scss/products.scss */
 .wl-form-container .wl-property-group--row {
   height: 80px;
   background-color: rgba(0, 0, 0, 0.1); }
 
-/* line 210, ../scss/products.scss */
+/* line 209, ../scss/products.scss */
 .wl-action {
   position: absolute;
   left: 705px;
   z-index: 99999; }
-  /* line 214, ../scss/products.scss */
+  /* line 213, ../scss/products.scss */
   .wl-action input.wl-button {
     padding: 3px;
     width: 80px; }
 
-/* line 219, ../scss/products.scss */
+/* line 218, ../scss/products.scss */
 .wl-form-options {
   position: fixed;
   top: 5px;
@@ -1176,14 +1176,14 @@ li.first {
   float: left;
   background: white; }
 
-/* line 241, ../scss/products.scss */
+/* line 240, ../scss/products.scss */
 .wl-list-styles-count {
   margin-top: -56px;
   margin-top: -55px;
   margin-right: 20px;
   float: right;
   list-style: none; }
-  /* line 242, ../scss/products.scss */
+  /* line 241, ../scss/products.scss */
   .wl-list-styles-count :before {
     display: block;
     position: absolute;
@@ -1197,10 +1197,10 @@ li.first {
     content: '';
     z-index: -1;
     background: none; }
-  /* line 260, ../scss/products.scss */
+  /* line 259, ../scss/products.scss */
   .wl-list-styles-count :before {
     background: none; }
-  /* line 270, ../scss/products.scss */
+  /* line 269, ../scss/products.scss */
   .wl-list-styles-count .txt {
     padding-left: 6px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -1208,7 +1208,7 @@ li.first {
     color: #828282;
     background-color: white; }
 
-/* line 283, ../scss/products.scss */
+/* line 282, ../scss/products.scss */
 .wl-dropdown {
   width: 110px;
   margin-right: 7px;
@@ -1217,7 +1217,7 @@ li.first {
   height: 20px;
   float: left;
   z-index: 100; }
-  /* line 286, ../scss/products.scss */
+  /* line 285, ../scss/products.scss */
   .wl-dropdown .wl-value select {
     height: 45px;
     text-indent: 0;
@@ -1225,13 +1225,13 @@ li.first {
     -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
-  /* line 294, ../scss/products.scss */
+  /* line 293, ../scss/products.scss */
   .wl-dropdown span.arrow {
     margin: -25px 10px 0 0; }
-  /* line 300, ../scss/products.scss */
+  /* line 299, ../scss/products.scss */
   .wl-dropdown:last-child {
     margin-right: 0; }
-  /* line 309, ../scss/products.scss */
+  /* line 308, ../scss/products.scss */
   .wl-dropdown select {
     padding-left: 16px;
     width: 100%;
@@ -1249,7 +1249,7 @@ li.first {
     border-image: url("../../images/borders/border-50.png") 10 10 round;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic; }
-  /* line 327, ../scss/products.scss */
+  /* line 326, ../scss/products.scss */
   .wl-dropdown .arrow {
     display: block;
     position: relative;

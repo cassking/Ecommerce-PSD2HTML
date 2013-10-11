@@ -289,11 +289,11 @@ li.first {
     .wl-form-options {
       min-width: 475px; } }
 
-/* line 233, ../scss/products.scss */
+/* line 232, ../scss/products.scss */
 .wl-list-styles-count {
   float: right;
   list-style: none; }
-  /* line 234, ../scss/products.scss */
+  /* line 233, ../scss/products.scss */
   .wl-list-styles-count :before {
     padding: 0;
     background: url("../../images/borders/border-25.png");
@@ -307,23 +307,23 @@ li.first {
     width: 450px;
     z-index: -1; }
     @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
-      /* line 234, ../scss/products.scss */
+      /* line 233, ../scss/products.scss */
       .wl-list-styles-count :before {
         background: none; } }
   @media screen and (max-width: 30em) {
-    /* line 233, ../scss/products.scss */
+    /* line 232, ../scss/products.scss */
     .wl-list-styles-count {
       margin-top: -56px; } }
   @media screen and (min-width: small-only) {
-    /* line 233, ../scss/products.scss */
+    /* line 232, ../scss/products.scss */
     .wl-list-styles-count {
       margin-top: -56px; } }
   @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
-    /* line 233, ../scss/products.scss */
+    /* line 232, ../scss/products.scss */
     .wl-list-styles-count {
       margin-top: -55px;
       margin-right: 20px; } }
-  /* line 259, ../scss/products.scss */
+  /* line 258, ../scss/products.scss */
   .wl-list-styles-count .txt {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
@@ -331,7 +331,7 @@ li.first {
     padding-left: 6px;
     background-color: white; }
 
-/* line 273, ../scss/products.scss */
+/* line 272, ../scss/products.scss */
 .wl-dropdown {
   margin-right: 5px;
   float: left;
@@ -339,21 +339,21 @@ li.first {
   height: 20px;
   z-index: 100; }
   @media screen and (max-width: 30em) {
-    /* line 273, ../scss/products.scss */
+    /* line 272, ../scss/products.scss */
     .wl-dropdown {
       display: none; } }
   @media screen and (min-width: small-only) {
-    /* line 273, ../scss/products.scss */
+    /* line 272, ../scss/products.scss */
     .wl-dropdown {
       display: none; } }
   @media screen and (min-width: 30.0625em) and (max-width: 61.1875em) {
-    /* line 273, ../scss/products.scss */
+    /* line 272, ../scss/products.scss */
     .wl-dropdown {
       margin-right: 7px; }
-      /* line 279, ../scss/products.scss */
+      /* line 278, ../scss/products.scss */
       .wl-dropdown:last-child {
         margin-right: 0; } }
-  /* line 288, ../scss/products.scss */
+  /* line 287, ../scss/products.scss */
   .wl-dropdown select {
     -moz-appearance: button;
     text-indent: 5px;
@@ -371,7 +371,7 @@ li.first {
     padding-left: 16px;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic; }
-  /* line 306, ../scss/products.scss */
+  /* line 305, ../scss/products.scss */
   .wl-dropdown .arrow {
     float: right;
     display: block;

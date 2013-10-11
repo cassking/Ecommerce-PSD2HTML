@@ -222,7 +222,6 @@ li.first {
     @include respond-to(medium-only) {
         min-width: 475px;
     }
-   
     width: 470px;
     float: left;
     height: 27px;
